@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>blog搭建 on Walk Hanmei&#39;s World</title>
+    <link>https://nicolemayer.github.io/categories/blog%E6%90%AD%E5%BB%BA/</link>
+    <description>Recent content in blog搭建 on Walk Hanmei&#39;s World</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 01 Nov 2019 01:52:49 -0700</lastBuildDate>
+    
+	<atom:link href="https://nicolemayer.github.io/categories/blog%E6%90%AD%E5%BB%BA/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About</title>
+      <link>https://nicolemayer.github.io/about/</link>
+      <pubDate>Fri, 01 Nov 2019 01:52:49 -0700</pubDate>
+      
+      <guid>https://nicolemayer.github.io/about/</guid>
+      <description>&lt;p&gt;之前搭这个博客问题重重，到最后不知怎么的把主题给搞没了。所以重新搭建一些，同时记录一下博客搭建的过程。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
