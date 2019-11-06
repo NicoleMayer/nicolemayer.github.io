@@ -1,0 +1,318 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge,chrome=1"><title>WebGL 系列三.md - Walk Hanmei&#39;s World</title><meta name=renderer content="webkit"><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1"><meta http-equiv=cache-control content="no-transform"><meta http-equiv=cache-control content="no-siteapp"><meta name=theme-color content="#f8f5ec"><meta name=msapplication-navbutton-color content="#f8f5ec"><meta name=apple-mobile-web-app-capable content="yes"><meta name=apple-mobile-web-app-status-bar-style content="#f8f5ec"><meta name=author content="Hanmei"><meta name=description content><meta name=keywords content="Life,Coding,Journal"><meta name=generator content="Hugo 0.59.0 with theme even"><link rel=canonical href=https://nicolemayer.github.io/posts/2019-11/webgl-%E7%B3%BB%E5%88%97%E4%B8%89/><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=manifest href=/manifest.json><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><script async src=//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js></script><link href=/dist/even.c2a46f00.min.css rel=stylesheet><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin=anonymous><meta property="og:title" content="WebGL 系列三.md"><meta property="og:description" content><meta property="og:type" content="article"><meta property="og:url" content="https://nicolemayer.github.io/posts/2019-11/webgl-%E7%B3%BB%E5%88%97%E4%B8%89/"><meta property="article:published_time" content="2019-11-04T00:03:43-07:00"><meta property="article:modified_time" content="2019-11-04T00:03:43-07:00"><meta itemprop=name content="WebGL 系列三.md"><meta itemprop=description content><meta itemprop=datePublished content="2019-11-04T00:03:43-07:00"><meta itemprop=dateModified content="2019-11-04T00:03:43-07:00"><meta itemprop=wordCount content="2187"><meta itemprop=keywords content="WebGL,图形学,"><meta name=twitter:card content="summary"><meta name=twitter:title content="WebGL 系列三.md"><meta name=twitter:description content><!--[if lte IE 9]><script src=https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js></script><![endif]--><!--[if lt IE 9]><script src=https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js></script><script src=https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js></script><![endif]--></head><body><div id=mobile-navbar class=mobile-navbar><div class=mobile-header-logo><a href=/ class=logo>Hanmei@梅</a></div><div class=mobile-navbar-icon><span></span><span></span><span></span></div></div><nav id=mobile-menu class="mobile-menu slideout-menu"><ul class=mobile-menu-list><a href=/><li class=mobile-menu-item>Home</li></a><a href=/post/><li class=mobile-menu-item>Archives</li></a><a href=/tags/><li class=mobile-menu-item>Tags</li></a><a href=/categories/><li class=mobile-menu-item>Categories</li></a><a href=/about><li class=mobile-menu-item>About</li></a></ul></nav><div class=container id=mobile-panel><header id=header class=header><div class=logo-wrapper><a href=/ class=logo>Hanmei@梅</a></div><nav class=site-navbar><ul id=menu class=menu><li class=menu-item><a class=menu-item-link href=/>Home</a></li><li class=menu-item><a class=menu-item-link href=/post/>Archives</a></li><li class=menu-item><a class=menu-item-link href=/tags/>Tags</a></li><li class=menu-item><a class=menu-item-link href=/categories/>Categories</a></li><li class=menu-item><a class=menu-item-link href=/about>About</a></li></ul></nav></header><main id=main class=main><div class=content-wrapper><div id=content class=content><article class=post><header class=post-header><h1 class=post-title>WebGL 系列三.md</h1><div class=post-meta><span class=post-time>2019-11-04</span><div class=post-category><a href=/categories/%E6%8A%80%E6%9C%AF/>技术</a></div><span class=more-meta>2187 words</span>
+<span class=more-meta>5 mins read</span>
+<span id=busuanzi_container_page_pv class=more-meta><span id=busuanzi_value_page_pv><img src=/img/spinner.svg alt=spinner.svg></span> times read</span></div></header><div class=post-toc id=post-toc><h2 class=post-toc-title>Contents</h2><div class="post-toc-content always-active"><nav id=TableOfContents><ul><li><a href=#顶点着色器>顶点着色器</a><ul><li><a href=#缓冲和属性>缓冲和属性</a></li><li><a href=#uniforms-全局变量>Uniforms 全局变量</a></li><li><a href=#纹理>纹理</a></li></ul></li><li><a href=#片断着色器>片断着色器</a><ul><li><a href=#uniform-全局变量>Uniform 全局变量</a></li><li><a href=#textures-纹理>Textures 纹理</a></li><li><a href=#varyings-可变量>Varyings 可变量</a></li></ul></li><li><a href=#glsl>GLSL</a></li><li><a href=#总结>总结</a></li></ul></nav></div></div><div class=post-content><p>WebGL需要两个着色器， <strong>顶点着色器</strong>和<strong>片断着色器</strong>，每一个着色器都是一个方法。 一个顶点着色器和一个片断着色器<strong>链接在一起</strong>放入一个<strong>着色程序</strong>中。 一个典型的WebGL应用会有多个着色程序。</p><h1 id=顶点着色器>顶点着色器</h1><ul><li>功能：生成裁剪空间坐标值</li><li>每个顶点调用一次（顶点）着色器，每次调用都需要设置一个特殊的全局变量<code>gl_Position</code>， 该变量的值就是<strong>裁减空间坐标值</strong>。</li><li>它所需要的数据可以通过以下三种方式获得：<ul><li>Attributes 属性 (从缓冲中获取的数据)</li><li>Uniforms 全局变量 (在一次绘制中对所有顶点保持一致值)</li><li>Textures 纹理 (从像素或纹理元素中获取的数据)</li></ul></li></ul><h2 id=缓冲和属性>缓冲和属性</h2><p>最常用的方法是缓冲和属性，就如<a href=https://nicolemayer.github.io/posts/2019-11/webgl-%E7%B3%BB%E5%88%97%E4%B8%80/>WebGL 系列一</a>展示的那样。</p><p>属性可以用 <code>float</code>, <code>vec2</code>, <code>vec3</code>, <code>vec4</code>, <code>mat2</code>, <code>mat3</code> 和 <code>mat4</code> 数据类型。</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code class=language-js data-lang=js><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-js data-lang=js><span class=c1>//创建缓冲
+</span><span class=c1></span><span class=kd>var</span> <span class=nx>buf</span> <span class=o>=</span> <span class=nx>gl</span><span class=p>.</span><span class=nx>createBuffer</span><span class=p>();</span>
+
+<span class=c1>//将数据存入缓冲
+</span><span class=c1></span><span class=nx>gl</span><span class=p>.</span><span class=nx>bindBuffer</span><span class=p>(</span><span class=nx>gl</span><span class=p>.</span><span class=nx>ARRAY_BUFFER</span><span class=p>,</span> <span class=nx>buf</span><span class=p>);</span>
+<span class=nx>gl</span><span class=p>.</span><span class=nx>bufferData</span><span class=p>(</span><span class=nx>gl</span><span class=p>.</span><span class=nx>ARRAY_BUFFER</span><span class=p>,</span> <span class=nx>someData</span><span class=p>,</span> <span class=nx>gl</span><span class=p>.</span><span class=nx>STATIC_DRAW</span><span class=p>);</span>
+
+<span class=c1>//初始化的时候，在着色程序中找到属性所在地址
+</span><span class=c1></span><span class=kd>var</span> <span class=nx>positionLoc</span> <span class=o>=</span> <span class=nx>gl</span><span class=p>.</span><span class=nx>getAttribLocation</span><span class=p>(</span><span class=nx>someShaderProgram</span><span class=p>,</span> <span class=s2>&#34;a_position&#34;</span><span class=p>);</span>
+
+<span class=c1>//在渲染的时候告诉WebGL怎么从缓冲中获取数据传递给属性
+</span><span class=c1></span><span class=nx>gl</span><span class=p>.</span><span class=nx>enableVertexAttribArray</span><span class=p>(</span><span class=nx>positionLoc</span><span class=p>);</span> <span class=c1>// 开启从缓冲中获取数据
+</span><span class=c1></span><span class=kd>var</span> <span class=nx>numComponents</span> <span class=o>=</span> <span class=mi>3</span><span class=p>;</span>  <span class=c1>// (x, y, z)
+</span><span class=c1></span><span class=kd>var</span> <span class=nx>type</span> <span class=o>=</span> <span class=nx>gl</span><span class=p>.</span><span class=nx>FLOAT</span><span class=p>;</span>    <span class=c1>// 32位浮点数据
+</span><span class=c1></span><span class=kd>var</span> <span class=nx>normalize</span> <span class=o>=</span> <span class=kc>false</span><span class=p>;</span>  <span class=c1>// 不标准化
+</span><span class=c1></span><span class=kd>var</span> <span class=nx>offset</span> <span class=o>=</span> <span class=mi>0</span><span class=p>;</span>         <span class=c1>// 从缓冲起始位置开始获取
+</span><span class=c1></span><span class=kd>var</span> <span class=nx>stride</span> <span class=o>=</span> <span class=mi>0</span><span class=p>;</span>         <span class=c1>// 到下一个数据跳多少位内存
+</span><span class=c1></span>                        <span class=c1>// 0 = 使用当前的单位个数和单位长度 （ 3 * Float32Array.BYTES_PER_ELEMENT ）
+</span><span class=c1></span><span class=nx>gl</span><span class=p>.</span><span class=nx>vertexAttribPointer</span><span class=p>(</span><span class=nx>positionLoc</span><span class=p>,</span> <span class=nx>numComponents</span><span class=p>,</span> <span class=nx>type</span><span class=p>,</span> <span class=kc>false</span><span class=p>,</span> <span class=nx>stride</span><span class=p>,</span> <span class=nx>offset</span><span class=p>);</span>
+</code></pre></td></tr></table></div></div><h2 id=uniforms-全局变量>Uniforms 全局变量</h2><p>在一次绘制过程中传递给着色器的值都一样。</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code class=language-js data-lang=js><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span><span class=lnt>9
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-js data-lang=js><span class=nx>attribute</span> <span class=nx>vec4</span> <span class=nx>a_position</span><span class=p>;</span>
+<span class=nx>uniform</span> <span class=nx>vec4</span> <span class=nx>u_offset</span><span class=p>;</span> <span class=c1>// 着色器里
+</span><span class=c1></span> 
+<span class=k>void</span> <span class=nx>main</span><span class=p>()</span> <span class=p>{</span>
+   <span class=nx>gl_Position</span> <span class=o>=</span> <span class=nx>a_position</span> <span class=o>+</span> <span class=nx>u_offset</span><span class=p>;</span>
+<span class=p>}</span>
+<span class=kd>var</span> <span class=nx>offsetLoc</span> <span class=o>=</span> <span class=nx>gl</span><span class=p>.</span><span class=nx>getUniformLocation</span><span class=p>(</span><span class=nx>someProgram</span><span class=p>,</span> <span class=s2>&#34;u_offset&#34;</span><span class=p>);</span> <span class=c1>// JavaScript 初始化时
+</span><span class=c1></span>
+<span class=nx>gl</span><span class=p>.</span><span class=nx>uniform4fv</span><span class=p>(</span><span class=nx>offsetLoc</span><span class=p>,</span> <span class=p>[</span><span class=mi>1</span><span class=p>,</span> <span class=mi>0</span><span class=p>,</span> <span class=mi>0</span><span class=p>,</span> <span class=mi>0</span><span class=p>]);</span>  <span class=c1>// 向右偏移一半屏幕宽度 渲染的时候
+</span></code></pre></td></tr></table></div></div><p>全局变量有很多类型，对应的类型有对应的设置方法。</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code class=language-js data-lang=js><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-js data-lang=js><span class=nx>gl</span><span class=p>.</span><span class=nx>uniform1f</span> <span class=p>(</span><span class=nx>floatUniformLoc</span><span class=p>,</span> <span class=nx>v</span><span class=p>);</span>                 <span class=c1>// float
+</span><span class=c1></span><span class=nx>gl</span><span class=p>.</span><span class=nx>uniform1fv</span><span class=p>(</span><span class=nx>floatUniformLoc</span><span class=p>,</span> <span class=p>[</span><span class=nx>v</span><span class=p>]);</span>               <span class=c1>// float 或 float array
+</span><span class=c1></span><span class=nx>gl</span><span class=p>.</span><span class=nx>uniform2f</span> <span class=p>(</span><span class=nx>vec2UniformLoc</span><span class=p>,</span>  <span class=nx>v0</span><span class=p>,</span> <span class=nx>v1</span><span class=p>);</span>            <span class=c1>// vec2
+</span><span class=c1></span><span class=nx>gl</span><span class=p>.</span><span class=nx>uniform2fv</span><span class=p>(</span><span class=nx>vec2UniformLoc</span><span class=p>,</span>  <span class=p>[</span><span class=nx>v0</span><span class=p>,</span> <span class=nx>v1</span><span class=p>]);</span>          <span class=c1>// vec2 或 vec2 array
+</span><span class=c1></span><span class=nx>gl</span><span class=p>.</span><span class=nx>uniform3f</span> <span class=p>(</span><span class=nx>vec3UniformLoc</span><span class=p>,</span>  <span class=nx>v0</span><span class=p>,</span> <span class=nx>v1</span><span class=p>,</span> <span class=nx>v2</span><span class=p>);</span>        <span class=c1>// vec3
+</span><span class=c1></span><span class=nx>gl</span><span class=p>.</span><span class=nx>uniform3fv</span><span class=p>(</span><span class=nx>vec3UniformLoc</span><span class=p>,</span>  <span class=p>[</span><span class=nx>v0</span><span class=p>,</span> <span class=nx>v1</span><span class=p>,</span> <span class=nx>v2</span><span class=p>]);</span>      <span class=c1>// vec3 或 vec3 array
+</span><span class=c1></span><span class=nx>gl</span><span class=p>.</span><span class=nx>uniform4f</span> <span class=p>(</span><span class=nx>vec4UniformLoc</span><span class=p>,</span>  <span class=nx>v0</span><span class=p>,</span> <span class=nx>v1</span><span class=p>,</span> <span class=nx>v2</span><span class=p>,</span> <span class=nx>v4</span><span class=p>);</span>    <span class=c1>// vec4
+</span><span class=c1></span><span class=nx>gl</span><span class=p>.</span><span class=nx>uniform4fv</span><span class=p>(</span><span class=nx>vec4UniformLoc</span><span class=p>,</span>  <span class=p>[</span><span class=nx>v0</span><span class=p>,</span> <span class=nx>v1</span><span class=p>,</span> <span class=nx>v2</span><span class=p>,</span> <span class=nx>v4</span><span class=p>]);</span>  <span class=c1>// vec4 或 vec4 array
+</span><span class=c1></span> 
+<span class=nx>gl</span><span class=p>.</span><span class=nx>uniformMatrix2fv</span><span class=p>(</span><span class=nx>mat2UniformLoc</span><span class=p>,</span> <span class=kc>false</span><span class=p>,</span> <span class=p>[</span>  <span class=mi>4</span><span class=nx>x</span> <span class=nx>element</span> <span class=nx>array</span> <span class=p>])</span>  <span class=c1>// mat2 或 mat2 array
+</span><span class=c1></span><span class=nx>gl</span><span class=p>.</span><span class=nx>uniformMatrix3fv</span><span class=p>(</span><span class=nx>mat3UniformLoc</span><span class=p>,</span> <span class=kc>false</span><span class=p>,</span> <span class=p>[</span>  <span class=mi>9</span><span class=nx>x</span> <span class=nx>element</span> <span class=nx>array</span> <span class=p>])</span>  <span class=c1>// mat3 或 mat3 array
+</span><span class=c1></span><span class=nx>gl</span><span class=p>.</span><span class=nx>uniformMatrix4fv</span><span class=p>(</span><span class=nx>mat4UniformLoc</span><span class=p>,</span> <span class=kc>false</span><span class=p>,</span> <span class=p>[</span> <span class=mi>16</span><span class=nx>x</span> <span class=nx>element</span> <span class=nx>array</span> <span class=p>])</span>  <span class=c1>// mat4 或 mat4 array
+</span><span class=c1></span> 
+<span class=nx>gl</span><span class=p>.</span><span class=nx>uniform1i</span> <span class=p>(</span><span class=nx>intUniformLoc</span><span class=p>,</span>   <span class=nx>v</span><span class=p>);</span>                 <span class=c1>// int
+</span><span class=c1></span><span class=nx>gl</span><span class=p>.</span><span class=nx>uniform1iv</span><span class=p>(</span><span class=nx>intUniformLoc</span><span class=p>,</span> <span class=p>[</span><span class=nx>v</span><span class=p>]);</span>                 <span class=c1>// int 或 int array
+</span><span class=c1></span><span class=nx>gl</span><span class=p>.</span><span class=nx>uniform2i</span> <span class=p>(</span><span class=nx>ivec2UniformLoc</span><span class=p>,</span> <span class=nx>v0</span><span class=p>,</span> <span class=nx>v1</span><span class=p>);</span>            <span class=c1>// ivec2
+</span><span class=c1></span><span class=nx>gl</span><span class=p>.</span><span class=nx>uniform2iv</span><span class=p>(</span><span class=nx>ivec2UniformLoc</span><span class=p>,</span> <span class=p>[</span><span class=nx>v0</span><span class=p>,</span> <span class=nx>v1</span><span class=p>]);</span>          <span class=c1>// ivec2 或 ivec2 array
+</span><span class=c1></span><span class=nx>gl</span><span class=p>.</span><span class=nx>uniform3i</span> <span class=p>(</span><span class=nx>ivec3UniformLoc</span><span class=p>,</span> <span class=nx>v0</span><span class=p>,</span> <span class=nx>v1</span><span class=p>,</span> <span class=nx>v2</span><span class=p>);</span>        <span class=c1>// ivec3
+</span><span class=c1></span><span class=nx>gl</span><span class=p>.</span><span class=nx>uniform3iv</span><span class=p>(</span><span class=nx>ivec3UniformLoc</span><span class=p>,</span> <span class=p>[</span><span class=nx>v0</span><span class=p>,</span> <span class=nx>v1</span><span class=p>,</span> <span class=nx>v2</span><span class=p>]);</span>      <span class=c1>// ivec3 or ivec3 array
+</span><span class=c1></span><span class=nx>gl</span><span class=p>.</span><span class=nx>uniform4i</span> <span class=p>(</span><span class=nx>ivec4UniformLoc</span><span class=p>,</span> <span class=nx>v0</span><span class=p>,</span> <span class=nx>v1</span><span class=p>,</span> <span class=nx>v2</span><span class=p>,</span> <span class=nx>v4</span><span class=p>);</span>    <span class=c1>// ivec4
+</span><span class=c1></span><span class=nx>gl</span><span class=p>.</span><span class=nx>uniform4iv</span><span class=p>(</span><span class=nx>ivec4UniformLoc</span><span class=p>,</span> <span class=p>[</span><span class=nx>v0</span><span class=p>,</span> <span class=nx>v1</span><span class=p>,</span> <span class=nx>v2</span><span class=p>,</span> <span class=nx>v4</span><span class=p>]);</span>  <span class=c1>// ivec4 或 ivec4 array
+</span><span class=c1></span> 
+<span class=nx>gl</span><span class=p>.</span><span class=nx>uniform1i</span> <span class=p>(</span><span class=nx>sampler2DUniformLoc</span><span class=p>,</span>   <span class=nx>v</span><span class=p>);</span>           <span class=c1>// sampler2D (textures)
+</span><span class=c1></span><span class=nx>gl</span><span class=p>.</span><span class=nx>uniform1iv</span><span class=p>(</span><span class=nx>sampler2DUniformLoc</span><span class=p>,</span> <span class=p>[</span><span class=nx>v</span><span class=p>]);</span>           <span class=c1>// sampler2D 或 sampler2D array
+</span><span class=c1></span> 
+<span class=nx>gl</span><span class=p>.</span><span class=nx>uniform1i</span> <span class=p>(</span><span class=nx>samplerCubeUniformLoc</span><span class=p>,</span>   <span class=nx>v</span><span class=p>);</span>         <span class=c1>// samplerCube (textures)
+</span><span class=c1></span><span class=nx>gl</span><span class=p>.</span><span class=nx>uniform1iv</span><span class=p>(</span><span class=nx>samplerCubeUniformLoc</span><span class=p>,</span> <span class=p>[</span><span class=nx>v</span><span class=p>]);</span>         <span class=c1>// samplerCube 或 samplerCube array
+</span></code></pre></td></tr></table></div></div><p>还有一些类型 <code>bool</code>, <code>bvec2</code>, <code>bvec3</code>, and <code>bvec4</code>。它们可用<code>gl.uniform?f?</code>或<code>gl.uniform?i?</code>。</p><p>如果你想单独设置数组中的某个值，就要单独找到该值的地址。</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code class=language-js data-lang=js><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span><span class=lnt>9
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-js data-lang=js><span class=c1>// JavaScript 初始化时
+</span><span class=c1></span><span class=kd>var</span> <span class=nx>someVec2Element0Loc</span> <span class=o>=</span> <span class=nx>gl</span><span class=p>.</span><span class=nx>getUniformLocation</span><span class=p>(</span><span class=nx>someProgram</span><span class=p>,</span> <span class=s2>&#34;u_someVec2[0]&#34;</span><span class=p>);</span>
+<span class=kd>var</span> <span class=nx>someVec2Element1Loc</span> <span class=o>=</span> <span class=nx>gl</span><span class=p>.</span><span class=nx>getUniformLocation</span><span class=p>(</span><span class=nx>someProgram</span><span class=p>,</span> <span class=s2>&#34;u_someVec2[1]&#34;</span><span class=p>);</span>
+<span class=kd>var</span> <span class=nx>someVec2Element2Loc</span> <span class=o>=</span> <span class=nx>gl</span><span class=p>.</span><span class=nx>getUniformLocation</span><span class=p>(</span><span class=nx>someProgram</span><span class=p>,</span> <span class=s2>&#34;u_someVec2[2]&#34;</span><span class=p>);</span>
+ 
+<span class=c1>// 渲染的时候
+</span><span class=c1></span><span class=nx>gl</span><span class=p>.</span><span class=nx>uniform2fv</span><span class=p>(</span><span class=nx>someVec2Element0Loc</span><span class=p>,</span> <span class=p>[</span><span class=mi>1</span><span class=p>,</span> <span class=mi>2</span><span class=p>]);</span>  <span class=c1>// set element 0
+</span><span class=c1></span><span class=nx>gl</span><span class=p>.</span><span class=nx>uniform2fv</span><span class=p>(</span><span class=nx>someVec2Element1Loc</span><span class=p>,</span> <span class=p>[</span><span class=mi>3</span><span class=p>,</span> <span class=mi>4</span><span class=p>]);</span>  <span class=c1>// set element 1
+</span><span class=c1></span><span class=nx>gl</span><span class=p>.</span><span class=nx>uniform2fv</span><span class=p>(</span><span class=nx>someVec2Element2Loc</span><span class=p>,</span> <span class=p>[</span><span class=mi>5</span><span class=p>,</span> <span class=mi>6</span><span class=p>]);</span>  <span class=c1>// set element 2
+</span></code></pre></td></tr></table></div></div><p>要注意的是全局变量属于单个着色程序，如果多个着色程序有同名全局变量，需要找到每个全局变量并设置自己的值。</p><p>如果你创建了一个结构体，你需要找到每个元素的地址。</p><h2 id=纹理>纹理</h2><p>同 <a href=https://nicolemayer.github.io/posts/2019-11/webgl-%E7%B3%BB%E5%88%97%E4%B8%89/#片段着色器>片段着色器</a> 中的 纹理描述</p><h1 id=片断着色器>片断着色器</h1><ul><li>功能：为当前光栅化的像素提供颜色值</li><li>每个像素都将调用一次片断着色器，每次调用需要从你设置的特殊全局变量<code>gl_FragColor</code>中获取颜色信息。</li><li>片断着色器所需的数据，可以通过以下三种方式获取:<ol><li>Uniforms 全局变量 (values that stay the same for every pixel of a single draw call)</li><li>Textures 纹理 (data from pixels/texels)</li><li>Varyings 可变量 (data passed from the vertex shader and interpolated)</li></ol></li></ul><h2 id=uniform-全局变量>Uniform 全局变量</h2><p>同 <a href=https://nicolemayer.github.io/posts/2019-11/webgl-%E7%B3%BB%E5%88%97%E4%B8%89/#uniforms-全局变量>Uniforms</a></p><h2 id=textures-纹理>Textures 纹理</h2><p>在着色器中获取纹理信息，可以先创建一个sampler2D类型全局变量，然后用GLSL方法从 texture2D 从纹理中提取信息。</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code class=language-js data-lang=js><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-js data-lang=js><span class=nx>precision</span> <span class=nx>mediump</span> <span class=kr>float</span><span class=p>;</span>
+ 
+<span class=nx>uniform</span> <span class=nx>sampler2D</span> <span class=nx>u_texture</span><span class=p>;</span>
+ 
+<span class=k>void</span> <span class=nx>main</span><span class=p>()</span> <span class=p>{</span>
+   <span class=nx>vec2</span> <span class=nx>texcoord</span> <span class=o>=</span> <span class=nx>vec2</span><span class=p>(</span><span class=mf>0.5</span><span class=p>,</span> <span class=mf>0.5</span><span class=p>)</span>  <span class=c1>// 获取纹理中心的值
+</span><span class=c1></span>   <span class=nx>gl_FragColor</span> <span class=o>=</span> <span class=nx>texture2D</span><span class=p>(</span><span class=nx>u_texture</span><span class=p>,</span> <span class=nx>texcoord</span><span class=p>);</span>
+<span class=p>}</span>
+
+<span class=c1>//从纹理中获取的数据取决于很多设置
+</span><span class=c1></span><span class=kd>var</span> <span class=nx>tex</span> <span class=o>=</span> <span class=nx>gl</span><span class=p>.</span><span class=nx>createTexture</span><span class=p>();</span>
+<span class=nx>gl</span><span class=p>.</span><span class=nx>bindTexture</span><span class=p>(</span><span class=nx>gl</span><span class=p>.</span><span class=nx>TEXTURE_2D</span><span class=p>,</span> <span class=nx>tex</span><span class=p>);</span>
+<span class=kd>var</span> <span class=nx>level</span> <span class=o>=</span> <span class=mi>0</span><span class=p>;</span>
+<span class=kd>var</span> <span class=nx>width</span> <span class=o>=</span> <span class=mi>2</span><span class=p>;</span>
+<span class=kd>var</span> <span class=nx>height</span> <span class=o>=</span> <span class=mi>1</span><span class=p>;</span>
+<span class=kd>var</span> <span class=nx>data</span> <span class=o>=</span> <span class=k>new</span> <span class=nx>Uint8Array</span><span class=p>([</span>
+   <span class=mi>255</span><span class=p>,</span> <span class=mi>0</span><span class=p>,</span> <span class=mi>0</span><span class=p>,</span> <span class=mi>255</span><span class=p>,</span>   <span class=c1>// 一个红色的像素
+</span><span class=c1></span>   <span class=mi>0</span><span class=p>,</span> <span class=mi>255</span><span class=p>,</span> <span class=mi>0</span><span class=p>,</span> <span class=mi>255</span><span class=p>,</span>   <span class=c1>// 一个绿色的像素
+</span><span class=c1></span><span class=p>]);</span>
+<span class=nx>gl</span><span class=p>.</span><span class=nx>texImage2D</span><span class=p>(</span><span class=nx>gl</span><span class=p>.</span><span class=nx>TEXTURE_2D</span><span class=p>,</span> <span class=nx>level</span><span class=p>,</span> <span class=nx>gl</span><span class=p>.</span><span class=nx>RGBA</span><span class=p>,</span> <span class=nx>width</span><span class=p>,</span> <span class=nx>height</span><span class=p>,</span> <span class=mi>0</span><span class=p>,</span> <span class=nx>gl</span><span class=p>.</span><span class=nx>RGBA</span><span class=p>,</span> <span class=nx>gl</span><span class=p>.</span><span class=nx>UNSIGNED_BYTE</span><span class=p>,</span> <span class=nx>data</span><span class=p>);</span>
+
+<span class=c1>//在初始化时找到全局变量的地址
+</span><span class=c1></span><span class=kd>var</span> <span class=nx>someSamplerLoc</span> <span class=o>=</span> <span class=nx>gl</span><span class=p>.</span><span class=nx>getUniformLocation</span><span class=p>(</span><span class=nx>someProgram</span><span class=p>,</span> <span class=s2>&#34;u_texture&#34;</span><span class=p>);</span>
+
+<span class=c1>//在渲染的时候WebGL要求纹理必须绑定到一个纹理单元上
+</span><span class=c1></span><span class=kd>var</span> <span class=nx>unit</span> <span class=o>=</span> <span class=mi>5</span><span class=p>;</span>  <span class=c1>// 挑选一个纹理单元
+</span><span class=c1></span><span class=nx>gl</span><span class=p>.</span><span class=nx>activeTexture</span><span class=p>(</span><span class=nx>gl</span><span class=p>.</span><span class=nx>TEXTURE0</span> <span class=o>+</span> <span class=nx>unit</span><span class=p>);</span>
+<span class=nx>gl</span><span class=p>.</span><span class=nx>bindTexture</span><span class=p>(</span><span class=nx>gl</span><span class=p>.</span><span class=nx>TEXTURE_2D</span><span class=p>,</span> <span class=nx>tex</span><span class=p>);</span>
+
+<span class=c1>//然后告诉着色器你要使用的纹理在那个纹理单元
+</span><span class=c1></span><span class=nx>gl</span><span class=p>.</span><span class=nx>uniform1i</span><span class=p>(</span><span class=nx>someSamplerLoc</span><span class=p>,</span> <span class=nx>unit</span><span class=p>);</span>
+</code></pre></td></tr></table></div></div><h2 id=varyings-可变量>Varyings 可变量</h2><p>可变量是一种顶点着色器给片断着色器传值的方式。为了使用可变量，要在两个着色器中定义同名的可变量。</p><p>给顶点着色器中可变量设置的值，会作为参考值进行内插，在绘制像素时传给片断着色器的可变量。</p><p>顶点着色器</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code class=language-js data-lang=js><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-js data-lang=js><span class=nx>attribute</span> <span class=nx>vec4</span> <span class=nx>a_position</span><span class=p>;</span>
+ 
+<span class=nx>uniform</span> <span class=nx>vec4</span> <span class=nx>u_offset</span><span class=p>;</span>
+ 
+<span class=nx>varying</span> <span class=nx>vec4</span> <span class=nx>v_positionWithOffset</span><span class=p>;</span>
+ 
+<span class=k>void</span> <span class=nx>main</span><span class=p>()</span> <span class=p>{</span>
+  <span class=nx>gl_Position</span> <span class=o>=</span> <span class=nx>a_position</span> <span class=o>+</span> <span class=nx>u_offset</span><span class=p>;</span>
+  <span class=nx>v_positionWithOffset</span> <span class=o>=</span> <span class=nx>a_position</span> <span class=o>+</span> <span class=nx>u_offset</span><span class=p>;</span>
+<span class=p>}</span>
+</code></pre></td></tr></table></div></div><p>片断着色器</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code class=language-js data-lang=js><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span><span class=lnt>9
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-js data-lang=js><span class=nx>precision</span> <span class=nx>mediump</span> <span class=kr>float</span><span class=p>;</span>
+ 
+<span class=nx>varying</span> <span class=nx>vec4</span> <span class=nx>v_positionWithOffset</span><span class=p>;</span>
+ 
+<span class=k>void</span> <span class=nx>main</span><span class=p>()</span> <span class=p>{</span>
+  <span class=c1>// 从裁剪空间 (-1 &lt;-&gt; +1) 转换到颜色空间 (0 -&gt; 1).
+</span><span class=c1></span>  <span class=nx>vec4</span> <span class=nx>color</span> <span class=o>=</span> <span class=nx>v_positionWithOffset</span> <span class=o>*</span> <span class=mf>0.5</span> <span class=o>+</span> <span class=mf>0.5</span>
+  <span class=nx>gl_FragColor</span> <span class=o>=</span> <span class=nx>color</span><span class=p>;</span>
+<span class=p>}</span>
+</code></pre></td></tr></table></div></div><p>上方的示例几乎没有意义，通常情况下直接将裁剪空间的值传给片断着色器当作颜色值是没有意义的， 虽然它可以运行并且可以生成颜色值。</p><h1 id=glsl>GLSL</h1><p>GLSL全称是 Graphics Library Shader Language （图形库着色器语言），是着色器使用的语言。 它有一些不同于JavaScript的特性，主要目的是为栅格化图形提供常用的计算功能。</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code class=language-js data-lang=js><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-js data-lang=js><span class=nx>vec4</span> <span class=nx>a</span> <span class=o>=</span> <span class=nx>vec4</span><span class=p>(</span><span class=mi>1</span><span class=p>,</span> <span class=mi>2</span><span class=p>,</span> <span class=mi>3</span><span class=p>,</span> <span class=mi>4</span><span class=p>);</span>
+<span class=nx>vec4</span> <span class=nx>b</span> <span class=o>=</span> <span class=nx>a</span> <span class=o>*</span> <span class=mf>2.0</span><span class=p>;</span>
+<span class=c1>// b 现在是 vec4(2, 4, 6, 8);
+</span><span class=c1></span>
+
+<span class=nx>mat4</span> <span class=nx>a</span> <span class=o>=</span> <span class=o>???</span>
+<span class=nx>mat4</span> <span class=nx>b</span> <span class=o>=</span> <span class=o>???</span>
+<span class=nx>mat4</span> <span class=nx>c</span> <span class=o>=</span> <span class=nx>a</span> <span class=o>*</span> <span class=nx>b</span><span class=p>;</span>
+ 
+<span class=nx>vec4</span> <span class=nx>v</span> <span class=o>=</span> <span class=o>???</span>
+<span class=nx>vec4</span> <span class=nx>y</span> <span class=o>=</span> <span class=nx>c</span> <span class=o>*</span> <span class=nx>v</span><span class=p>;</span>
+
+<span class=nx>vec4</span> <span class=nx>v</span><span class=p>;</span>
+<span class=c1>// v.x 和 v.s 以及 v.r ， v[0] 表达的是同一个分量。
+</span><span class=c1>// v.y 和 v.t 以及 v.g ， v[1] 表达的是同一个分量。
+</span><span class=c1>// v.z 和 v.p 以及 v.b ， v[2] 表达的是同一个分量。
+</span><span class=c1>// v.w 和 v.q 以及 v.a ， v[3] 表达的是同一个分量。
+</span><span class=c1></span>
+
+<span class=c1>// 它还支持矢量调制，意味者你可以交换或重复分量。
+</span><span class=c1></span><span class=nx>v</span><span class=p>.</span><span class=nx>yyyy</span>
+<span class=c1>// 等同于
+</span><span class=c1></span><span class=nx>vec4</span><span class=p>(</span><span class=nx>v</span><span class=p>.</span><span class=nx>y</span><span class=p>,</span> <span class=nx>v</span><span class=p>.</span><span class=nx>y</span><span class=p>,</span> <span class=nx>v</span><span class=p>.</span><span class=nx>y</span><span class=p>,</span> <span class=nx>v</span><span class=p>.</span><span class=nx>y</span><span class=p>)</span>
+
+
+<span class=nx>v</span><span class=p>.</span><span class=nx>bgra</span>
+<span class=c1>// 等同于
+</span><span class=c1></span><span class=nx>vec4</span><span class=p>(</span><span class=nx>v</span><span class=p>.</span><span class=nx>b</span><span class=p>,</span> <span class=nx>v</span><span class=p>.</span><span class=nx>g</span><span class=p>,</span> <span class=nx>v</span><span class=p>.</span><span class=nx>r</span><span class=p>,</span> <span class=nx>v</span><span class=p>.</span><span class=nx>a</span><span class=p>)</span>
+
+<span class=nx>vec4</span><span class=p>(</span><span class=nx>v</span><span class=p>.</span><span class=nx>rgb</span><span class=p>,</span> <span class=mi>1</span><span class=p>)</span>
+<span class=c1>// 等同于
+</span><span class=c1></span><span class=nx>vec4</span><span class=p>(</span><span class=nx>v</span><span class=p>.</span><span class=nx>r</span><span class=p>,</span> <span class=nx>v</span><span class=p>.</span><span class=nx>g</span><span class=p>,</span> <span class=nx>v</span><span class=p>.</span><span class=nx>b</span><span class=p>,</span> <span class=mi>1</span><span class=p>)</span>
+
+<span class=nx>vec4</span><span class=p>(</span><span class=mi>1</span><span class=p>)</span>
+<span class=c1>// 等同于
+</span><span class=c1></span><span class=nx>vec4</span><span class=p>(</span><span class=mi>1</span><span class=p>,</span> <span class=mi>1</span><span class=p>,</span> <span class=mi>1</span><span class=p>,</span> <span class=mi>1</span><span class=p>)</span>
+</code></pre></td></tr></table></div></div><p>GLSL有一系列内置方法，其中大多数运算支持多种数据类型，并且一次可以运算多个分量，例如 <code>T sin(T angle)</code></p><p>T可以是 float, vec2, vec3 或 vec4 。如果你传的是 vec4 返回的也是 vec4, 返回结果对应每个分量的正弦值。</p><h1 id=总结>总结</h1><p>WebGL的全部内容就是创建不同的着色器，向着色器提供数据然后调用<code>gl.drawArrays</code> 或 <code>gl.drawElements</code></p><p>让WebGL调用当前顶点着色器处理每个顶点，调用当前片断着色器渲染每个像素。</p></div><div class=post-copyright><p class=copyright-item><span class=item-title>Author</span>
+<span class=item-content>Hanmei</span></p><p class=copyright-item><span class=item-title>LastMod</span>
+<span class=item-content>2019-11-04</span></p></div><footer class=post-footer><div class=post-tags><a href=/tags/webgl/>WebGL</a>
+<a href=/tags/%E5%9B%BE%E5%BD%A2%E5%AD%A6/>图形学</a></div><nav class=post-nav><a class=prev href=/posts/2019-11/%E8%AF%BE%E7%A8%8B%E4%BD%9C%E4%B8%9A-%E5%9B%BE%E5%BD%A2%E5%AD%A6pa2%E8%A7%A3%E9%A2%98%E8%BF%87%E7%A8%8B/><i class="iconfont icon-left"></i><span class="prev-text nav-default">【】课程作业 图形学PA2解题过程.md</span>
+<span class="prev-text nav-mobile">Prev</span></a>
+<a class=next href=/posts/2019-11/webgl-%E7%B3%BB%E5%88%97%E4%BA%8C/><span class="next-text nav-default">WebGL 系列二.md</span>
+<span class="next-text nav-mobile">Next</span>
+<i class="iconfont icon-right"></i></a></nav></footer></article></div><div id=gitalk-container></div><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css crossorigin=anonymous><script src=https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js crossorigin=anonymous></script><script type=text/javascript>var gitalk=new Gitalk({id:'2019-11-04 00:03:43 -0700 -0700',title:'WebGL 系列三.md',clientID:'8d8830a8bdd2c3ba3869',clientSecret:'5dea07f5de4151736f94f1d8921972ac32a5f8dc',repo:'hanmeimei-blog',owner:'nicolemayer',admin:['nicolemayer'],body:decodeURI(location.href)});gitalk.render('gitalk-container');</script><noscript>Please enable JavaScript to view the <a href=https://github.com/gitalk/gitalk>comments powered by
+gitalk.</a></noscript></div></main><footer id=footer class=footer><div class=social-links><a href=nicolemeimeibest@gmail.com class="iconfont icon-email" title=email></a><a href=https://github.com/NicoleMayer class="iconfont icon-github" title=github></a><a href=https://nicolemayer.github.io/index.xml type=application/rss+xml class="iconfont icon-rss" title=rss></a></div><div class=copyright><span class=power-by>Powered by <a class=hexo-link href=https://gohugo.io>Hugo</a></span>
+<span class=division>|</span>
+<span class=theme-info>Theme -
+<a class=theme-link href=https://github.com/olOwOlo/hugo-theme-even>Even</a></span><div class=busuanzi-footer><span id=busuanzi_container_site_pv>site pv: <span id=busuanzi_value_site_pv><img src=/img/spinner.svg alt=spinner.svg></span></span>
+<span class=division>|</span>
+<span id=busuanzi_container_site_uv>site uv: <span id=busuanzi_value_site_uv><img src=/img/spinner.svg alt=spinner.svg></span></span></div><span class=copyright-year>&copy;
+2019
+<span class=heart><i class="iconfont icon-heart"></i></span><span class=author>Hanmei</span></span></div></footer><div class=back-to-top id=back-to-top><i class="iconfont icon-up"></i></div></div><script src=https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin=anonymous></script><script src=https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin=anonymous></script><script src=https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin=anonymous></script><script type=text/javascript src=/dist/even.26188efa.min.js></script><script type=text/javascript>window.MathJax={tex2jax:{inlineMath:[['$','$'],['\\(','\\)']]},showProcessingMessages:false,messageStyle:'none'};</script><script async src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin=anonymous></script><script type=application/javascript>var doNotTrack=false;if(!doNotTrack){window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;ga('create','UA-151013261-1','auto');ga('set','anonymizeIp',true);ga('send','pageview');}</script><script async src=https://www.google-analytics.com/analytics.js></script></body></html>
