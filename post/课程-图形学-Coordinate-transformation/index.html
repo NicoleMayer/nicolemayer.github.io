@@ -1,0 +1,735 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>课程 图形学 Coordinate transformation | Hanmei@梅</title>
+    <meta property="og:title" content="课程 图形学 Coordinate transformation - Hanmei@梅">
+    <meta property="og:type" content="article">
+    
+    <meta property="article:published_time" content='2019-11-11T09:00:48&#43;08:00'>
+    
+    
+    <meta property="article:modified_time" content='2019-11-11T09:00:48&#43;08:00'>
+    
+    <meta name="Keywords" content="">
+    <meta name="description" content="课程 图形学 Coordinate transformation">
+    
+    <meta name="author" content="">
+    <meta property="og:url" content="http://example.org/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Coordinate-transformation/">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href='/css/normalize.css'>
+    <link rel="stylesheet" href='/css/style.css'>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    
+
+
+    
+    
+</head>
+
+<body>
+    <header id="header" class="clearfix">
+    <div class="container">
+        <div class="col-group">
+            <div class="site-name ">
+                <a id="logo" href="http://example.org/">
+                    Hanmei@梅
+                </a>
+                
+            </div>
+            <div>
+                <nav id="nav-menu" class="clearfix">
+                    
+                    <a  href="http://example.org/"
+                        title="首页">首页</a>
+                    
+                    <a  href="http://example.org/archives/"
+                        title="存档">存档</a>
+                    
+                    <a  href="http://example.org/about/"
+                        title="关于">关于</a>
+                    
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+    <div id="body">
+        <div class="container">
+            <div class="col-group">
+
+                <div class="col-8" id="main">
+                    
+<div class="res-cons">
+    <style type="text/css">
+    .post-toc {
+        position: fixed;
+        width: 200px;
+        margin-left: -210px;
+        padding: 5px 10px;
+        font-family: Athelas, STHeiti, Microsoft Yahei, serif;
+        font-size: 12px;
+        border: 1px solid rgba(0, 0, 0, .07);
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.98);
+        background-clip: padding-box;
+        -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, .125);
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, .125);
+        word-wrap: break-word;
+        white-space: nowrap;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        z-index: 999;
+        cursor: pointer;
+        max-height: 70%;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .post-toc .post-toc-title {
+        width: 100%;
+        margin: 0 auto;
+        font-size: 20px;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .post-toc .post-toc-content {
+        font-size: 15px;
+    }
+
+    .post-toc .post-toc-content>nav>ul {
+        margin: 10px 0;
+    }
+
+    .post-toc .post-toc-content ul {
+        padding-left: 20px;
+        list-style: square;
+        margin: 0.5em;
+        line-height: 1.8em;
+    }
+
+    .post-toc .post-toc-content ul ul {
+        padding-left: 15px;
+        display: none;
+    }
+
+    @media print,
+    screen and (max-width:1057px) {
+        .post-toc {
+            display: none;
+        }
+    }
+</style>
+<div class="post-toc" style="position: absolute; top: 188px;">
+    <h2 class="post-toc-title">文章目录</h2>
+    <div class="post-toc-content">
+        <nav id="TableOfContents">
+<ul>
+<li><a href="#一些基本概念">一些基本概念</a></li>
+<li><a href="#transformation">transformation</a>
+<ul>
+<li><a href="#axis-aligned-scaling">(Axis-Aligned) Scaling</a></li>
+<li><a href="#rotation">Rotation</a>
+<ul>
+<li><a href="#in-2d">in 2D</a></li>
+<li><a href="#in-3d">in 3D</a></li>
+</ul></li>
+<li><a href="#shear">Shear</a>
+<ul>
+<li><a href="#in-2d-1">in 2D</a></li>
+<li><a href="#in-3d-1">in 3D</a></li>
+</ul></li>
+<li><a href="#translation">Translation</a></li>
+</ul></li>
+<li><a href="#homogeneous-coordinates">Homogeneous Coordinates</a>
+<ul>
+<li><a href="#概念">概念</a></li>
+<li><a href="#齐次坐标系下的各种变换">齐次坐标系下的各种变换</a></li>
+<li><a href="#coordinate-system">Coordinate System</a></li>
+</ul></li>
+<li><a href="#组合变换">组合变换</a>
+<ul>
+<li><a href="#scaling-about-a-point">Scaling About a Point</a></li>
+<li><a href="#rotation-1">Rotation</a>
+<ul>
+<li><a href="#about-a-fixed-point">about a fixed point</a></li>
+<li><a href="#about-an-arbitrary-axis">about an arbitrary axis</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#expressing-transformations">Expressing Transformations</a>
+<ul>
+<li><a href="#global-coordinate-system">global coordinate system</a></li>
+<li><a href="#local-coordinate-system">local coordinate system</a></li>
+<li><a href="#loading-pushing-and-popping">Loading, Pushing and Popping</a></li>
+</ul></li>
+<li><a href="#view-transformation-视图变换">View Transformation 视图变换</a></li>
+</ul>
+</nav>
+    </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var postToc = $(".post-toc");
+        if (postToc.length) {
+            var leftPos = $("#main").offset().left;
+            if(leftPos<220){
+                postToc.css({"width":leftPos-10,"margin-left":(0-leftPos)})
+            }
+
+            var t = postToc.offset().top - 20,
+                a = {
+                    start: {
+                        position: "absolute",
+                        top: t
+                    },
+                    process: {
+                        position: "fixed",
+                        top: 20
+                    },
+                };
+            $(window).scroll(function () {
+                var e = $(window).scrollTop();
+                e < t ? postToc.css(a.start) : postToc.css(a.process)
+            })
+        }
+    })
+</script>
+    <article class="post">
+        <header>
+            <h1 class="post-title">课程 图形学 Coordinate transformation</h1>
+        </header>
+        <date class="post-meta meta-date">
+            2019年11月11日
+        </date>
+        
+        <div class="post-meta">
+            <span>|</span>
+            
+            <span class="meta-category"><a href='http://example.org/categories/CS%E8%AF%BE%E7%A8%8B%E5%AD%A6%E4%B9%A0'>CS课程学习</a></span>
+            
+        </div>
+        
+        
+        <div class="post-meta">
+            <span id="busuanzi_container_page_pv">|<span id="busuanzi_value_page_pv"></span><span>
+                    阅读</span></span>
+        </div>
+        
+        
+        <div class="clear" style="display: none">
+            <div class="toc-article">
+                <div class="toc-title">文章目录</div>
+            </div>
+        </div>
+        
+        <div class="post-content">
+            <p>about 图形学中从模型坐标系到世界坐标系，从世界坐标系到视图（摄像头）坐标系会经历的各种矩阵变换。同时还具体的讲了视图变换的过程。</p>
+
+<p>属于<a href="../课程-图形学-总结">图形学系列文章</a>。</p>
+
+<h1 id="一些基本概念">一些基本概念</h1>
+
+<p>Points</p>
+
+<div>
+$$
+P = (P_{x}, P_{y}, P_{z})
+$$
+</div>
+
+<p>Vectors</p>
+
+<div>
+$$
+\boldsymbol{v}=\boldsymbol{P}-\boldsymbol{Q}=(\underbrace{P_{x}-Q_{x}}_{=v_{x}}, \underbrace{P_{y}-Q_{y}}_{=v_{y}}, \underbrace{P_{z}-Q_{z}}_{=v_{z}})
+$$
+</div>
+
+<div>
+$$
+\begin{array}{l}{\text { Magnitude }|\boldsymbol{v}|=\sqrt{v_{x}^{2}+v_{y}^{2}+v_{z}^{2}}} \\ {\text { Direction (unit vector) } \hat{\boldsymbol{v}}=\boldsymbol{v} /|\boldsymbol{v}|}\end{array}
+$$
+</div>
+
+<p>Lines (point $P$ + a vector $(Q - P)$)</p>
+
+<div>
+$$
+\begin{array}{l} {L(\alpha)=P+\alpha(Q-P)=\alpha Q+(1-\alpha) P}\end{array}
+$$
+</div>
+
+<p>Planes</p>
+
+<div>
+$$
+\begin{aligned} \text { Three non-collinear points } P, Q, \text { and } R \text { define a plane } \\ S(\alpha)=& \alpha P+(1-\alpha) Q \\ T(\alpha, \beta)=& \beta S(\alpha)+(1-\beta) R \\=& \alpha \beta P+\beta(1-\alpha) Q+(1-\beta) R \\=& P+\beta(1-\alpha)(Q-P)+(1-\beta)(R-P) \\   \end{aligned}
+$$
+</div>
+
+<div>
+$$
+\begin{array}{l}{\text { Plane normal: } \boldsymbol{n}=(\boldsymbol{Q}-\boldsymbol{P}) \times(\boldsymbol{R}-\boldsymbol{P})} \\ {\text { Satisfies } \boldsymbol{n} \cdot \boldsymbol{P}=\boldsymbol{n} \cdot \boldsymbol{Q}=\boldsymbol{n} \cdot \boldsymbol{R}}\end{array}
+$$
+</div>
+
+<p><strong>Vector Operations</strong>: Addition, subtraction, Scaling, Dot (scalar) product, Cross (vector) product</p>
+
+<p><strong>Some properties</strong>: Linear dependency, affine sum, Convexity, convex hull</p>
+
+<h1 id="transformation">transformation</h1>
+
+<p>transformation 的本质是是一个函数，它将一个点映射到其它的点上。</p>
+
+<p><strong>Linear Transformation</strong>: 这类变换可以用矩阵乘法表示，满足 Preservation of zero points、Preservation of straight lines、Preservation of parallel lines、Does not necessarily preserve angles 的性质，常见的例子有 rotation, scaling, shearing</p>
+
+<h2 id="axis-aligned-scaling">(Axis-Aligned) Scaling</h2>
+
+<div>
+$$
+\boldsymbol{P}^{\prime}=\underbrace{\left(\begin{array}{ccc}{s_{x}} & {0} & {0} \\ {0} & {s_{y}} & {0} \\ {0} & {0} & {s_{z}}\end{array}\right) }_{=: S\left(S_{x}, S_{y}, S_{z}\right)}\boldsymbol{P}
+$$
+</div>
+
+<h2 id="rotation">Rotation</h2>
+
+<h3 id="in-2d">in 2D</h3>
+
+<div>
+$$
+\left(\begin{array}{l}{x^{\prime}} \\ {y^{\prime}}\end{array}\right)=\underbrace{\left(\begin{array}{cc}{\cos \theta} & {-\sin \theta} \\ {\sin \theta} & {\cos \theta}\end{array}\right)}_{=: R(\theta)}\left(\begin{array}{l}{x} \\ {y}\end{array}\right)
+$$
+</div>
+
+<h3 id="in-3d">in 3D</h3>
+
+<p>Around the Z axis:</p>
+
+<div>
+$$
+\left(\begin{array}{l}{x^{\prime}} \\ {y^{\prime}} \\ {z^{\prime}}\end{array}\right)=\underbrace{\left(\begin{array}{ccc}{\cos \theta} & {-\sin \theta} & {0} \\ {\sin \theta} & {\cos \theta} & {0} \\ {0} & {0} & {1}\end{array}\right)}_{=R_{z}(\theta)}\left(\begin{array}{l}{x} \\ {y} \\ {z}\end{array}\right)
+$$
+</div>
+
+<p>Around the X axis:</p>
+
+<div>
+$$
+\left(\begin{array}{l}{x^{\prime}} \\ {y^{\prime}} \\ {z^{\prime}}\end{array}\right)=\underbrace{\left(\begin{array}{ccc}{1} & {0} & {0} \\ {0} & {\cos \theta} & {-\sin \theta} \\ {0} & {\sin \theta} & {\cos \theta}\end{array}\right)}_{=R_{x}(\theta)}\left(\begin{array}{l}{x} \\ {y} \\ {z}\end{array}\right)
+$$
+</div>
+
+<p>任意的3D旋转可以表示成 Rx(θx)*Ry(θy)*Rz(θz)</p>
+
+<h2 id="shear">Shear</h2>
+
+<p>性质：Changes the shape of the object / Generally do not preserve angles</p>
+
+<h3 id="in-2d-1">in 2D</h3>
+
+<p>定义：Translate one coordinate of a point proportionally to the value of the other coordinate of the same point. 假设原坐标为 (x, y)，则：</p>
+
+<p><strong>x-shear</strong>: (x, y + bx)</p>
+
+<p><strong>y-shear</strong>: (x + ay, y)</p>
+
+<h3 id="in-3d-1">in 3D</h3>
+
+<p>定义：Translate all but one coordinate of a point proportionally to the value of that one coordinate. 假设原坐标为 (x, y, z)，则：</p>
+
+<p><strong>z-shear</strong>:  (x + az, y + bz, z)</p>
+
+<div>
+$$
+\left(\begin{array}{l}{x^{\prime}} \\ {y^{\prime}} \\ {z^{\prime}}\end{array}\right)=\left(\begin{array}{c}{x+a z} \\ {y+b z} \\ {z}\end{array}\right)=\left(\begin{array}{ccc}{1} & {0} & {a} \\ {0} & {1} & {b} \\ {0} & {0} & {1}\end{array}\right)\left(\begin{array}{l}{x} \\ {y} \\ {z}\end{array}\right)
+$$
+</div>
+
+<hr />
+
+<h2 id="translation">Translation</h2>
+
+<div>
+$$
+\left(\begin{array}{l}{x^{\prime}} \\ {y^{\prime}} \\ {z^{\prime}}\end{array}\right)=\left(\begin{array}{l}{x+t_{x}} \\ {y+t_{y}} \\ {z+t_{z}}\end{array}\right)
+$$
+</div>
+
+<p>前面三个都是 linear 的变换，但 translation 是非线性的变换，它 does not preserve zero points -&gt; <span style="color:red">not</span> a linear transformation -&gt; but is an affine transformation</p>
+
+<p><strong>What&rsquo;s the meanning of affine transformation ?</strong></p>
+
+<p>linear transformation + translation: 满足 $\boldsymbol{q}=T(\boldsymbol{p})+\boldsymbol{r}$ 其中 $T$ 是线性的。</p>
+
+<p>假设 P = (Px, Py, Pz)，那么 affine transformation of P 可以表示为：</p>
+
+<div>
+$$
+\left(\begin{array}{l}{P_{x}^{\prime}} \\ {P_{y}^{\prime}} \\ {P_{z}^{\prime}}\end{array}\right)=\left(\begin{array}{lll}{a_{11}} & {a_{12}} & {a_{13}} \\ {a_{21}} & {a_{22}} & {a_{23}} \\ {a_{31}} & {a_{32}} & {a_{33}}\end{array}\right)\left(\begin{array}{c}{P_{x}} \\ {P_{y}} \\ {P_{z}}\end{array}\right)+\left(\begin{array}{l}{b_{1}} \\ {b_{2}} \\ {b_{3}}\end{array}\right)
+$$
+</div>
+
+<p>除了 preserve zero points 外，其它 linear transformation 满足的性质它都满足。</p>
+
+<p><strong>What&rsquo;s the meanning of rigid transformation ?</strong></p>
+
+<p>preserves angles and lengths、does not <strong>deform</strong> the object 如旋转和平移</p>
+
+<p><strong>affine transformation</strong> 包括的变换更广（包括 rigid transformation），但它的 <strong>deforms</strong> 有限制，需要 preserves collinearity and ratio of lengths，像缩放或剪切属于这一类</p>
+
+<h1 id="homogeneous-coordinates">Homogeneous Coordinates</h1>
+
+<h2 id="概念">概念</h2>
+
+<p>我们常常在原来的矩阵或向量上再加一行，使之变成四维的齐次坐标。</p>
+
+<div>
+$$
+\left(\begin{array}{c}{P_{x}^{\prime}} \\ {P_{y}^{\prime}} \\ {P_{z}^{\prime}} \\ {1}\end{array}\right)=\left(\begin{array}{cccc}{a_{11}} & {a_{12}} & {a_{13}} & {b_{1}} \\ {a_{21}} & {a_{22}} & {a_{23}} & {b_{2}} \\ {a_{31}} & {a_{32}} & {a_{33}} & {b_{3}} \\ {0} & {0} & {0} & {1}\end{array}\right) \left(\begin{array}{c}{P_{x}} \\ {P_{y}} \\ {P_{z} \\ {1}}\end{array}\right)
+$$
+</div>
+
+<p>(x, y, z, p) 这中表示方法不仅能将 affine transformation 转换为单纯的矩阵乘法，还可以用来区分向量和点。</p>
+
+<p>Any point on the same vector has the same homogeneous coordinates. 这里是说在四维平面里，同一个向量上的点在三维坐标系里面是相同的点。If (x, y, z, w) is the homogeneous coordinate of a 3D point, then the 3D point is given by (x/w, y/w, z/w)</p>
+
+<p><code>p = 0</code> 代表向量，带入到平移矩阵，向量没有发生变化，正好符合<strong>向量没有位置</strong>的概念。</p>
+
+<h2 id="齐次坐标系下的各种变换">齐次坐标系下的各种变换</h2>
+
+<p>Translation:</p>
+
+<div>
+$$
+\left(\begin{array}{c}{x^{\prime}} \\ {y^{\prime}} \\ {z^{\prime}} \\ {1}\end{array}\right)=\left(\begin{array}{c}{x+t_{x}} \\ {y+t_{y}} \\ {z+t_{z}} \\ {1}\end{array}\right)=\left(\begin{array}{ccc}{1} & {0} & {0} & {t_{x}} \\ {0} & {1} & {0} & {t_{y}} \\ {0} & {0} & {1} & {t_{z}} \\ {0} & {0} & {0} & {1}\end{array}\right)\left(\begin{array}{l}{x} \\ {y} \\ {z} \\ {1}\end{array}\right)
+$$
+</div>
+
+<p>Scaling:</p>
+
+<div>
+$$
+\left(\begin{array}{c}{x^{\prime}} \\ {y^{\prime}} \\ {z^{\prime}} \\ {1}\end{array}\right)=\left(\begin{array}{c}{S_{x}x} \\ {S_{y}y} \\ {S_{z}z} \\ {1}\end{array}\right)=\left(\begin{array}{ccc}{S_{x}} & {0} & {0} & {0} \\ {0} & {S_{y}} & {0} & {0} \\ {0} & {0} & {S_{z}} & {0} \\ {0} & {0} & {0} & {1}\end{array}\right)\left(\begin{array}{l}{x} \\ {y} \\ {z} \\ {1}\end{array}\right)
+$$
+</div>
+
+<p>Rotation around Z:</p>
+
+<div>
+$$
+\left(\begin{array}{c}{x^{\prime}} \\ {y^{\prime}} \\ {z^{\prime}} \\ {1}\end{array}\right)=\left(\begin{array}{c}{x \cos \theta-y \sin \theta} \\ {x \sin \theta+y \cos \theta} \\ {z} \\ {1}\end{array}\right)=\left(\begin{array}{ccc}{\cos \theta} & {-\sin \theta} & {0} & {0} \\ {\sin \theta} & {\cos \theta} & {0} & {0} \\ {0} & {0} & {1} & {0} \\ {0} & {0} & {0} & {1}\end{array}\right)\left(\begin{array}{l}{x} \\ {y} \\ {z} \\ {1}\end{array}\right)
+$$
+</div>
+
+<p>Z-shear:</p>
+
+<div>
+$$
+\left(\begin{array}{c}{x^{\prime}} \\ {y^{\prime}} \\ {z^{\prime}} \\ {1}\end{array}\right)=\left(\begin{array}{c}{x+az} \\ {y+bz} \\ {z} \\ {1}\end{array}\right)=\left(\begin{array}{ccc}{1} & {0} & {a} & {0} \\ {0} & {1} & {b} & {0} \\ {0} & {0} & {1} & {0} \\ {0} & {0} & {0} & {1}\end{array}\right)\left(\begin{array}{l}{x} \\ {y} \\ {z} \\ {1}\end{array}\right)
+$$
+</div>
+
+<h2 id="coordinate-system">Coordinate System</h2>
+
+<p>Representation of a 3D point:  basis vectors v1, v2, v3 + the origin r</p>
+
+<p>可以表示一个点 / 向量</p>
+
+<p><strong>Change of Coordinates</strong></p>
+
+<p><img src="http://q2sxqdau4.bkt.clouddn.com/20191111154256.png" alt="" /></p>
+
+<h1 id="组合变换">组合变换</h1>
+
+<p>本质上是矩阵的乘法，但是我们需要注意矩阵的乘法不满足交换律。</p>
+
+<h2 id="scaling-about-a-point">Scaling About a Point</h2>
+
+<p>如果这个点是原点，很简单；不是原点呢？像下图这样：</p>
+
+<p><img src="http://q2sxqdau4.bkt.clouddn.com/20191111155445.png" alt="" /></p>
+
+<p>我们可以把这个变换拆解：首先通过 T(-1,-1) 把中心点挪到原点，接着就是要求的操作 S(2, 2)，最后我们再平移回去。这个过程可以表示成：<code>T(1, 1)S(2, 2)T(-1, -1)P</code></p>
+
+<h2 id="rotation-1">Rotation</h2>
+
+<p><span style="color:red">这块知识点非常重要！！！</span></p>
+
+<h3 id="about-a-fixed-point">about a fixed point</h3>
+
+<p>假设要求是 z-axis rotation of θ about its center Pf</p>
+
+<p>拆解过程：</p>
+
+<ol>
+<li>将 Pf 平移到原点 T(-Pf)</li>
+<li>绕着z轴旋转 Rz(θ)</li>
+<li>将 Pf 平移回去 T(Pf)</li>
+</ol>
+
+<p>总结：M = T(Pf)Rz(θ)T(-Pf)</p>
+
+<h3 id="about-an-arbitrary-axis">about an arbitrary axis</h3>
+
+<p>旋转轴这么定义，要求逆时针旋转θ（这么看来上面 about a fixed point 的情况是这个的特殊情况，旋转的轴是以 Pf 为起点，平行于z轴的向量）：</p>
+
+<p><img src="http://q2sxqdau4.bkt.clouddn.com/20191111160225.png" alt="" /></p>
+
+<p>拆解过程（假设P1坐标为 <code>(x, y, z)</code>）：</p>
+
+<p><img src="http://q2sxqdau4.bkt.clouddn.com/20191111161708.png" alt="" /></p>
+
+<ol>
+<li>首先使得向量u与z轴重合
+
+<ol>
+<li>将P1平移到原点 T(-x, -y, -z)</li>
+<li>关于x轴旋转使得u在x-z平面 R1</li>
+<li>关于y轴旋转使得u在z轴上 R2</li>
+</ol></li>
+<li>按照要求绕u逆时针旋转θ R3</li>
+<li>Inverse transformation of R2, R1, Three</li>
+</ol>
+
+<p>其中第1步的第2小步矩阵操作：</p>
+
+<p><img src="http://q2sxqdau4.bkt.clouddn.com/20191111162358.png" alt="" /></p>
+
+<p>其中第1步的第3小步矩阵操作：</p>
+
+<p><img src="http://q2sxqdau4.bkt.clouddn.com/20191111162500.png" alt="" /></p>
+
+<p>其中第2步矩阵操作：</p>
+
+<p><img src="http://q2sxqdau4.bkt.clouddn.com/20191111162533.png" alt="" /></p>
+
+<p>总结：<span style="color:red">这个矩阵很重要！</span></p>
+
+<p><img src="http://q2sxqdau4.bkt.clouddn.com/20191111162549.png" alt="" /></p>
+
+<h1 id="expressing-transformations">Expressing Transformations</h1>
+
+<p>矩阵变换：P’ = RTP</p>
+
+<h2 id="global-coordinate-system">global coordinate system</h2>
+
+<p>Right to left：a point P is first translated and then rotated</p>
+
+<h2 id="local-coordinate-system">local coordinate system</h2>
+
+<p>Left to right：rotation first, then translation, then the point</p>
+
+<p><img src="http://q2sxqdau4.bkt.clouddn.com/20191111164306.png" alt="" /></p>
+
+<p>两者都对，因为矩阵乘法是遵守结合律的。<span style="color:red">OpenGL 遵守 LOCAL COORDINATE SYSTEM</span>，对于矩阵操作 <code>P' = TRSP</code>，OpenGL 的指令顺序：</p>
+
+<pre><code>glLoadIndentity()
+glTranslate(…)
+glRotate(…)
+glScale(…)
+DrawModel()
+</code></pre>
+
+<h2 id="loading-pushing-and-popping">Loading, Pushing and Popping</h2>
+
+<p>维护一个全局矩阵作为全局状态，允许每个状态从相应的栈中 push / pop</p>
+
+<p>glLoadmatrix(myarray)</p>
+
+<p>glPushmatrix()</p>
+
+<p>glPopMatrix()</p>
+
+<pre><code>glPushMatrix();
+glTranslatef(…);
+glScalef(…);
+glPopMatrix();
+</code></pre>
+
+<h1 id="view-transformation-视图变换">View Transformation 视图变换</h1>
+
+<p>从<strong>世界坐标系</strong>到<strong>视图（摄像头）坐标系</strong></p>
+
+<p>一般情况下眼睛/摄像头在原点，我们观察的图像在z的负半轴，如下图所示：</p>
+
+<p><img src="http://q2sxqdau4.bkt.clouddn.com/20191111170636.png" alt="" /></p>
+
+<p>但眼睛/摄像头不一定非要在原点，如下图：</p>
+
+<p><img src="http://q2sxqdau4.bkt.clouddn.com/20191111171554.png" alt="" /></p>
+
+<p><strong>那我们该如何转换呢？</strong></p>
+
+<p><img src="http://q2sxqdau4.bkt.clouddn.com/20191111172007.png" alt="" /></p>
+
+<p><strong>What if N and V are not perpendicular?</strong></p>
+
+<p><img src="http://q2sxqdau4.bkt.clouddn.com/20191111172213.png" alt="" /></p>
+        </div>
+
+        
+
+
+        
+
+<div class="post-archive">
+    <h2>See Also</h2>
+    <ul class="listing">
+        
+        <li><a href="/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Rendering-Pipeline/">课程 图形学 Rendering Pipeline</a></li>
+        
+        <li><a href="/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-%E6%80%BB%E7%BB%93/">课程 图形学 总结</a></li>
+        
+        <li><a href="/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Color-Display/">课程 图形学 Color &amp; Display</a></li>
+        
+        <li><a href="/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Sampling-Aliasing/">课程 图形学 Sampling &amp; Aliasing</a></li>
+        
+        <li><a href="/post/%E8%AF%BE%E7%A8%8B%E4%BD%9C%E4%B8%9A-%E5%9B%BE%E5%BD%A2%E5%AD%A6PA2%E8%A7%A3%E9%A2%98%E8%BF%87%E7%A8%8B/">【】课程作业 图形学PA2解题过程</a></li>
+        
+    </ul>
+</div>
+
+
+        <div class="post-meta meta-tags">
+            
+            <ul class="clearfix">
+                
+                <li><a href='http://example.org/tags/%E5%9B%BE%E5%BD%A2%E5%AD%A6'>图形学</a></li>
+                
+            </ul>
+            
+        </div>
+    </article>
+    
+    
+
+    
+    
+</div>
+
+                </div>
+
+                <div id="secondary">
+    <section class="widget">
+        <form id="search" action='//www.google.com/search'
+      method="get" accept-charset="utf-8" target="_blank" _lpchecked="1">
+      
+      <input type="text" name="q" maxlength="20" placeholder="Search">
+      <input type="hidden" name="sitesearch" value="http://example.org/">
+      <button type="submit" class="submit icon-search"></button>
+</form>
+    </section>
+
+    
+
+    <section class="widget">
+        <h3 class="widget-title">分类</h3>
+<ul class="widget-list">
+    
+    <li><a href="http://example.org/categories/CS%E8%AF%BE%E7%A8%8B%E5%AD%A6%E4%B9%A0/">CS课程学习 (18)</a></li>
+    
+    <li><a href="http://example.org/categories/blog%E6%90%AD%E5%BB%BA/">blog搭建 (1)</a></li>
+    
+    <li><a href="http://example.org/categories/%E5%AD%A6%E6%9C%AF/">学术 (2)</a></li>
+    
+    <li><a href="http://example.org/categories/%E6%8A%80%E6%9C%AF/">技术 (7)</a></li>
+    
+    <li><a href="http://example.org/categories/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/">日常记录 (28)</a></li>
+    
+    <li><a href="http://example.org/categories/%E7%94%9F%E6%B4%BB/">生活 (1)</a></li>
+    
+</ul>
+    </section>
+
+    <section class="widget">
+        <h3 class="widget-title">标签</h3>
+<div class="tagcloud">
+    
+    <a href="http://example.org/tags/WebGL/">WebGL</a>
+    
+    <a href="http://example.org/tags/blog/">blog</a>
+    
+    <a href="http://example.org/tags/git/">git</a>
+    
+    <a href="http://example.org/tags/linux/">linux</a>
+    
+    <a href="http://example.org/tags/%E5%9B%BE%E5%BD%A2%E5%AD%A6/">图形学</a>
+    
+    <a href="http://example.org/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/">密码学</a>
+    
+    <a href="http://example.org/tags/%E6%8C%81%E7%BB%AD%E8%A1%A5%E5%85%85.../">持续补充...</a>
+    
+    <a href="http://example.org/tags/%E6%B5%8B%E8%AF%84/">测评</a>
+    
+    <a href="http://example.org/tags/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/">离散数学</a>
+    
+    <a href="http://example.org/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/">网络安全</a>
+    
+    <a href="http://example.org/tags/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/">论文阅读</a>
+    
+    <a href="http://example.org/tags/%E8%BF%90%E5%8A%A8%E4%BC%AA%E5%BD%B1%E6%B6%88%E9%99%A4/">运动伪影消除</a>
+    
+    <a href="http://example.org/tags/%E9%80%9F%E6%9F%A5/">速查</a>
+    
+    <a href="http://example.org/tags/%E9%85%B8%E5%A5%B6/">酸奶</a>
+    
+    <a href="http://example.org/tags/%E9%9B%B6%E9%A3%9F/">零食</a>
+    
+</div>
+    </section>
+
+    
+
+    <section class="widget">
+        <h3 class="widget-title">其它</h3>
+        <ul class="widget-list">
+            <li><a href="http://example.org/index.xml">文章 RSS</a></li>
+        </ul>
+    </section>
+</div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+    <div class="container">
+        &copy; 2020 <a href="http://example.org/">Hanmei@梅.</a>
+        Powered by <a rel="nofollow noreferer noopener" href="https://gohugo.io" target="_blank">Hugo</a>.
+        Theme based on <a href="https://github.com/flysnow-org/maupassant-hugo" target="_blank">maupassant</a>.
+        
+    </div>
+</footer>
+
+
+
+<script type="text/javascript">
+    window.MathJax = {
+        tex2jax: {
+            inlineMath: [['$', '$']],
+            processEscapes: true
+        }
+    };
+</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+
+
+<a id="rocket" href="#top"></a>
+<script type="text/javascript" src='/js/totop.js?v=0.0.0' async=""></script>
+
+
+
+<script type="text/javascript" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
+
+
+
+
+</body>
+
+</html>

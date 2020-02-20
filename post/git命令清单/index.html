@@ -1,0 +1,561 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>git命令清单 | Hanmei@梅</title>
+    <meta property="og:title" content="git命令清单 - Hanmei@梅">
+    <meta property="og:type" content="article">
+    
+    <meta property="article:published_time" content='2019-11-01T18:30:00&#43;08:00'>
+    
+    
+    <meta property="article:modified_time" content='2019-11-01T18:30:00&#43;08:00'>
+    
+    <meta name="Keywords" content="">
+    <meta name="description" content="git命令清单">
+    
+    <meta name="author" content="">
+    <meta property="og:url" content="http://example.org/post/git%E5%91%BD%E4%BB%A4%E6%B8%85%E5%8D%95/">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href='/css/normalize.css'>
+    <link rel="stylesheet" href='/css/style.css'>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    
+
+
+    
+    
+</head>
+
+<body>
+    <header id="header" class="clearfix">
+    <div class="container">
+        <div class="col-group">
+            <div class="site-name ">
+                <a id="logo" href="http://example.org/">
+                    Hanmei@梅
+                </a>
+                
+            </div>
+            <div>
+                <nav id="nav-menu" class="clearfix">
+                    
+                    <a  href="http://example.org/"
+                        title="首页">首页</a>
+                    
+                    <a  href="http://example.org/archives/"
+                        title="存档">存档</a>
+                    
+                    <a  href="http://example.org/about/"
+                        title="关于">关于</a>
+                    
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+    <div id="body">
+        <div class="container">
+            <div class="col-group">
+
+                <div class="col-8" id="main">
+                    
+<div class="res-cons">
+    <style type="text/css">
+    .post-toc {
+        position: fixed;
+        width: 200px;
+        margin-left: -210px;
+        padding: 5px 10px;
+        font-family: Athelas, STHeiti, Microsoft Yahei, serif;
+        font-size: 12px;
+        border: 1px solid rgba(0, 0, 0, .07);
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.98);
+        background-clip: padding-box;
+        -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, .125);
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, .125);
+        word-wrap: break-word;
+        white-space: nowrap;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        z-index: 999;
+        cursor: pointer;
+        max-height: 70%;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .post-toc .post-toc-title {
+        width: 100%;
+        margin: 0 auto;
+        font-size: 20px;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .post-toc .post-toc-content {
+        font-size: 15px;
+    }
+
+    .post-toc .post-toc-content>nav>ul {
+        margin: 10px 0;
+    }
+
+    .post-toc .post-toc-content ul {
+        padding-left: 20px;
+        list-style: square;
+        margin: 0.5em;
+        line-height: 1.8em;
+    }
+
+    .post-toc .post-toc-content ul ul {
+        padding-left: 15px;
+        display: none;
+    }
+
+    @media print,
+    screen and (max-width:1057px) {
+        .post-toc {
+            display: none;
+        }
+    }
+</style>
+<div class="post-toc" style="position: absolute; top: 188px;">
+    <h2 class="post-toc-title">文章目录</h2>
+    <div class="post-toc-content">
+        <nav id="TableOfContents">
+<ul>
+<li><a href="#远程仓库">远程仓库</a>
+<ul>
+<li><a href="#添加远程仓库">添加远程仓库</a></li>
+<li><a href="#查看远程仓库">查看远程仓库</a></li>
+<li><a href="#从远程仓库中拉取">从远程仓库中拉取</a></li>
+<li><a href="#提交到远程仓库">提交到远程仓库</a></li>
+<li><a href="#查看远程仓库信息">查看远程仓库信息</a></li>
+<li><a href="#重命名远程仓库">重命名远程仓库</a></li>
+<li><a href="#移除远程仓库">移除远程仓库</a></li>
+<li><a href="#强制覆盖本地文件-与git远程仓库保持一致">强制覆盖本地文件（与git远程仓库保持一致）</a></li>
+<li><a href="#和远程仓库内容合并">和远程仓库内容合并</a></li>
+</ul></li>
+<li><a href="#删除文件">删除文件</a>
+<ul>
+<li><a href="#如何删除git所有记录">如何删除git所有记录</a></li>
+<li><a href="#如何删除已上传的文件和文件夹">如何删除已上传的文件和文件夹</a></li>
+<li><a href="#git-pull-origin-master-vs-git-pull-origin-master"><code>git pull origin master</code> VS <code>git pull origin/master</code></a></li>
+</ul></li>
+<li><a href="#其它">其它</a>
+<ul>
+<li><a href="#fork仓库更新">fork仓库更新</a></li>
+<li><a href="#submodule使用">submodule使用</a></li>
+</ul></li>
+<li><a href="#changelog">ChangeLog</a></li>
+</ul>
+</nav>
+    </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var postToc = $(".post-toc");
+        if (postToc.length) {
+            var leftPos = $("#main").offset().left;
+            if(leftPos<220){
+                postToc.css({"width":leftPos-10,"margin-left":(0-leftPos)})
+            }
+
+            var t = postToc.offset().top - 20,
+                a = {
+                    start: {
+                        position: "absolute",
+                        top: t
+                    },
+                    process: {
+                        position: "fixed",
+                        top: 20
+                    },
+                };
+            $(window).scroll(function () {
+                var e = $(window).scrollTop();
+                e < t ? postToc.css(a.start) : postToc.css(a.process)
+            })
+        }
+    })
+</script>
+    <article class="post">
+        <header>
+            <h1 class="post-title">git命令清单</h1>
+        </header>
+        <date class="post-meta meta-date">
+            2019年11月1日
+        </date>
+        
+        <div class="post-meta">
+            <span>|</span>
+            
+            <span class="meta-category"><a href='http://example.org/categories/%E6%8A%80%E6%9C%AF'>技术</a></span>
+            
+        </div>
+        
+        
+        <div class="post-meta">
+            <span id="busuanzi_container_page_pv">|<span id="busuanzi_value_page_pv"></span><span>
+                    阅读</span></span>
+        </div>
+        
+        
+        <div class="clear" style="display: none">
+            <div class="toc-article">
+                <div class="toc-title">文章目录</div>
+            </div>
+        </div>
+        
+        <div class="post-content">
+            <p>总是查总是忘，查别人的博客还不如查自己的，自力更生。</p>
+
+<h1 id="远程仓库">远程仓库</h1>
+
+<h2 id="添加远程仓库">添加远程仓库</h2>
+
+<pre><code class="language-shell">git remote add origin [url] //经常使用版本
+
+git remote add &lt;shortname&gt; &lt;url&gt; //格式
+
+</code></pre>
+
+<p>这里的 shortname 之后就代表了这个仓库链接</p>
+
+<h2 id="查看远程仓库">查看远程仓库</h2>
+
+<pre><code class="language-shell">git remote 
+</code></pre>
+
+<p>返回结果 <code>origin</code>，如果我还需要详细的地址的话，再加一个 <code>-v</code></p>
+
+<pre><code class="language-shell">git remote -v
+</code></pre>
+
+<h2 id="从远程仓库中拉取">从远程仓库中拉取</h2>
+
+<pre><code class="language-shell">git fetch [remote-name] //只是拉取
+
+git pull //还会自动合并
+</code></pre>
+
+<pre><code class="language-shell">git pull origin master //注意这条命令会直接把本地覆盖了，导致删库事件
+</code></pre>
+
+<p>该怎么恢复呢？</p>
+
+<pre><code class="language-shell">git reflog show //查看本地的操作记录
+
+git reset HEAD@{2} //找到我想恢复的那一条 reset
+</code></pre>
+
+<p>会输出：</p>
+
+<pre><code class="language-shell">Unstaged changes after reset:
+D	XXX
+M	README.md
+</code></pre>
+
+<p>文件夹依然什么都没有</p>
+
+<pre><code class="language-shell">git add .
+git reset --hard
+</code></pre>
+
+<p>输出结果：</p>
+
+<pre><code class="language-shell">HEAD is now at [commit XXXX]
+</code></pre>
+
+<p>现在什么都恢复了</p>
+
+<h2 id="提交到远程仓库">提交到远程仓库</h2>
+
+<pre><code class="language-shell">git push -u origin master //想要强行提交完全不一致的内容 用-f
+
+git push [remote-name] [branch-name] //格式
+</code></pre>
+
+<h2 id="查看远程仓库信息">查看远程仓库信息</h2>
+
+<pre><code class="language-shell">git remote show [remote-name]
+</code></pre>
+
+<h2 id="重命名远程仓库">重命名远程仓库</h2>
+
+<pre><code class="language-shell">git remote rename [原来] [修改后]
+</code></pre>
+
+<h2 id="移除远程仓库">移除远程仓库</h2>
+
+<pre><code class="language-shell">git remote rm origin
+</code></pre>
+
+<p>如果执行 git remote rm origin 报错的话，我们可以手动修改<code>gitconfig</code>文件的内容</p>
+
+<pre><code class="language-shell">vi .git/config
+</code></pre>
+
+<p>把 <code>[remote “origin”]</code> 那一行删掉就好了。</p>
+
+<h2 id="强制覆盖本地文件-与git远程仓库保持一致">强制覆盖本地文件（与git远程仓库保持一致）</h2>
+
+<pre><code class="language-shell">git fetch --all
+
+git reset --hard origin/master
+
+git pull
+</code></pre>
+
+<p>变成单条执行</p>
+
+<pre><code class="language-shell">git fetch --all &amp;&amp; git reset --hard origin/master &amp;&amp; git pull
+</code></pre>
+
+<h2 id="和远程仓库内容合并">和远程仓库内容合并</h2>
+
+<p>How to merge remote master to local branch？</p>
+
+<pre><code class="language-shell">git fetch
+git rebase origin/master
+</code></pre>
+
+<h1 id="删除文件">删除文件</h1>
+
+<h2 id="如何删除git所有记录">如何删除git所有记录</h2>
+
+<pre><code class="language-shell">rm -rf .git 
+</code></pre>
+
+<h2 id="如何删除已上传的文件和文件夹">如何删除已上传的文件和文件夹</h2>
+
+<pre><code class="language-shell">git rm -r --cached app
+</code></pre>
+
+<p>删除暂存区或分支上的文件, 但本地又需要使用, 只是不希望这个文件被版本控制</p>
+
+<h2 id="git-pull-origin-master-vs-git-pull-origin-master"><code>git pull origin master</code> VS <code>git pull origin/master</code></h2>
+
+<p><code>git pull origin master</code> will pull changes from the origin remote, master branch and merge them to the local checked-out branch.</p>
+
+<p><code>git pull origin/master</code> will pull changes from the locally stored branch origin/master and merge that to the local checked-out branch. The origin/master branch is essentially a &ldquo;cached copy&rdquo; of what was last pulled from origin, which is why it&rsquo;s called a remote branch in git parlance. This might be somewhat confusing.</p>
+
+<p>You can see what branches are available with git branch and git branch -r to see the &ldquo;remote branches&rdquo;.</p>
+
+<h1 id="其它">其它</h1>
+
+<h2 id="fork仓库更新">fork仓库更新</h2>
+
+<p>如何将fork别人的仓库中的代码更新至最新版本？ 摘自<a href="https://blog.csdn.net/qq1332479771/article/details/56087333">链接</a></p>
+
+<pre><code class="language-shell">git remote add upstream git@github.com:xxx/xxx.git
+git fetch upstream
+git merge upstream/master
+git push 
+</code></pre>
+
+<h2 id="submodule使用">submodule使用</h2>
+
+<pre><code class="language-shell">git submodule add &lt;submodule_url&gt;  # 添加子项目
+
+git submodule init  # 初始化本地.gitmodules文件
+git submodule update  # 同步远端submodule源码
+
+git clone --recurse-submodules &lt;main_project_url&gt;  # 获取主项目和所有子项目源码
+
+git fetch  # 获取submodule远端源码
+git merge origin/&lt;branch_name&gt;  # 合并submodule远端源码
+git pull  # 获取submodule远端源码合并到当前分支
+git checkout &lt;branch_name&gt;  # 切换submodule的branch
+git commit -am &quot;change_summary&quot;  # 提交submodule的commit
+
+# or
+
+# 更新submodule源码，默认更新的branch是master，如果要修改branch，在.gitmodule中设置
+git submodule update --remote &lt;submodule_name&gt;  
+# 更新所有submodule源码，默认更新.gitmodule中设置的跟踪分支，未设置则跟踪master
+git submodule update --remote  
+# 当submodule commits提交有问题的时候放弃整个push
+git push --recurse-submodules=check
+# 分开提交submodule和main project
+git push --recurse-submodules=on-demand
+</code></pre>
+
+<p>有关博客主题子模块更新的流程</p>
+
+<pre><code class="language-shell">cd themes/even
+git add *
+git commit -m &quot;XXX&quot;
+
+cd ../..
+git add themes/even
+git commit -m &quot;XXX&quot;
+
+git push --recurse-submodules=on-demand
+
+</code></pre>
+
+<hr />
+
+<h1 id="changelog">ChangeLog</h1>
+
+<p>之前记录的就算了</p>
+
+<p>2019-11-24 今天我用了<code>git pull origin master</code>结果删库了，太可怕了，写一下怎么恢复；补充了和远程仓库合并的正确做法
+2019-12-08 <code>git pull origin master</code> VS <code>git pull origin/master</code></p>
+        </div>
+
+        
+
+
+        
+
+
+        <div class="post-meta meta-tags">
+            
+            <ul class="clearfix">
+                
+                <li><a href='http://example.org/tags/%E9%80%9F%E6%9F%A5'>速查</a></li>
+                
+                <li><a href='http://example.org/tags/git'>git</a></li>
+                
+                <li><a href='http://example.org/tags/%E6%8C%81%E7%BB%AD%E8%A1%A5%E5%85%85...'>持续补充...</a></li>
+                
+            </ul>
+            
+        </div>
+    </article>
+    
+    
+
+    
+    
+</div>
+
+                </div>
+
+                <div id="secondary">
+    <section class="widget">
+        <form id="search" action='//www.google.com/search'
+      method="get" accept-charset="utf-8" target="_blank" _lpchecked="1">
+      
+      <input type="text" name="q" maxlength="20" placeholder="Search">
+      <input type="hidden" name="sitesearch" value="http://example.org/">
+      <button type="submit" class="submit icon-search"></button>
+</form>
+    </section>
+
+    
+
+    <section class="widget">
+        <h3 class="widget-title">分类</h3>
+<ul class="widget-list">
+    
+    <li><a href="http://example.org/categories/CS%E8%AF%BE%E7%A8%8B%E5%AD%A6%E4%B9%A0/">CS课程学习 (18)</a></li>
+    
+    <li><a href="http://example.org/categories/blog%E6%90%AD%E5%BB%BA/">blog搭建 (1)</a></li>
+    
+    <li><a href="http://example.org/categories/%E5%AD%A6%E6%9C%AF/">学术 (2)</a></li>
+    
+    <li><a href="http://example.org/categories/%E6%8A%80%E6%9C%AF/">技术 (7)</a></li>
+    
+    <li><a href="http://example.org/categories/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/">日常记录 (28)</a></li>
+    
+    <li><a href="http://example.org/categories/%E7%94%9F%E6%B4%BB/">生活 (1)</a></li>
+    
+</ul>
+    </section>
+
+    <section class="widget">
+        <h3 class="widget-title">标签</h3>
+<div class="tagcloud">
+    
+    <a href="http://example.org/tags/WebGL/">WebGL</a>
+    
+    <a href="http://example.org/tags/blog/">blog</a>
+    
+    <a href="http://example.org/tags/git/">git</a>
+    
+    <a href="http://example.org/tags/linux/">linux</a>
+    
+    <a href="http://example.org/tags/%E5%9B%BE%E5%BD%A2%E5%AD%A6/">图形学</a>
+    
+    <a href="http://example.org/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/">密码学</a>
+    
+    <a href="http://example.org/tags/%E6%8C%81%E7%BB%AD%E8%A1%A5%E5%85%85.../">持续补充...</a>
+    
+    <a href="http://example.org/tags/%E6%B5%8B%E8%AF%84/">测评</a>
+    
+    <a href="http://example.org/tags/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/">离散数学</a>
+    
+    <a href="http://example.org/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/">网络安全</a>
+    
+    <a href="http://example.org/tags/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/">论文阅读</a>
+    
+    <a href="http://example.org/tags/%E8%BF%90%E5%8A%A8%E4%BC%AA%E5%BD%B1%E6%B6%88%E9%99%A4/">运动伪影消除</a>
+    
+    <a href="http://example.org/tags/%E9%80%9F%E6%9F%A5/">速查</a>
+    
+    <a href="http://example.org/tags/%E9%85%B8%E5%A5%B6/">酸奶</a>
+    
+    <a href="http://example.org/tags/%E9%9B%B6%E9%A3%9F/">零食</a>
+    
+</div>
+    </section>
+
+    
+
+    <section class="widget">
+        <h3 class="widget-title">其它</h3>
+        <ul class="widget-list">
+            <li><a href="http://example.org/index.xml">文章 RSS</a></li>
+        </ul>
+    </section>
+</div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+    <div class="container">
+        &copy; 2020 <a href="http://example.org/">Hanmei@梅.</a>
+        Powered by <a rel="nofollow noreferer noopener" href="https://gohugo.io" target="_blank">Hugo</a>.
+        Theme based on <a href="https://github.com/flysnow-org/maupassant-hugo" target="_blank">maupassant</a>.
+        
+    </div>
+</footer>
+
+
+
+<script type="text/javascript">
+    window.MathJax = {
+        tex2jax: {
+            inlineMath: [['$', '$']],
+            processEscapes: true
+        }
+    };
+</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+
+
+<a id="rocket" href="#top"></a>
+<script type="text/javascript" src='/js/totop.js?v=0.0.0' async=""></script>
+
+
+
+<script type="text/javascript" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,655 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>课程 图形学 Texture Mapping | Hanmei@梅</title>
+    <meta property="og:title" content="课程 图形学 Texture Mapping - Hanmei@梅">
+    <meta property="og:type" content="article">
+    
+    <meta property="article:published_time" content='2019-11-11T23:11:46&#43;08:00'>
+    
+    
+    <meta property="article:modified_time" content='2019-11-11T23:11:46&#43;08:00'>
+    
+    <meta name="Keywords" content="">
+    <meta name="description" content="课程 图形学 Texture Mapping">
+    
+    <meta name="author" content="">
+    <meta property="og:url" content="http://example.org/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Texture-Mapping/">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href='/css/normalize.css'>
+    <link rel="stylesheet" href='/css/style.css'>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    
+
+
+    
+    
+</head>
+
+<body>
+    <header id="header" class="clearfix">
+    <div class="container">
+        <div class="col-group">
+            <div class="site-name ">
+                <a id="logo" href="http://example.org/">
+                    Hanmei@梅
+                </a>
+                
+            </div>
+            <div>
+                <nav id="nav-menu" class="clearfix">
+                    
+                    <a  href="http://example.org/"
+                        title="首页">首页</a>
+                    
+                    <a  href="http://example.org/archives/"
+                        title="存档">存档</a>
+                    
+                    <a  href="http://example.org/about/"
+                        title="关于">关于</a>
+                    
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+    <div id="body">
+        <div class="container">
+            <div class="col-group">
+
+                <div class="col-8" id="main">
+                    
+<div class="res-cons">
+    <style type="text/css">
+    .post-toc {
+        position: fixed;
+        width: 200px;
+        margin-left: -210px;
+        padding: 5px 10px;
+        font-family: Athelas, STHeiti, Microsoft Yahei, serif;
+        font-size: 12px;
+        border: 1px solid rgba(0, 0, 0, .07);
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.98);
+        background-clip: padding-box;
+        -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, .125);
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, .125);
+        word-wrap: break-word;
+        white-space: nowrap;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        z-index: 999;
+        cursor: pointer;
+        max-height: 70%;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .post-toc .post-toc-title {
+        width: 100%;
+        margin: 0 auto;
+        font-size: 20px;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .post-toc .post-toc-content {
+        font-size: 15px;
+    }
+
+    .post-toc .post-toc-content>nav>ul {
+        margin: 10px 0;
+    }
+
+    .post-toc .post-toc-content ul {
+        padding-left: 20px;
+        list-style: square;
+        margin: 0.5em;
+        line-height: 1.8em;
+    }
+
+    .post-toc .post-toc-content ul ul {
+        padding-left: 15px;
+        display: none;
+    }
+
+    @media print,
+    screen and (max-width:1057px) {
+        .post-toc {
+            display: none;
+        }
+    }
+</style>
+<div class="post-toc" style="position: absolute; top: 188px;">
+    <h2 class="post-toc-title">文章目录</h2>
+    <div class="post-toc-content">
+        <nav id="TableOfContents">
+<ul>
+<li><a href="#背景">背景</a></li>
+<li><a href="#纹理管线">纹理管线</a></li>
+<li><a href="#坐标系变换">坐标系变换</a>
+<ul>
+<li><a href="#texture-space-to-object-space">Texture Space to Object Space</a>
+<ul>
+<li><a href="#direct-method">Direct Method</a></li>
+<li><a href="#indirect-method">Indirect Method</a></li>
+</ul></li>
+<li><a href="#object-space-to-screen-space">Object Space to Screen Space</a></li>
+</ul></li>
+<li><a href="#sampling-the-texture">Sampling the Texture</a>
+<ul>
+<li><a href="#nearest-neighbor-sampling">Nearest-Neighbor Sampling</a></li>
+<li><a href="#linear-sampling">Linear Sampling</a></li>
+<li><a href="#mipmaping">Mipmaping</a></li>
+</ul></li>
+<li><a href="#bump-mapping-凹凸映射">Bump Mapping 凹凸映射</a>
+<ul>
+<li><a href="#normal-perturbation-theory">Normal Perturbation Theory</a></li>
+<li><a href="#implementation">Implementation</a></li>
+</ul></li>
+<li><a href="#normal-mapping-法线贴图">Normal Mapping 法线贴图</a></li>
+<li><a href="#displacement-mapping-移位贴图">Displacement Mapping 移位贴图</a></li>
+<li><a href="#environment-mapping-环境映射">Environment Mapping 环境映射</a></li>
+<li><a href="#cube-mapping-天空盒">Cube Mapping（天空盒）</a></li>
+<li><a href="#projective-textures">Projective Textures</a>
+<ul>
+<li><a href="#shadow-mapping">Shadow Mapping</a></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var postToc = $(".post-toc");
+        if (postToc.length) {
+            var leftPos = $("#main").offset().left;
+            if(leftPos<220){
+                postToc.css({"width":leftPos-10,"margin-left":(0-leftPos)})
+            }
+
+            var t = postToc.offset().top - 20,
+                a = {
+                    start: {
+                        position: "absolute",
+                        top: t
+                    },
+                    process: {
+                        position: "fixed",
+                        top: 20
+                    },
+                };
+            $(window).scroll(function () {
+                var e = $(window).scrollTop();
+                e < t ? postToc.css(a.start) : postToc.css(a.process)
+            })
+        }
+    })
+</script>
+    <article class="post">
+        <header>
+            <h1 class="post-title">课程 图形学 Texture Mapping</h1>
+        </header>
+        <date class="post-meta meta-date">
+            2019年11月11日
+        </date>
+        
+        <div class="post-meta">
+            <span>|</span>
+            
+            <span class="meta-category"><a href='http://example.org/categories/CS%E8%AF%BE%E7%A8%8B%E5%AD%A6%E4%B9%A0'>CS课程学习</a></span>
+            
+        </div>
+        
+        
+        <div class="post-meta">
+            <span id="busuanzi_container_page_pv">|<span id="busuanzi_value_page_pv"></span><span>
+                    阅读</span></span>
+        </div>
+        
+        
+        <div class="clear" style="display: none">
+            <div class="toc-article">
+                <div class="toc-title">文章目录</div>
+            </div>
+        </div>
+        
+        <div class="post-content">
+            <p>about 图形学中的纹理贴图，结合上课课件和<a href="https://blog.csdn.net/qq826364410/article/details/88569131">博文</a></p>
+
+<p>属于<a href="../课程-图形学-总结">图形学系列文章</a>。</p>
+
+<h1 id="背景">背景</h1>
+
+<p><strong>Per-vertex color</strong> is insufficient for realistic appearance</p>
+
+<p><strong>Naïve solution</strong>: using very fine meshes <span style="color:red">expensive!</span></p>
+
+<p><strong>Texture Mapping</strong>: Wrap (map) a <strong>image</strong> onto a surface (like gift wrapping)，Fragment colors are given by the image contents</p>
+
+<h1 id="纹理管线">纹理管线</h1>
+
+<p><img src="http://q2sxqdau4.bkt.clouddn.com/20191111232939.png" alt="" /></p>
+
+<blockquote>
+<p>第一步。通过将投影方程（projector function）运用于空间中的点 ，从而得到一组称为参数空间值（parameter-space values）的关于纹理的数值。</p>
+
+<p>第二步。在使用这些新值访问纹理之前，可以使用一个或者多个映射函数（corresponder function）将参数空间值（parameter-space values ）转换到纹理空间。</p>
+
+<p>第三步。使用这些纹理空间值（texture-space locations）从纹理中获取相应的颜色值（obtain value）。</p>
+
+<p>第四步。再使用值变换函数（value transform function）对检索结果进行值变换，最后使用得到的新值来改变表面属性，如材质或者着色法线等等。</p>
+</blockquote>
+
+<p>具体的例子：</p>
+
+<blockquote>
+<p>找到物体空间中的位置(x,y,z)，比如点（-2.3,7.1,88.2），然后对该位置运用投影函数。这个投影函数通常将向量(x,y,z)转换为一个二元向量(u,v)。在此示例中使用的投影函数是一个正交投影，类似一个投影仪，将具有光泽的砖墙图像投影到多边形表面上。再考虑砖墙这边，其实这个投影过程就是将砖墙平面上的点变换为值域为0到1之间的一对(u,v)值，如图，(0.32,0.29)就是这个我们通过投影函数得到的uv值。而我们图像的分辨率是256 x 256，所以，将256分别乘以(0.32,0.29)，去掉小数点，得到纹理坐标(81, 74)。通过这个纹理坐标，可以在纹理贴图上查找到坐标对应的颜色值，所以，我们接着找到砖块图像上像素位置为(81,74)处的点，得到颜色(0.9,0.8,0.7)。而由于原始砖墙的颜色太暗，因此可以使用一个值变换函数，给每个向量乘以1.1，就可以得到我们纹理管线过程的结果——颜色值(0.99,0.88,0.77)。</p>
+</blockquote>
+
+<h1 id="坐标系变换">坐标系变换</h1>
+
+<p><img src="http://q2sxqdau4.bkt.clouddn.com/20191111232235.png" alt="" /></p>
+
+<h2 id="texture-space-to-object-space">Texture Space to Object Space</h2>
+
+<p>The texture images will be stretched differently at different places on the surface (based on the curvature)</p>
+
+<p><strong>Two methods</strong>: direct &amp; indirect</p>
+
+<h3 id="direct-method">Direct Method</h3>
+
+<p>参数表示: For each vertex of a tessellated object at P = f(u, v), assign (s, t), a normalized version of (u, v), as the texture coordinate of P 这个也叫 <strong>投影函数</strong> （将空间中的三维点转化为纹理坐标）</p>
+
+<p>例子：</p>
+
+<p><strong>Open Cylinder</strong></p>
+
+<p><img src="http://q2sxqdau4.bkt.clouddn.com/20191111234455.png" alt="" /></p>
+
+<p><strong>Sphere</strong></p>
+
+<p><img src="http://q2sxqdau4.bkt.clouddn.com/20191111234536.png" alt="" /></p>
+
+<h3 id="indirect-method">Indirect Method</h3>
+
+<p>Define <strong>intermediate simpler surface</strong> (e.g., plane, sphere, or cylinder) and parameterize it. Enclose <strong>arbitrary geometry</strong>（对象） within the intermediate one 选择的简单表面越像，效果越好</p>
+
+<h2 id="object-space-to-screen-space">Object Space to Screen Space</h2>
+
+<p>这个时候给定物体的坐标，我们已经能知道它对应的纹理坐标了。那我们该怎么映射到 screen space 呢？</p>
+
+<p><span style="color:red">这部分没时间去弄懂了，希望考试不要踩到</span></p>
+
+<p><img src="http://q2sxqdau4.bkt.clouddn.com/20191111235258.png" alt="" /></p>
+
+<h1 id="sampling-the-texture">Sampling the Texture</h1>
+
+<blockquote>
+<p>当一个比较小的贴图，贴到一个比较大的3D模型上，就会存在一个问题，3D模型上的点，不会正好对应贴图上的像素，3D模型上的点可能就会落在贴图上像素点与像素点之间。</p>
+</blockquote>
+
+<h2 id="nearest-neighbor-sampling">Nearest-Neighbor Sampling</h2>
+
+<blockquote>
+<p>如果选择Point模式，就会选择贴图对应3D模型上的点，距离最近的一个贴图像素点，来插值采样，纹理像素看起来就会一块块的，形似马赛克。</p>
+</blockquote>
+
+<p>Let I_1 be a 1D texture with n pixels</p>
+
+<p>To evaluate I_1(u) for some 0 &lt; u &lt; 1:</p>
+
+<ul>
+<li>Let i = floor(n*u), which is an integer</li>
+<li>Return I_1[i]</li>
+<li>Returns the color of the pixel that is closest to u</li>
+</ul>
+
+<p>OpenGL -&gt; GL_NEAREST 模式</p>
+
+<h2 id="linear-sampling">Linear Sampling</h2>
+
+<blockquote>
+<p>如果选择Bilinear模式，就会选择贴图对应3D模型上的点，周围的四个贴图像素点，来插值采样，纹理像素看起来就会过渡的更加自然。</p>
+</blockquote>
+
+<p>条件同上一个：</p>
+
+<ul>
+<li>Let i = floor(n*u), which is an integer</li>
+<li>Let w = fract(n*u) = n*u – i, which is a float between 0 and 1</li>
+<li>Return (1 - w)*I_1[i] + w*I_1[i + 1]</li>
+<li>Linearly interpolates the values of two neighboring pixels</li>
+</ul>
+
+<p>但是还是会产生走样（Aliasing）的问题问题 ：像素采样不足</p>
+
+<p>那我们该如何 Anti-Aliasing (AA) 呢？</p>
+
+<ol>
+<li>more samples -&gt; slow</li>
+<li>Prefiltering</li>
+</ol>
+
+<p><strong>Idea</strong>: subsampling the textures to reduce its frequency content</p>
+
+<p>At render time, one queries color values from the subsampled image to reduce aliasing</p>
+
+<p>The lower frequency content will make the sampling adequate</p>
+
+<h2 id="mipmaping">Mipmaping</h2>
+
+<p>Progressively subsample the original image into a number of levels</p>
+
+<p>Up one level, half the resolution</p>
+
+<p><img src="http://q2sxqdau4.bkt.clouddn.com/20191112002346.png" alt="" /></p>
+
+<blockquote>
+<p>如果选择Trilinear模式，还会在 Mip map（多级渐远纹理）之间进行混合，如果纹理没有采用Mip map技术，那么Trilinear得到结果跟Bilinear是一样的。</p>
+
+<p>Mip maps是一个逐渐缩小的图像列表，用于优化实时3D引擎的性能。远离相机的物体使用较小的Texture版本。使用Mip maps需要使用33%以上的内存，但不使用它会导致巨大的性能损失。</p>
+
+<p>缺点：运行时占用更多内存，且增加包的容量。因为Mip maps会根据摄像机远近不同而生成对应的八个贴图，运行会加载到内存中。</p>
+
+<p>优点：优化显存带宽，用来减少渲染。因为可以根据距离摄像机远近，选择适合的贴图来渲染。</p>
+
+<p>一般不需要距离摄像机靠近清晰，否则模糊的这种效果，取消勾选Generate Mip Maps选项。</p>
+
+<p>勾选Mip maps，对处理锯齿和闪烁的很有用。</p>
+</blockquote>
+
+<h1 id="bump-mapping-凹凸映射">Bump Mapping 凹凸映射</h1>
+
+<p><strong>Goal</strong>: Simulate <strong>detailed</strong> geometry without adding actual geometry (i.e., vertices, faces)</p>
+
+<blockquote>
+<p>凹凸贴图是指计算机图形学中在三维环境中通过纹理方法来产生表面凹凸不平的视觉效果。它主要的原理是通过改变表面光照方程的法线，而不是表面的几何法线，或对每个待渲染的像素在计算照明之前都要加上一个从高度图中找到的扰动，来模拟凹凸不平的视觉特征，如褶皱、波浪等等。</p>
+
+<p>Blinn于1978年提出了凹凸贴图方法。使用凹凸贴图，是为了给光滑的平面，在不增加顶点的情况下，增加一些凹凸的变化。他的原理是通过法向量的变化，来产生光影的变化，从而产生凹凸感。实际上并没有顶点（即Geometry）的变化。</p>
+
+<p>表示凹凸效果的另一种方法是使用高度图来修改表面法线的方向。每个单色纹理值代表一个高度，所以在纹理中，白色表示高高度区域，黑色是低高度的区域（反之亦然）。</p>
+</blockquote>
+
+<h2 id="normal-perturbation-theory">Normal Perturbation Theory</h2>
+
+<p><img src="http://q2sxqdau4.bkt.clouddn.com/20191112003025.png" alt="" /></p>
+
+<p><img src="http://q2sxqdau4.bkt.clouddn.com/20191112003042.png" alt="" /></p>
+
+<h2 id="implementation">Implementation</h2>
+
+<p>操作步骤</p>
+
+<ol>
+<li>B(u, v) 初始化为 a gray scale texture</li>
+<li>Find the image Bu(u, v) by subtracting every pixel from its right neighbor（一般认为u是水平的）</li>
+<li>Find the image Bv(u, v) by subtracting every pixel from its bottom neighbor</li>
+</ol>
+
+<p>最后：</p>
+
+<p><img src="http://q2sxqdau4.bkt.clouddn.com/20191112004434.png" alt="" /></p>
+
+<p>实现步骤</p>
+
+<ol>
+<li>Store bump/normal maps as 2D textures</li>
+<li>At render time, query these textures per point (i.e., fragment) instead of per vertex</li>
+<li>Compute shading using perturbed normals</li>
+</ol>
+
+<h1 id="normal-mapping-法线贴图">Normal Mapping 法线贴图</h1>
+
+<blockquote>
+<p>法线贴图（Normal mapping）是凸凹贴图（Bump mapping）技术的一种应用，法线贴图有时也称为“Dot3（仿立体）凸凹纹理贴图”。凸凹与纹理贴图通常是在现有的模型法线添加扰动不同，法线贴图要完全更新法线。与凸凹贴图类似的是，它也是用来在不增加多边形的情况下在浓淡效果中添加细节。但是<span style="color:red">凸凹贴图通常根据一个单独的灰度图像通道进行计算，而法线贴图的数据源图像通常是从更加细致版本的物体得到的多通道图像</span>，即红、绿、蓝通道都是作为一个单独的颜色对待。</p>
+
+<p>简单来说，<strong>Normal Map直接将正确的Normal值保存到一张纹理中去，那么在使用的时候直接从贴图中取即可。</strong></p>
+</blockquote>
+
+<p>Since the blue channel is always 1, it is bluish in appearance</p>
+
+<h1 id="displacement-mapping-移位贴图">Displacement Mapping 移位贴图</h1>
+
+<p>直接作用于 vertex，根据 displacement map 中对应的 vertex 的像素值，使 vertex 沿法向移动，产生真正的凹凸表面</p>
+
+<p>more expensive！</p>
+
+<h1 id="environment-mapping-环境映射">Environment Mapping 环境映射</h1>
+
+<p>问题：Simple light sources (e.g., point, directional) create unnaturally harsh illuminations. In reality, light usually come from all directions</p>
+
+<p>Environment lighting is capable of producing much more realistic results</p>
+
+<p><strong>Environment Map</strong>:</p>
+
+<ul>
+<li>A special type of texture used to specify environment lighting</li>
+<li>Describe incident light from all directions</li>
+<li>Generate the map of the environment (On a sphere, cube or paraboloid)</li>
+<li>Use a view-dependent mapping on the geometry</li>
+</ul>
+
+<p><strong>Generating Environment Maps</strong>:</p>
+
+<ul>
+<li>Using physical measurements
+
+<ul>
+<li>Light probe: taking pictures of a small spherical mirror (e.g., a stainless steel ball)</li>
+</ul></li>
+<li>Using computer simulation
+
+<ul>
+<li>Ray tracing</li>
+</ul></li>
+</ul>
+
+<h1 id="cube-mapping-天空盒">Cube Mapping（天空盒）</h1>
+
+<blockquote>
+<p>Cubemap是六个方形纹理表示对环境的反射集合。六个方形形成围绕物体的假想立方体的面。通常用于捕捉物体的反射和周围环境。例如，天空盒（Skybox）和环境反射（Reflection Probe），可用于模拟不同光滑度平面的反射。</p>
+</blockquote>
+
+<p><img src="http://q2sxqdau4.bkt.clouddn.com/20191112003530.png" alt="" /></p>
+
+<h1 id="projective-textures">Projective Textures</h1>
+
+<p><strong>Project a texture on 3D object</strong>:</p>
+
+<p><img src="http://q2sxqdau4.bkt.clouddn.com/20191112011653.png" alt="" /></p>
+
+<p><strong>Designing Theatres</strong>:</p>
+
+<p><img src="http://q2sxqdau4.bkt.clouddn.com/20191112011852.png" alt="" /></p>
+
+<p>Projective textures 一般用来实现一些复杂的视觉效果，可能需要多次渲染</p>
+
+<p><strong>Shadows</strong>: points visible to the eye but invisible to the light are in shadow</p>
+
+<h2 id="shadow-mapping">Shadow Mapping</h2>
+
+<p><img src="http://q2sxqdau4.bkt.clouddn.com/20191112012012.png" alt="" /></p>
+
+<p><strong>Rendering Pass 1</strong></p>
+
+<p><img src="http://q2sxqdau4.bkt.clouddn.com/20191112012052.png" alt="" /></p>
+
+<p><strong>Rendering Pass 2</strong></p>
+
+<p><img src="http://q2sxqdau4.bkt.clouddn.com/20191112012119.png" alt="" /></p>
+
+<p>Creates “hard shadows”</p>
+
+<p>Fast but not very accurate: shadows can look pixelated when the shadow map has insufficient
+resolution</p>
+
+<p>Prefiltering the shadow map helps reducing such artifacts</p>
+        </div>
+
+        
+
+
+        
+
+<div class="post-archive">
+    <h2>See Also</h2>
+    <ul class="listing">
+        
+        <li><a href="/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Polygon-Scanning/">课程 图形学 Polygon Scanning</a></li>
+        
+        <li><a href="/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Clipping/">课程 图形学 Clipping</a></li>
+        
+        <li><a href="/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Shading/">课程 图形学 Shading</a></li>
+        
+        <li><a href="/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Projection/">课程 图形学 Projection</a></li>
+        
+        <li><a href="/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Coordinate-transformation/">课程 图形学 Coordinate transformation</a></li>
+        
+    </ul>
+</div>
+
+
+        <div class="post-meta meta-tags">
+            
+            <ul class="clearfix">
+                
+                <li><a href='http://example.org/tags/%E5%9B%BE%E5%BD%A2%E5%AD%A6'>图形学</a></li>
+                
+            </ul>
+            
+        </div>
+    </article>
+    
+    
+
+    
+    
+</div>
+
+                </div>
+
+                <div id="secondary">
+    <section class="widget">
+        <form id="search" action='//www.google.com/search'
+      method="get" accept-charset="utf-8" target="_blank" _lpchecked="1">
+      
+      <input type="text" name="q" maxlength="20" placeholder="Search">
+      <input type="hidden" name="sitesearch" value="http://example.org/">
+      <button type="submit" class="submit icon-search"></button>
+</form>
+    </section>
+
+    
+
+    <section class="widget">
+        <h3 class="widget-title">分类</h3>
+<ul class="widget-list">
+    
+    <li><a href="http://example.org/categories/CS%E8%AF%BE%E7%A8%8B%E5%AD%A6%E4%B9%A0/">CS课程学习 (18)</a></li>
+    
+    <li><a href="http://example.org/categories/blog%E6%90%AD%E5%BB%BA/">blog搭建 (1)</a></li>
+    
+    <li><a href="http://example.org/categories/%E5%AD%A6%E6%9C%AF/">学术 (2)</a></li>
+    
+    <li><a href="http://example.org/categories/%E6%8A%80%E6%9C%AF/">技术 (7)</a></li>
+    
+    <li><a href="http://example.org/categories/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/">日常记录 (28)</a></li>
+    
+    <li><a href="http://example.org/categories/%E7%94%9F%E6%B4%BB/">生活 (1)</a></li>
+    
+</ul>
+    </section>
+
+    <section class="widget">
+        <h3 class="widget-title">标签</h3>
+<div class="tagcloud">
+    
+    <a href="http://example.org/tags/WebGL/">WebGL</a>
+    
+    <a href="http://example.org/tags/blog/">blog</a>
+    
+    <a href="http://example.org/tags/git/">git</a>
+    
+    <a href="http://example.org/tags/linux/">linux</a>
+    
+    <a href="http://example.org/tags/%E5%9B%BE%E5%BD%A2%E5%AD%A6/">图形学</a>
+    
+    <a href="http://example.org/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/">密码学</a>
+    
+    <a href="http://example.org/tags/%E6%8C%81%E7%BB%AD%E8%A1%A5%E5%85%85.../">持续补充...</a>
+    
+    <a href="http://example.org/tags/%E6%B5%8B%E8%AF%84/">测评</a>
+    
+    <a href="http://example.org/tags/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/">离散数学</a>
+    
+    <a href="http://example.org/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/">网络安全</a>
+    
+    <a href="http://example.org/tags/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/">论文阅读</a>
+    
+    <a href="http://example.org/tags/%E8%BF%90%E5%8A%A8%E4%BC%AA%E5%BD%B1%E6%B6%88%E9%99%A4/">运动伪影消除</a>
+    
+    <a href="http://example.org/tags/%E9%80%9F%E6%9F%A5/">速查</a>
+    
+    <a href="http://example.org/tags/%E9%85%B8%E5%A5%B6/">酸奶</a>
+    
+    <a href="http://example.org/tags/%E9%9B%B6%E9%A3%9F/">零食</a>
+    
+</div>
+    </section>
+
+    
+
+    <section class="widget">
+        <h3 class="widget-title">其它</h3>
+        <ul class="widget-list">
+            <li><a href="http://example.org/index.xml">文章 RSS</a></li>
+        </ul>
+    </section>
+</div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+    <div class="container">
+        &copy; 2020 <a href="http://example.org/">Hanmei@梅.</a>
+        Powered by <a rel="nofollow noreferer noopener" href="https://gohugo.io" target="_blank">Hugo</a>.
+        Theme based on <a href="https://github.com/flysnow-org/maupassant-hugo" target="_blank">maupassant</a>.
+        
+    </div>
+</footer>
+
+
+
+<script type="text/javascript">
+    window.MathJax = {
+        tex2jax: {
+            inlineMath: [['$', '$']],
+            processEscapes: true
+        }
+    };
+</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+
+
+<a id="rocket" href="#top"></a>
+<script type="text/javascript" src='/js/totop.js?v=0.0.0' async=""></script>
+
+
+
+<script type="text/javascript" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
+
+
+
+
+</body>
+
+</html>

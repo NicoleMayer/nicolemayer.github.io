@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>持续补充... on Hanmei@梅</title>
+    <link>http://example.org/tags/%E6%8C%81%E7%BB%AD%E8%A1%A5%E5%85%85.../</link>
+    <description>Recent content in 持续补充... on Hanmei@梅</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Mon, 11 Nov 2019 07:21:06 -0700</lastBuildDate>
+    
+	<atom:link href="http://example.org/tags/%E6%8C%81%E7%BB%AD%E8%A1%A5%E5%85%85.../index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>课程 图形学 总结</title>
+      <link>http://example.org/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-%E6%80%BB%E7%BB%93/</link>
+      <pubDate>Mon, 11 Nov 2019 07:21:06 -0700</pubDate>
+      
+      <guid>http://example.org/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-%E6%80%BB%E7%BB%93/</guid>
+      <description>&lt;p&gt;计算机图形学(Computer Graphics，简称CG)是一种使用数学算法将&lt;strong&gt;二维或三维图形&lt;/strong&gt;转化为计算机显示器的&lt;strong&gt;栅格形式&lt;/strong&gt;的科学。—— from百度百科&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2019/11/15/2lY5prwe19hKkU4.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>linux命令 文件及文件夹</title>
+      <link>http://example.org/post/linux%E5%91%BD%E4%BB%A4-%E6%96%87%E4%BB%B6%E5%8F%8A%E6%96%87%E4%BB%B6%E5%A4%B9/</link>
+      <pubDate>Sat, 09 Nov 2019 08:25:58 -0700</pubDate>
+      
+      <guid>http://example.org/post/linux%E5%91%BD%E4%BB%A4-%E6%96%87%E4%BB%B6%E5%8F%8A%E6%96%87%E4%BB%B6%E5%A4%B9/</guid>
+      <description>&lt;p&gt;有关文件及文件夹的linux命令，持续更新中&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>git命令清单</title>
+      <link>http://example.org/post/git%E5%91%BD%E4%BB%A4%E6%B8%85%E5%8D%95/</link>
+      <pubDate>Fri, 01 Nov 2019 18:30:00 -0700</pubDate>
+      
+      <guid>http://example.org/post/git%E5%91%BD%E4%BB%A4%E6%B8%85%E5%8D%95/</guid>
+      <description>&lt;p&gt;总是查总是忘，查别人的博客还不如查自己的，自力更生。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

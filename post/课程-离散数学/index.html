@@ -1,0 +1,545 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>课程 离散数学 | Hanmei@梅</title>
+    <meta property="og:title" content="课程 离散数学 - Hanmei@梅">
+    <meta property="og:type" content="article">
+    
+    <meta property="article:published_time" content='2019-10-29T11:21:14&#43;08:00'>
+    
+    
+    <meta property="article:modified_time" content='2019-10-29T11:21:14&#43;08:00'>
+    
+    <meta name="Keywords" content="">
+    <meta name="description" content="课程 离散数学">
+    
+    <meta name="author" content="">
+    <meta property="og:url" content="http://example.org/post/%E8%AF%BE%E7%A8%8B-%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href='/css/normalize.css'>
+    <link rel="stylesheet" href='/css/style.css'>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    
+
+
+    
+    
+</head>
+
+<body>
+    <header id="header" class="clearfix">
+    <div class="container">
+        <div class="col-group">
+            <div class="site-name ">
+                <a id="logo" href="http://example.org/">
+                    Hanmei@梅
+                </a>
+                
+            </div>
+            <div>
+                <nav id="nav-menu" class="clearfix">
+                    
+                    <a  href="http://example.org/"
+                        title="首页">首页</a>
+                    
+                    <a  href="http://example.org/archives/"
+                        title="存档">存档</a>
+                    
+                    <a  href="http://example.org/about/"
+                        title="关于">关于</a>
+                    
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+    <div id="body">
+        <div class="container">
+            <div class="col-group">
+
+                <div class="col-8" id="main">
+                    
+<div class="res-cons">
+    <style type="text/css">
+    .post-toc {
+        position: fixed;
+        width: 200px;
+        margin-left: -210px;
+        padding: 5px 10px;
+        font-family: Athelas, STHeiti, Microsoft Yahei, serif;
+        font-size: 12px;
+        border: 1px solid rgba(0, 0, 0, .07);
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.98);
+        background-clip: padding-box;
+        -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, .125);
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, .125);
+        word-wrap: break-word;
+        white-space: nowrap;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        z-index: 999;
+        cursor: pointer;
+        max-height: 70%;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .post-toc .post-toc-title {
+        width: 100%;
+        margin: 0 auto;
+        font-size: 20px;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .post-toc .post-toc-content {
+        font-size: 15px;
+    }
+
+    .post-toc .post-toc-content>nav>ul {
+        margin: 10px 0;
+    }
+
+    .post-toc .post-toc-content ul {
+        padding-left: 20px;
+        list-style: square;
+        margin: 0.5em;
+        line-height: 1.8em;
+    }
+
+    .post-toc .post-toc-content ul ul {
+        padding-left: 15px;
+        display: none;
+    }
+
+    @media print,
+    screen and (max-width:1057px) {
+        .post-toc {
+            display: none;
+        }
+    }
+</style>
+<div class="post-toc" style="position: absolute; top: 188px;">
+    <h2 class="post-toc-title">文章目录</h2>
+    <div class="post-toc-content">
+        
+    </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var postToc = $(".post-toc");
+        if (postToc.length) {
+            var leftPos = $("#main").offset().left;
+            if(leftPos<220){
+                postToc.css({"width":leftPos-10,"margin-left":(0-leftPos)})
+            }
+
+            var t = postToc.offset().top - 20,
+                a = {
+                    start: {
+                        position: "absolute",
+                        top: t
+                    },
+                    process: {
+                        position: "fixed",
+                        top: 20
+                    },
+                };
+            $(window).scroll(function () {
+                var e = $(window).scrollTop();
+                e < t ? postToc.css(a.start) : postToc.css(a.process)
+            })
+        }
+    })
+</script>
+    <article class="post">
+        <header>
+            <h1 class="post-title">课程 离散数学</h1>
+        </header>
+        <date class="post-meta meta-date">
+            2019年10月29日
+        </date>
+        
+        <div class="post-meta">
+            <span>|</span>
+            
+            <span class="meta-category"><a href='http://example.org/categories/CS%E8%AF%BE%E7%A8%8B%E5%AD%A6%E4%B9%A0'>CS课程学习</a></span>
+            
+        </div>
+        
+        
+        <div class="post-meta">
+            <span id="busuanzi_container_page_pv">|<span id="busuanzi_value_page_pv"></span><span>
+                    阅读</span></span>
+        </div>
+        
+        
+        <div class="clear" style="display: none">
+            <div class="toc-article">
+                <div class="toc-title">文章目录</div>
+            </div>
+        </div>
+        
+        <div class="post-content">
+            <p>复习网络安全课程时觉得很多内容与2年前上过王琦男神的离散课有重叠，然而网络安全课在数论方面写的比较简略，没办法建立一个系统的概念，于是好不容易从硬盘里找对应的课件，借此巩固一下这方面的知识。</p>
+
+<p><img src="https://i.loli.net/2019/10/29/wNntXy4CB7SvRLb.jpg" alt="" /></p>
+
+<p>PS:还没找到这里 md 缩小图片的方法，之前的一些操作不适用，先将就着看吧</p>
+
+<p><strong>数论部分需要掌握的</strong>：
+概念：
+- Euler’s totient function / Euler’s Theorem
+- Fermat’s Little Theorem
+计算：
+- Euclidean algorithm 算最大公约数 / Extended Euclidean algorithm
+- Modular Inverse （画I R T Q 表）/ 线性同余方程的解
+- The Chinese Remainder Theorem (除了公式法外，还能用back substitution求解，各种回代和求逆)
+- The Multiplicative Order / Primitive Roots</p>
+
+<p>10.10的课件主要讲算法复杂度，关系不是很大，但我老是忘记<code>P</code>、<code>NP</code> 这些复杂度的关系 （题外话：早上起来刷群消息看到新闻有一男子在南京找不到工作在地铁发病了“算法的本质和定义是什么？”hhhh CS又学疯一人）</p>
+
+<ul>
+<li>Polynomial-Time Algorithms O(n^k)
+
+<ul>
+<li>n:input size of the problem</li>
+<li>k:a constant</li>
+<li><strong>Class P</strong>  -&gt; problems that are solvable in polynomial time</li>
+</ul></li>
+<li>Nonpolynomial-Time Algorithms
+
+<ul>
+<li>impractical</li>
+<li><strong>class NP</strong> -&gt; nondeterministic polynomial-time (there exists a certificate which allows one to verify in polynomial time that the input is <em>indeed</em> a yes-input)</li>
+<li><strong>NP-Complete problems</strong> -&gt; believed-to-be-hard decision problems in NP; they appear to have no efficient solution; answers are efficiently verifiable, solution to one is never much harder than a solution to another -&gt; if any one of the NP-Complete problems has an efficient solution then all of the NP-Complete problems have efficient solutions</li>
+<li><strong>NP-Hard problems</strong>: hardest; some of them may not be solved by a non-deterministictime. Many computational version of NP-complete problems are NP-hard.</li>
+</ul></li>
+<li>P = NP?</li>
+</ul>
+
+<p>10.17和10.18的课件开始进入数论的学习</p>
+
+<ul>
+<li><strong>The Division Algorithm</strong> -&gt; 一直没搞清楚一正一负两数相除的结果，这里说是 <code>0 ≤ r &lt; d</code> 也就是说余数必须为正</li>
+<li><strong>Congruence Relation</strong> -&gt; 同余关系 <code>a ≡ b (mod m)</code> 其中 m 为 modulus（模数）</li>
+<li><strong>Congruences of Sums and Products</strong> -&gt; <code>a ≡ b (mod m) and c ≡ d (mod m) ➡ a+c ≡ b+d (mod m) and ac ≡ bd (mod m)</code></li>
+
+<li><p>当m为正数时，<code>(a + b) mod m = ((a mod m) + (b mod m)) mod m ab mod m = ((a mod m)(b mod m)) mod m</code></p></li>
+
+<li><p><strong>Primes</strong></p>
+
+<ul>
+<li>不包括1</li>
+<li>三个证明
+
+<ol>
+<li>If n is composite, then n has a prime divisor less than or equal to √n.</li>
+<li>There are infinitely many primes.</li>
+<li>A prime factorization of a positive integer where the primes are in nondecreasing order is unique.</li>
+</ol></li>
+</ul></li>
+
+<li><p>一些概念 Greatest Common Divisor (GCD)、Least Common Multiple (LCM) Mersenne Primes (Primes in form of 2^p-1)</p></li>
+
+<li><p><strong>Euclidean algorithm</strong> -&gt; 用于求解GCD，当 a &gt;= b 时，算法复杂度为 O(log b)
+<img src="https://i.loli.net/2019/10/30/zWOtJLrY58xE6Mq.jpg" alt="" /></p></li>
+
+<li><p><strong>Bezout’s Theorem</strong> -&gt; If a and b are positive integers, then there exist integers <code>s</code> and <code>t</code> such that <code>gcd(a, b) = sa + tb</code>
+<img src="https://i.loli.net/2019/10/30/1kdKsUrYl7vLCiu.jpg" alt="" /></p></li>
+
+<li><p><strong>Linear Congruence</strong> 线性同余 <code>ax ≡ b (mod m)</code></p></li>
+
+<li><p><strong>Modular Inverse</strong> 在网络安全里面叫 multiplicative inverse
+<code>a’a ≡ 1 (mod m)</code> 通过模逆，我们可以计算出线性同余方程的解 <code>x ≡  a'b (mod m)</code>，但大前提是模逆存在</p></li>
+
+<li><p><strong>Theorem</strong>: If a and m are relatively prime integers and m &gt; 1, then an inverse of a modulo m exists. Furthermore, the inverse is uinque modulo m.</p></li>
+
+<li><p><strong>How to find inverses?</strong>
+<img src="https://i.loli.net/2019/10/30/5XkKbDjgGYPFm1s.jpg" alt="" />
+<img src="https://i.loli.net/2019/10/30/6cuXmlMLfbsKYgC.jpg" alt="" /></p></li>
+
+<li><p><strong>Number of Solutions to Congruences</strong>
+<img src="https://i.loli.net/2019/10/30/aieo4ZqFlf8KMrP.jpg" alt="" /></p></li>
+
+<li><p><strong>The Chinese Remainder Theorem</strong>
+<img src="https://i.loli.net/2019/10/30/SZ8GDQjbhLmpCUr.jpg" alt="" />
+<img src="https://i.loli.net/2019/10/30/IuBNWC5lhVGY98J.jpg" alt="" />
+还有一种方法叫 back substitution
+<img src="https://i.loli.net/2019/10/30/RlcaZPgQvGtUBrW.jpg" alt="" /></p></li>
+
+<li><p><strong>Fermat’s Little Theorem</strong> 它的证明很巧妙</p></li>
+</ul>
+
+<p><img src="https://i.loli.net/2019/10/30/ivSGCQJy6hOdUxL.jpg" alt="" /></p>
+
+<ul>
+<li><p><strong>Euler’s totient function</strong></p>
+
+<p>φ(n) the number of positive integers coprime to n in Zn（第三条想了好一会才明白&hellip;p^n内为p的倍数的数应该就是<code>{p, 2*p, 3*p....p^(n-1)*p}</code>好笨啊我）
+<img src="https://i.loli.net/2019/10/30/DSi9QZaK5WuHPsY.jpg" alt="" /></p></li>
+
+<li><p><strong>Euler’s Theorem</strong></p>
+
+<p>费马小定理的延伸和推广
+<img src="https://i.loli.net/2019/10/30/uah4WDiNvxoYsLm.jpg" alt="" /></p></li>
+
+<li><p><strong>The Multiplicative Order</strong></p>
+
+<p>定理是 Lagrange Theorem，其中 φ(n) 也称 order of the group，是所有 Multiplicative Order 中的最大值
+<img src="https://i.loli.net/2019/10/30/sqvhiC7nza6epRU.jpg" alt="" /></p></li>
+
+<li><p><strong>Primitive Roots</strong></p>
+
+<p>若 Multiplicative Order 等于 φ(n)，则被称为原根；原根的存在性在抽象代数里面相当于“有限域的乘法群是循环群”，那个原根就相当于是循环群的生成元(<del>想到我上一次作业天真的证明：因为质数是无穷的，所以不存在生成元</del>)
+<img src="https://i.loli.net/2019/10/30/jXRmc8V2ouCpyiB.jpg" alt="" /></p></li>
+</ul>
+
+<p>10.24开始进入密码学的学习</p>
+
+<ul>
+<li><p><strong>Classical One-Key Ciphers</strong></p>
+
+<p><img src="https://i.loli.net/2019/10/30/RL8mWoMv5DEiwQ2.jpg" alt="" /></p>
+
+<ul>
+<li><p>Attacks on Classical Cryptography</p>
+
+<ul>
+<li>Ciphertext-only attack</li>
+<li>Known-plaintext attack</li>
+</ul></li>
+
+<li><p>Simple Substitution Ciphers (1-to-1 function) / Affine cipher (e.g. Caesar cipher) / Cryptanalysis</p></li>
+
+<li><p>Other Symmetric Ciphers: DES / 3DES / IDEA / Blowfish Rijndael (AES)
+<img src="https://i.loli.net/2019/10/30/puWzgx8AiRfsNbT.jpg" alt="" /></p></li>
+</ul></li>
+
+<li><p><strong>Public-Key Cryptosystems</strong></p>
+
+<ul>
+<li>W. Diffie, M. E. Hellman, “New directions in cryptography”, IEEE Transactions on Information Theory, vol. 22-6, pages 644-654, 1976.</li>
+<li>Four properties:
+
+<ol>
+<li>D(E(M)) = M</li>
+<li>Both E and D are easy to compute</li>
+<li><strong>It is computationally infeasible to derive D from E</strong></li>
+<li>E(D(M)) = M</li>
+</ol></li>
+</ul></li>
+
+<li><p><strong>RSA Public-Key Cryptosystem</strong></p>
+
+<ul>
+<li><p>Pick two large primes, p and q. Let n = pq, then φ(n) = (p − 1)(q − 1). Encryption and decryption keys e and d are selected such that</p>
+
+<ul>
+<li>gcd(e, φ(n)) = 1</li>
+<li>ed ≡ 1 (mod φ(n))</li>
+<li>C = M^e mod n (RSA encryption)</li>
+<li>M = C^d mod n (RSA decryption)</li>
+<li><strong>p, q, φ(n) must be kept secret!</strong>
+<br /></li>
+</ul></li>
+
+<li><p>原理
+<img src="https://i.loli.net/2019/10/30/KR3FVjnNSlUvo4b.jpg" alt="" /></p></li>
+
+<li><p>例子
+<img src="https://i.loli.net/2019/10/30/Rd8FTXqyKMSJ4Gn.jpg" alt="" /></p></li>
+
+<li><p>安全性分析
+<img src="https://i.loli.net/2019/10/30/ti83sOF9y21AEMS.jpg" alt="" />
+<img src="https://i.loli.net/2019/10/30/rDStuBkng9Fy6Ow.jpg" alt="" /></p></li>
+
+<li><p>RSA用于数字签名</p>
+
+<ul>
+<li>S = M^d mod n (RSA signature)</li>
+<li>M = S^e mod n (RSA verification)</li>
+</ul></li>
+</ul></li>
+
+<li><p><strong>The Discrete Logrithm</strong>
+<img src="https://i.loli.net/2019/10/30/lZM2BhJUm3EDsvj.jpg" alt="" /></p></li>
+
+<li><p>El Gamal Encryption
+<img src="https://i.loli.net/2019/10/30/lGkYpnR4xoZyQda.jpg" alt="" /></p>
+
+<ul>
+<li>El Gamal for Digital Signature
+<img src="https://i.loli.net/2019/10/30/guDt9YKQmBl7q15.jpg" alt="" /></li>
+<li>例子
+<img src="https://i.loli.net/2019/10/30/Txhkz9jcECbuaO8.jpg" alt="" /></li>
+<li>安全性分析
+<img src="https://i.loli.net/2019/10/30/In2Z3QiwlmTLuPz.jpg" alt="" /></li>
+</ul></li>
+
+<li><p><strong>Diffie-Hellman Key Exchange Protocol</strong>
+<img src="https://i.loli.net/2019/10/30/Jsx84jdGrB2W1nM.jpg" alt="" /></p></li>
+</ul>
+        </div>
+
+        
+
+
+        
+
+<div class="post-archive">
+    <h2>See Also</h2>
+    <ul class="listing">
+        
+        <li><a href="/post/%E8%AF%BE%E7%A8%8B-%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0/">课程 网络安全 期中复习</a></li>
+        
+    </ul>
+</div>
+
+
+        <div class="post-meta meta-tags">
+            
+            <ul class="clearfix">
+                
+                <li><a href='http://example.org/tags/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6'>离散数学</a></li>
+                
+                <li><a href='http://example.org/tags/%E5%AF%86%E7%A0%81%E5%AD%A6'>密码学</a></li>
+                
+            </ul>
+            
+        </div>
+    </article>
+    
+    
+
+    
+    
+</div>
+
+                </div>
+
+                <div id="secondary">
+    <section class="widget">
+        <form id="search" action='//www.google.com/search'
+      method="get" accept-charset="utf-8" target="_blank" _lpchecked="1">
+      
+      <input type="text" name="q" maxlength="20" placeholder="Search">
+      <input type="hidden" name="sitesearch" value="http://example.org/">
+      <button type="submit" class="submit icon-search"></button>
+</form>
+    </section>
+
+    
+
+    <section class="widget">
+        <h3 class="widget-title">分类</h3>
+<ul class="widget-list">
+    
+    <li><a href="http://example.org/categories/CS%E8%AF%BE%E7%A8%8B%E5%AD%A6%E4%B9%A0/">CS课程学习 (18)</a></li>
+    
+    <li><a href="http://example.org/categories/blog%E6%90%AD%E5%BB%BA/">blog搭建 (1)</a></li>
+    
+    <li><a href="http://example.org/categories/%E5%AD%A6%E6%9C%AF/">学术 (2)</a></li>
+    
+    <li><a href="http://example.org/categories/%E6%8A%80%E6%9C%AF/">技术 (7)</a></li>
+    
+    <li><a href="http://example.org/categories/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/">日常记录 (28)</a></li>
+    
+    <li><a href="http://example.org/categories/%E7%94%9F%E6%B4%BB/">生活 (1)</a></li>
+    
+</ul>
+    </section>
+
+    <section class="widget">
+        <h3 class="widget-title">标签</h3>
+<div class="tagcloud">
+    
+    <a href="http://example.org/tags/WebGL/">WebGL</a>
+    
+    <a href="http://example.org/tags/blog/">blog</a>
+    
+    <a href="http://example.org/tags/git/">git</a>
+    
+    <a href="http://example.org/tags/linux/">linux</a>
+    
+    <a href="http://example.org/tags/%E5%9B%BE%E5%BD%A2%E5%AD%A6/">图形学</a>
+    
+    <a href="http://example.org/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/">密码学</a>
+    
+    <a href="http://example.org/tags/%E6%8C%81%E7%BB%AD%E8%A1%A5%E5%85%85.../">持续补充...</a>
+    
+    <a href="http://example.org/tags/%E6%B5%8B%E8%AF%84/">测评</a>
+    
+    <a href="http://example.org/tags/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/">离散数学</a>
+    
+    <a href="http://example.org/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/">网络安全</a>
+    
+    <a href="http://example.org/tags/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/">论文阅读</a>
+    
+    <a href="http://example.org/tags/%E8%BF%90%E5%8A%A8%E4%BC%AA%E5%BD%B1%E6%B6%88%E9%99%A4/">运动伪影消除</a>
+    
+    <a href="http://example.org/tags/%E9%80%9F%E6%9F%A5/">速查</a>
+    
+    <a href="http://example.org/tags/%E9%85%B8%E5%A5%B6/">酸奶</a>
+    
+    <a href="http://example.org/tags/%E9%9B%B6%E9%A3%9F/">零食</a>
+    
+</div>
+    </section>
+
+    
+
+    <section class="widget">
+        <h3 class="widget-title">其它</h3>
+        <ul class="widget-list">
+            <li><a href="http://example.org/index.xml">文章 RSS</a></li>
+        </ul>
+    </section>
+</div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+    <div class="container">
+        &copy; 2020 <a href="http://example.org/">Hanmei@梅.</a>
+        Powered by <a rel="nofollow noreferer noopener" href="https://gohugo.io" target="_blank">Hugo</a>.
+        Theme based on <a href="https://github.com/flysnow-org/maupassant-hugo" target="_blank">maupassant</a>.
+        
+    </div>
+</footer>
+
+
+
+<script type="text/javascript">
+    window.MathJax = {
+        tex2jax: {
+            inlineMath: [['$', '$']],
+            processEscapes: true
+        }
+    };
+</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+
+
+<a id="rocket" href="#top"></a>
+<script type="text/javascript" src='/js/totop.js?v=0.0.0' async=""></script>
+
+
+
+<script type="text/javascript" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
+
+
+
+
+</body>
+
+</html>
