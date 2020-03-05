@@ -1,76 +1,49 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>如何制作一个hugo主题？ | Hanmei@梅</title>
-    <meta property="og:title" content="如何制作一个hugo主题？ - Hanmei@梅">
-    <meta property="og:type" content="article">
-    
-    <meta property="article:published_time" content='2020-02-20T20:17:43&#43;08:00'>
-    
-    
-    <meta property="article:modified_time" content='2020-02-20T20:17:43&#43;08:00'>
-    
-    <meta name="Keywords" content="">
-    <meta name="description" content="如何制作一个hugo主题？">
-    
-    <meta name="author" content="">
-    <meta property="og:url" content="https://hanmei.netlify.com/post/%E5%A6%82%E4%BD%95%E5%88%B6%E4%BD%9C%E4%B8%80%E4%B8%AAhugo%E4%B8%BB%E9%A2%98/">
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-
-    <link rel="stylesheet" href='/css/normalize.css'>
-    <link rel="stylesheet" href='/css/style.css'>
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-    
-
-
-    
-    
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>如何制作一个hugo主题？ | Hanmei@梅</title>
+<meta content="如何制作一个hugo主题？ - Hanmei@梅" property="og:title"/>
+<meta content="article" property="og:type"/>
+<meta content="2020-02-20T20:17:43+08:00" property="article:published_time"/>
+<meta content="2020-02-20T20:17:43+08:00" property="article:modified_time"/>
+<meta content="" name="Keywords"/>
+<meta content="如何制作一个hugo主题？" name="description"/>
+<meta content="" name="author"/>
+<meta content="https://hanmei.netlify.com/post/%E5%A6%82%E4%BD%95%E5%88%B6%E4%BD%9C%E4%B8%80%E4%B8%AAhugo%E4%B8%BB%E9%A2%98/" property="og:url"/>
+<link href="/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+<link href="/css/normalize.css" rel="stylesheet"/>
+<link href="/css/style.css" rel="stylesheet"/>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" type="text/javascript"></script>
 </head>
-
 <body>
-    <header id="header" class="clearfix">
-    <div class="container">
-        <div class="col-group">
-            <div class="site-name ">
-                <a id="logo" href="https://hanmei.netlify.com/">
+<header class="clearfix" id="header">
+<div class="container">
+<div class="col-group">
+<div class="site-name">
+<a href="https://hanmei.netlify.com/" id="logo">
                     Hanmei@梅
                 </a>
-                
-            </div>
-            <div>
-                <nav id="nav-menu" class="clearfix">
-                    
-                    <a  href="https://hanmei.netlify.com/"
-                        title="首页">首页</a>
-                    
-                    <a  href="https://hanmei.netlify.com/archives/"
-                        title="存档">存档</a>
-                    
-                    <a  href="https://hanmei.netlify.com/ideas/"
-                        title="碎碎念">碎碎念</a>
-                    
-                    <a  href="https://hanmei.netlify.com/about/"
-                        title="关于">关于</a>
-                    
-                </nav>
-            </div>
-        </div>
-    </div>
+</div>
+<div>
+<nav class="clearfix" id="nav-menu">
+<a href="https://hanmei.netlify.com/" title="首页">首页</a>
+<a href="https://hanmei.netlify.com/archives/" title="存档">存档</a>
+<a href="https://hanmei.netlify.com/ideas/" title="碎碎念">碎碎念</a>
+<a href="https://hanmei.netlify.com/about/" title="关于">关于</a>
+</nav>
+</div>
+</div>
+</div>
 </header>
-    <div id="body">
-        <div class="container">
-            <div class="col-group">
-
-                <div class="col-8" id="main">
-                    
+<div id="body">
+<div class="container">
+<div class="col-group">
+<div class="col-8" id="main">
 <div class="res-cons">
-    <style type="text/css">
+<style type="text/css">
     .post-toc {
         position: fixed;
         width: 200px;
@@ -132,9 +105,9 @@
     }
 </style>
 <div class="post-toc" style="position: absolute; top: 188px;">
-    <h2 class="post-toc-title">文章目录</h2>
-    <div class="post-toc-content">
-        <nav id="TableOfContents">
+<h2 class="post-toc-title">文章目录</h2>
+<div class="post-toc-content">
+<nav id="TableOfContents">
 <ul>
 <li><a href="#第一步-整体目录结构">第一步：整体目录结构</a></li>
 <li><a href="#第二步-了解模版">第二步：了解模版</a></li>
@@ -149,7 +122,7 @@
 <li><a href="#changelog">ChangeLog</a></li>
 </ul>
 </nav>
-    </div>
+</div>
 </div>
 <script type="text/javascript">
     $(document).ready(function () {
@@ -178,89 +151,64 @@
         }
     })
 </script>
-    <article class="post">
-        <header>
-            <h1 class="post-title">如何制作一个hugo主题？</h1>
-        </header>
-        <date class="post-meta meta-date">
+<article class="post">
+<header>
+<h1 class="post-title">如何制作一个hugo主题？</h1>
+</header>
+<date class="post-meta meta-date">
             2020年2月20日
         </date>
-        
-        <div class="post-meta">
-            <span>|</span>
-            
-            <span class="meta-category"><a href='https://hanmei.netlify.com/categories/blog%E6%90%AD%E5%BB%BA'>blog搭建</a></span>
-            
-        </div>
-        
-        
-        <div class="post-meta">
-            <span id="busuanzi_container_page_pv">|<span id="busuanzi_value_page_pv"></span><span>
+<div class="post-meta">
+<span>|</span>
+<span class="meta-category"><a href="https://hanmei.netlify.com/categories/blog%E6%90%AD%E5%BB%BA">blog搭建</a></span>
+</div>
+<div class="post-meta">
+<span id="busuanzi_container_page_pv">|<span id="busuanzi_value_page_pv"></span><span>
                     阅读</span></span>
-        </div>
-        
-        
-        <div class="clear" style="display: none">
-            <div class="toc-article">
-                <div class="toc-title">文章目录</div>
-            </div>
-        </div>
-        
-        <div class="post-content">
-            <p>爱折腾的我不满足于even这个主题，它太简单了，我也不是很心水它对md的排版。我希望我的主页能加上日历这个元素，想了想就设计成两栏吧，把文字放在偏左的位置，留下一小块放其它小组件。</p>
-
+</div>
+<div class="clear" style="display: none">
+<div class="toc-article">
+<div class="toc-title">文章目录</div>
+</div>
+</div>
+<div class="post-content">
+<p>爱折腾的我不满足于even这个主题，它太简单了，我也不是很心水它对md的排版。我希望我的主页能加上日历这个元素，想了想就设计成两栏吧，把文字放在偏左的位置，留下一小块放其它小组件。</p>
 <p>这时候 maupassant 这个主题进入了我的世界，嗯，很美。</p>
-
-<p><img src="https://raw.githubusercontent.com/NicoleMayer/github-images/master/images20200220195859.png" alt="" />
+<p><img alt="" src="https://raw.githubusercontent.com/NicoleMayer/github-images/master/images20200220195859.png"/>
  本来打算直接用的，但作为一个CS背景的人，却老是拿来主义有点羞愧，看看一个主题是怎么写的吧，顺便修改一些小细节。</p>
-
 <h1 id="第一步-整体目录结构">第一步：整体目录结构</h1>
-
-<p><img src="https://raw.githubusercontent.com/NicoleMayer/github-images/master/images20200220195947.png" alt="" /></p>
-
+<p><img alt="" src="https://raw.githubusercontent.com/NicoleMayer/github-images/master/images20200220195947.png"/></p>
 <p>来自 <a href="https://github.com/JokerQyou/maupassant-hugo">https://github.com/JokerQyou/maupassant-hugo</a></p>
-
 <ol>
 <li>[archetypes] 里就一个文件 <code>default.md</code>，是创建新 post 时会用到的模版文件。</li>
 <li>[layouts] 中里面包含了网页的元素结构 html 文件。</li>
 <li>[static] 存放静态文件，比如css、js、img等文件。</li>
 <li>theme.toml 是博客的全局配置文件。</li>
 </ol>
-
 <p>于是乎，要制做出满足自己需求的网页，我们只需要关注 layouts 和 static 两个文件夹</p>
-
 <h1 id="第二步-了解模版">第二步：了解模版</h1>
-
 <p>学习了一下官方的文档和视频 <a href="https://gohugo.io/templates/，知道了">https://gohugo.io/templates/，知道了</a> hugo 主要有三种类型的模版：single、list and partial。</p>
-
 <p>Single Template 用于渲染单个页面，可以理解为一篇文章；List Template 用于渲染包含多个项目的内容，可以理解为文章目录；Partial Template 可以被理解为组件。</p>
-
 <p><code>baseof.html</code> 是其它模版的基石，只有它比较完整的包含了 html、body 等 tag。它的 body 包含了以下代码：</p>
+<pre><code class="language-html">    {{ partial "header" . }}
+    &lt;div id="body"&gt;
+        &lt;div class="container"&gt;
+            &lt;div class="col-group"&gt;
 
-<pre><code class="language-html">    {{ partial &quot;header&quot; . }}
-    &lt;div id=&quot;body&quot;&gt;
-        &lt;div class=&quot;container&quot;&gt;
-            &lt;div class=&quot;col-group&quot;&gt;
-
-                &lt;div class=&quot;col-8&quot; id=&quot;main&quot;&gt;
-                    {{ block &quot;content&quot; . }}{{ end }}
+                &lt;div class="col-8" id="main"&gt;
+                    {{ block "content" . }}{{ end }}
                 &lt;/div&gt;
 
-                {{ partial &quot;sidebar&quot; . }}
+                {{ partial "sidebar" . }}
             &lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
-    {{ partial &quot;footer&quot; . }}
+    {{ partial "footer" . }}
 </code></pre>
-
-<p>由此可以看出每个页面都包含 header 和 footer 组件，id 为 body 的块包裹着 container，里面囊括了包含左右两栏（其中右边栏由 sidebar 组件渲染）的 col-group。No idea why it named it &ldquo;col-8&rdquo; only contains 4 items in my screen.</p>
-
+<p>由此可以看出每个页面都包含 header 和 footer 组件，id 为 body 的块包裹着 container，里面囊括了包含左右两栏（其中右边栏由 sidebar 组件渲染）的 col-group。No idea why it named it “col-8” only contains 4 items in my screen.</p>
 <p>成分清晰，我们先来剖析一下 <code>baseof.html</code> 包含的组件吧，它们都存在于 partials 文件夹中。</p>
-
-<hr />
-
-<p>首先 <code>header.html</code>，第一行 <code>class=&quot;clearfix&quot;</code>，去查了查原来这是为了<a href="https://segmentfault.com/a/1190000013664630">清除浮动</a>，以前添加一个clear属性的空标签的做法已经过时，目前的做法是：</p>
-
+<hr/>
+<p>首先 <code>header.html</code>，第一行 <code>class="clearfix"</code>，去查了查原来这是为了<a href="https://segmentfault.com/a/1190000013664630">清除浮动</a>，以前添加一个clear属性的空标签的做法已经过时，目前的做法是：</p>
 <pre><code class="language-css">.clearfix{
     zoom: 1;
 }
@@ -269,96 +217,58 @@
     clear: both;
 }
 </code></pre>
-
 <p>在 <code>style.css</code> 文件中，col-group类也采取了相同的做法，防止它包裹的两栏浮动出现问题。</p>
-
 <p>不知道为什么后面莫名其妙的要判断一下是否在主页，如果是用一个 <code>&lt;h1&gt;</code> 框住标题，实际也没什么效果。</p>
-
 <p>看到一个新语法：<code>with INPUT</code> 官方解释：Rebinds the context (.) within its scope and skips the block if the variable is absent. 看起来很好用，用户只需要在配置文件写一下该字段即可。</p>
-
 <p>又一个新语法：<code>range INPUT</code> 不过这次猜猜就知道什么意思了。</p>
-
 <p>{{ if eq .URL $.RelPermalink }} 判断当前 menu 中哪个 item 被选中。我觉得作者把首页单独拎出来有点奇怪，我打算把它们全部写入配置中。</p>
-
-<hr />
-
-<p>打开 <code>footer.html</code> 有点崩溃，这也太长了吧&hellip;原因就是加载了几个模块支持graphviz、flowchart、sequence、latex、小火箭和 busuanzi。插件什么的先扔在一边。</p>
-
-<p>页脚学习一下这种写法：<code>&amp;copy; {{ now.Format &quot;2006&quot; }}</code></p>
-
-<hr />
-
+<hr/>
+<p>打开 <code>footer.html</code> 有点崩溃，这也太长了吧…原因就是加载了几个模块支持graphviz、flowchart、sequence、latex、小火箭和 busuanzi。插件什么的先扔在一边。</p>
+<p>页脚学习一下这种写法：<code>&amp;copy; {{ now.Format "2006" }}</code></p>
+<hr/>
 <p>最后看看 <code>sidebar.html</code>，结构简单明了，在 id 为 secondary 的 <code>&lt;div&gt;</code> 标签下包裹着 search_form、recent_post、categories、tags 和其它小部件。</p>
-
 <p>所有的小部件都遵循这一格式：</p>
-
-<pre><code class="language-html">        &lt;h3 class=&quot;widget-title&quot;&gt;其它&lt;/h3&gt;
-        &lt;ul class=&quot;widget-list&quot;&gt;
-            &lt;li&gt;&lt;a href=&quot;{{ &quot;index.xml&quot; | absURL }}&quot;&gt;文章 RSS&lt;/a&gt;&lt;/li&gt;
+<pre><code class="language-html">        &lt;h3 class="widget-title"&gt;其它&lt;/h3&gt;
+        &lt;ul class="widget-list"&gt;
+            &lt;li&gt;&lt;a href="{{ "index.xml" | absURL }}"&gt;文章 RSS&lt;/a&gt;&lt;/li&gt;
         &lt;/ul&gt;
 </code></pre>
-
-<hr />
-
-<p>先来看看 <code>{{ partial &quot;links&quot; . }}</code> 是什么（它没有被 <code>&lt;section&gt;</code> 框住，不知道是不是因为有 with 条件限定，为了整齐起见？）原来是友情链接呀。如果有设置 <code>.Site.Params.links</code> 参数，则会在侧边栏显示。它包含至少3个子参数：url、title、name。</p>
-
-<hr />
-
+<hr/>
+<p>先来看看 <code>{{ partial "links" . }}</code> 是什么（它没有被 <code>&lt;section&gt;</code> 框住，不知道是不是因为有 with 条件限定，为了整齐起见？）原来是友情链接呀。如果有设置 <code>.Site.Params.links</code> 参数，则会在侧边栏显示。它包含至少3个子参数：url、title、name。</p>
+<hr/>
 <p>然后看看 search_form，它的 <code>&lt;form&gt;</code> 标签包含了很多参数，一个一个来解析。</p>
-
 <ol>
-<li>action=&lsquo;{{if .Site.Params.localSearch }}{{ &ldquo;search/&rdquo;| absURL}}{{else}}//www.google.com/search{{end}}&rsquo; 规定当提交表单时向何处发送表单数据。<a href="https://github.com/flysnow-org/maupassant-hugo">github</a> 作者有在 <code>README</code> 中讲解如何开启 Local Search 站内搜索，但我目前不是很理解这个选项，难道是直接在当前网页就能搜索？不用跳出到 google？其次对于没有开启站内搜索的情况，使用谷歌搜索，以 &ldquo;//&rdquo; 开头，有点摸不着头脑，不过 <a href="https://stackoverflow.com/questions/11881054/is-a-url-starting-with-valid">Stack Overflow</a> 给我解答了疑惑。It is a &ldquo;scheme relative&rdquo; or &ldquo;protocol relative&rdquo; URI.</li>
-<li>method=&ldquo;get&rdquo; 表单数据附加在URL之后，由客户端直接发送至服务器，所以速度上会比post快。<a href="https://www.w3school.com.cn/tags/att_form_method.asp">W3School</a> 有关于如何选择方法的建议。</li>
-<li>accept-charset=&ldquo;utf-8&rdquo; 规定服务器处理表单数据所接受的字符集。除了 Internet Explorer，accept-charset 属性得到几乎所有浏览器的支持。</li>
-<li>target=&rdquo;_blank&rdquo; 在新窗口中打开。</li>
-<li>_lpchecked=&ldquo;1&rdquo; 这个字段很奇怪诶，从来没看到过，去搜了搜发现是 LastPass browser extension 自动添加的，表示它已经 check 过这个表单是否用来 login。</li>
+<li>action=‘{{if .Site.Params.localSearch }}{{ “search/”| absURL}}{{else}}//www.google.com/search{{end}}’ 规定当提交表单时向何处发送表单数据。<a href="https://github.com/flysnow-org/maupassant-hugo">github</a> 作者有在 <code>README</code> 中讲解如何开启 Local Search 站内搜索，但我目前不是很理解这个选项，难道是直接在当前网页就能搜索？不用跳出到 google？其次对于没有开启站内搜索的情况，使用谷歌搜索，以 “//” 开头，有点摸不着头脑，不过 <a href="https://stackoverflow.com/questions/11881054/is-a-url-starting-with-valid">Stack Overflow</a> 给我解答了疑惑。It is a “scheme relative” or “protocol relative” URI.</li>
+<li>method=“get” 表单数据附加在URL之后，由客户端直接发送至服务器，所以速度上会比post快。<a href="https://www.w3school.com.cn/tags/att_form_method.asp">W3School</a> 有关于如何选择方法的建议。</li>
+<li>accept-charset=“utf-8” 规定服务器处理表单数据所接受的字符集。除了 Internet Explorer，accept-charset 属性得到几乎所有浏览器的支持。</li>
+<li>target=”_blank” 在新窗口中打开。</li>
+<li>_lpchecked=“1” 这个字段很奇怪诶，从来没看到过，去搜了搜发现是 LastPass browser extension 自动添加的，表示它已经 check 过这个表单是否用来 login。</li>
 </ol>
-
 <p><code>&lt;form&gt;</code> 内还包含了两个 <code>&lt;input&gt;</code> 标签，它们的名字遵循 google 搜索的 url 命名规则。</p>
-
-<hr />
-
-<p>接下来看看 recent_post，整体结构和其它小部件一样，重点是 <code>{{ range first 10 (where (where .Site.Pages &quot;Type&quot; &quot;in&quot; (slice &quot;post&quot; &quot;posts&quot;)) &quot;Kind&quot; &quot;page&quot;) }}</code> 这段代码。
+<hr/>
+<p>接下来看看 recent_post，整体结构和其它小部件一样，重点是 <code>{{ range first 10 (where (where .Site.Pages "Type" "in" (slice "post" "posts")) "Kind" "page") }}</code> 这段代码。
 <code>slice ITEM...</code> Creates a slice (array) of all passed arguments.
 <code>first LIMIT COLLECTION</code> Slices an array to only the first N elements.
 <code>where COLLECTION KEY [OPERATOR] MATCH</code> Filters an array to only the elements containing a matching value for a given field. 看<a href="https://gohugo.io/functions/where/">官方</a>的例子，后面匹配的条件用引号框住。</p>
-
 <p>目前我不需要展示这么多，就三个好了。</p>
-
-<hr />
-
+<hr/>
 <p>下面我们研究 categories，重点在于 <code>{{ range .Site.Taxonomies.categories }}</code>。Taxonomy 被 hugo 用于对 content 的分组，默认有 category 和 tag 两种分类方式，当然你也可以添加其它方式。通过官方文档，还了解到 Term 在分类中用于分类的关键词，Value 被用于指向特定关键词的 content 列表。</p>
-
-<p>The <code>.Site.Taxonomies</code> variable holds all the taxonomies defined site-wide. <code>.Site.Taxonomies</code> is a map of the taxonomy name to a list of its values (e.g., <code>&quot;tags&quot; -&gt; [&quot;tag1&quot;, &quot;tag2&quot;, &quot;tag3&quot;]</code>). Each value, though, is not a string but rather a <em>Taxonomy variable</em>.</p>
-
+<p>The <code>.Site.Taxonomies</code> variable holds all the taxonomies defined site-wide. <code>.Site.Taxonomies</code> is a map of the taxonomy name to a list of its values (e.g., <code>"tags" -&gt; ["tag1", "tag2", "tag3"]</code>). Each value, though, is not a string but rather a <em>Taxonomy variable</em>.</p>
 <p>但是我不能理解为什么列出每个分类后，可以直接使用 {{ .Page.Permalink }} 和 {{ .Page.Title }}？我在<a href="https://gohugo.io/templates/taxonomy-templates/#order-taxonomies">这个说明</a>里找到了蛛丝马迹。我目前的理解是：对于 category 和 tag 这两种默认的分组，hugo 会帮忙创建一个 页面 指向分组的 list，或者对于 list 中单个 keyword 创建页面。页面的 title 即为分组名。
 根据<a href="https://gohugo.io/templates/taxonomy-templates/#order-alphabetically-example">这里</a>的例子，<code>.Data.Terms.Alphabetical</code> 和 <code>.Site.Taxonomies.categories</code> 返回的应该是同一种类型。但我做了替换之后，就显示不出来内容了，不知道是什么情况。这个地方能查到的资料不多，暂且搁置。🤔️</p>
-
-<hr />
-
+<hr/>
 <p>有了对 categories 的研究，tags.html 应该能猜到怎么写的吧。唯一的区别在于分类是一列一列排布，而标签是一行一行排布，所以少了 <code>&lt;li&gt;</code> 标签。</p>
-
 <h1 id="第三步-大刀阔斧的修改css">第三步：大刀阔斧的修改css</h1>
-
 <p>对网页结构有了大概的了解之后，就开始修改样式的细节。主要就是各种 padding 的调整。
 遇到标签栏标签写不下换行的问题，觉得很不好看：</p>
-
-<p><img src="https://raw.githubusercontent.com/NicoleMayer/github-images/master/images20200220200629.png" alt="" /></p>
-
+<p><img alt="" src="https://raw.githubusercontent.com/NicoleMayer/github-images/master/images20200220200629.png"/></p>
 <p>在对应的 class 中加入 <code>white-space: nowrap;</code> 就好了。</p>
-
 <p>经过一番改动，基本上主页已经是想象中的样子了。</p>
-
-<p><img src="https://raw.githubusercontent.com/NicoleMayer/github-images/master/images20200220200716.png" alt="" /></p>
-
+<p><img alt="" src="https://raw.githubusercontent.com/NicoleMayer/github-images/master/images20200220200716.png"/></p>
 <p>我发现这样的排版不太适合 markdown 数字序列，左边会空太多，之后调整 markdown 渲染样式的时候来解决。总体来说，还是很喜欢这个主题对 md 的渲染状况的，比 even 主题好看很多～</p>
-
 <p>整体的效果虽然改完了，但是还有些小细节想要完善，这需要再回过头研究模版代码。</p>
-
 <h1 id="第四步-再次研究模版">第四步：再次研究模版</h1>
-
 <p>之前木有研究 _default 文件夹中的 <code>section.html</code>，去查官方文档，看到下面这个表，一清二楚。</p>
-
 <table>
 <thead>
 <tr>
@@ -367,32 +277,27 @@
 <th>Example</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>home</code></td>
 <td>The home page</td>
 <td><code>/index.html</code></td>
 </tr>
-
 <tr>
 <td><code>page</code></td>
 <td>A page showing a <em>regular page</em></td>
 <td><code>my-post</code> page (<code>/posts/my-post/index.html</code>)</td>
 </tr>
-
 <tr>
 <td><code>section</code></td>
 <td>A page listing <em>regular pages</em> from a given <a href="https://gohugo.io/content-management/sections/"><em>section</em></a></td>
 <td><code>posts</code> section (<code>/posts/index.html</code>)</td>
 </tr>
-
 <tr>
 <td><code>taxonomy</code></td>
 <td>A page listing <em>regular pages</em> from a given <em>taxonomy term</em></td>
 <td>page for the term <code>awesome</code>from <code>tags</code> taxonomy (<code>/tags/awesome/index.html</code>)</td>
 </tr>
-
 <tr>
 <td><code>taxonomyTerm</code></td>
 <td>A page listing terms from a given <em>taxonomy</em></td>
@@ -400,56 +305,35 @@
 </tr>
 </tbody>
 </table>
-
 <p>第二行 <code>{{- $paginator := .Paginate .Data.Pages.ByDate.Reverse 10 }}</code> 看得有点懵逼。查了查 <code>:=</code> 在 go 语言里表示声明并赋值，估计 <code>$paginator</code> 是取的一个变量名？[是的，根据<a href="https://gohugo.io/templates/introduction/">文档</a>，<code>$</code> 代表用户自定义变量]</p>
-
 <p>最让人疑惑的是 <code>{{</code> 后面的 <code>-</code> 符号，百思不得其解。[Go 1.6 includes the ability to trim the whitespace from either side of a Go tag by including a hyphen (-) and space immediately beside the corresponding {{ or }} delimiter.]</p>
-
 <p>根据<a href="https://gohugo.io/templates/pagination">官方文档</a>：</p>
-
 <blockquote>
 <p>There are two ways to configure and use a <code>.Paginator</code>:</p>
-
 <ol>
 <li>The simplest way is just to call <code>.Paginator.Pages</code> from a template. It will contain the pages for <em>that page</em>.</li>
 <li>Select a subset of the pages with the available template functions and ordering options, and pass the slice to <code>.Paginate</code>, e.g. <code>{{ range (.Paginate ( first 50 .Pages.ByTitle )).Pages }}</code>.</li>
 </ol>
-
 <p>The global page size setting (<code>Paginate</code>) can be overridden by providing a positive integer as the last argument. The examples below will give five items per page:</p>
-
 <ul>
 <li><code>{{ range (.Paginator 5).Pages }}</code></li>
-<li><code>{{ $paginator := .Paginate (where .Pages &quot;Type&quot; &quot;posts&quot;) 5 }}</code></li>
+<li><code>{{ $paginator := .Paginate (where .Pages "Type" "posts") 5 }}</code></li>
 </ul>
 </blockquote>
-
 <p>absLangURL: Adds the absolute URL with correct language prefix according to site configuration for multilingual.</p>
-
 <p>urlize: Takes a string, sanitizes it for usage in URLs, and converts spaces to hyphens.</p>
-
-<p>最后 <code>{{ partial &quot;paginator&quot; . }}</code> 是页面1、2、3&hellip;跳转的组件。</p>
-
-<hr />
-
+<p>最后 <code>{{ partial "paginator" . }}</code> 是页面1、2、3…跳转的组件。</p>
+<hr/>
 <p>研读了 <code>paginator.html</code> 的代码，还是很好理解的，case 比较多，目前我的文章没到10页那么多，也就全部页面展示了。</p>
-
-<hr />
-
+<hr/>
 <p><code>related.html</code> 比较简单，根据<a href="https://gohugo.io/content-management/related/">官方文档</a>，Hugo uses a set of factors to identify a page’s related content based on Front Matter parameters. 直接拿来主义就好。</p>
-
 <h1 id="第五步-制作日历">第五步：制作日历</h1>
-
 <p>对于日历，我采用了 github 上 <a href="https://github.com/GramThanos/jsCalendar">jsCalendar</a> 的实现，并对 css 效果进行了微调。最后的效果看起来还不错</p>
-
-<p><img src="https://raw.githubusercontent.com/NicoleMayer/github-images/master/images20200220201103.png" alt="" /></p>
-
+<p><img alt="" src="https://raw.githubusercontent.com/NicoleMayer/github-images/master/images20200220201103.png"/></p>
 <p>不过 js 加载会有点慢，要是以后有想法再改改。其次我希望日历现实的那天如果有文章，点击那一天会列出当前书写的全部文章。
  加入日历后发现只有主页才有会显示，其它页面无法显示。捣鼓了半天发现如果我采用和 `` 一样的写法就能正常显示，估计应该就是相对路径的问题。</p>
-
 <h1 id="variables">Variables</h1>
-
 <h2 id="用到什么记录什么">用到什么记录什么</h2>
-
 <table>
 <thead>
 <tr>
@@ -457,222 +341,140 @@
 <th>true in the context of the homepage.</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td>.Site.Title</td>
 <td>a string representing the title of the site.</td>
 </tr>
-
 <tr>
 <td>.Title</td>
 <td>the title for this page.</td>
 </tr>
-
 <tr>
 <td>.Site.Params</td>
 <td>a container holding the values from the params section of your site configuration</td>
 </tr>
-
 <tr>
 <td>.Site.BaseURL</td>
 <td>the base URL for the site as defined in the site configuration.</td>
 </tr>
-
 <tr>
 <td>.Site.Menus</td>
 <td>all of the menus in the site.</td>
 </tr>
-
 <tr>
 <td>.URL</td>
 <td>string URL that the menu entry points to. The url key, if set for the menu entry, sets this value. If that key is not set, and if the menu entry is set in a page front-matter, this value defaults to the page’s .RelPermalink.</td>
 </tr>
-
 <tr>
 <td>.Type</td>
 <td>the content type of the content (e.g., posts).Hugo resolves the content type from either the type in front matter or, if not set, the first directory in the file path. 一般为文件夹名字</td>
 </tr>
-
 <tr>
 <td>.RelPermalink</td>
 <td>The Relative permanent link for this page.</td>
 </tr>
-
 <tr>
 <td>absURL</td>
 <td>Creates an absolute URL based on the configured baseURL. <a href="https://gohugo.io/functions/absurl/">https://gohugo.io/functions/absurl/</a></td>
 </tr>
-
 <tr>
 <td>.Kind</td>
 <td>the page’s kind. Possible return values are page, home, section, taxonomy, or taxonomyTerm. Note that there are also RSS, sitemap, robotsTXT, and 404 kinds, but these are only available during the rendering of each of these respective page’s kind and therefore not available in any of the Pages collections.</td>
 </tr>
 </tbody>
 </table>
-
 <h2 id="总结">总结</h2>
-
 <p>Hugo 有好几种类型的变量，比如 Site变量 定义在站点配置文件中，包含：</p>
-
 <ol>
 <li>.Site.Menus:站点下的所有菜单</li>
 <li>.Site.Pages:站点下的所有页面</li>
 <li>.Site.Params: 站点下的参数</li>
 </ol>
-
 <p>比如 Page变量 定义在页面头部的front matter中，我觉得 .Params.XXX 的都是？</p>
-
-<hr />
-
+<hr/>
 <h1 id="changelog">ChangeLog</h1>
-
 <p>2020-02-20 对 layout 中的大部分结构都有了了解，加入了日历</p>
-        </div>
-
-        
-
-
-        
-
+</div>
 <div class="post-archive">
-    <h2>See Also</h2>
-    <ul class="listing">
-        
-        <li><a href="/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-%E6%80%BB%E7%BB%93/">课程 图形学 总结</a></li>
-        
-        <li><a href="/post/linux%E5%91%BD%E4%BB%A4-%E6%96%87%E4%BB%B6%E5%8F%8A%E6%96%87%E4%BB%B6%E5%A4%B9/">linux命令 文件及文件夹</a></li>
-        
-        <li><a href="/post/git%E5%91%BD%E4%BB%A4%E6%B8%85%E5%8D%95/">git命令清单</a></li>
-        
-    </ul>
-</div>
-
-
-        <div class="post-meta meta-tags">
-            
-            <ul class="clearfix">
-                
-                <li><a href='https://hanmei.netlify.com/tags/blog'>“blog”</a></li>
-                
-                <li><a href='https://hanmei.netlify.com/tags/%E6%8C%81%E7%BB%AD%E8%A1%A5%E5%85%85...'>持续补充...</a></li>
-                
-            </ul>
-            
-        </div>
-    </article>
-    
-    
-
-    
-    
-</div>
-
-                </div>
-
-                <div id="secondary">
-    <section class="widget">
-        <form id="search" action='https://hanmei.netlify.com/search/'
-      method="get" accept-charset="utf-8" target="_blank" _lpchecked="1">
-      
-      <input type="text" name="q" maxlength="20" placeholder="Search">
-      <input type="hidden" name="sitesearch" value="https://hanmei.netlify.com/">
-      <button type="submit" class="submit icon-search"></button>
-</form>
-    </section>
-
-    
-
-    <section class="widget">
-        <div id="calendar" class="auto-jsCalendar"></div>
-    </section>
-
-    <section class="widget">
-        <h3 class="widget-title">分类</h3>
-<ul class="widget-list">
-    
-    <li><a href="https://hanmei.netlify.com/categories/">Categories (1)</a></li>
-    
-    <li><a href="https://hanmei.netlify.com/categories/CS%E8%AF%BE%E7%A8%8B%E5%AD%A6%E4%B9%A0/">CS课程学习 (19)</a></li>
-    
-    <li><a href="https://hanmei.netlify.com/categories/blog%E6%90%AD%E5%BB%BA/">blog搭建 (2)</a></li>
-    
-    <li><a href="https://hanmei.netlify.com/categories/%E5%AD%A6%E6%9C%AF/">学术 (2)</a></li>
-    
-    <li><a href="https://hanmei.netlify.com/categories/%E6%8A%80%E6%9C%AF/">技术 (7)</a></li>
-    
-    <li><a href="https://hanmei.netlify.com/categories/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/">日常记录 (29)</a></li>
-    
-    <li><a href="https://hanmei.netlify.com/categories/%E7%94%9F%E6%B4%BB/">生活 (1)</a></li>
-    
+<h2>See Also</h2>
+<ul class="listing">
+<li><a href="/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-%E6%80%BB%E7%BB%93/">课程 图形学 总结</a></li>
+<li><a href="/post/linux%E5%91%BD%E4%BB%A4-%E6%96%87%E4%BB%B6%E5%8F%8A%E6%96%87%E4%BB%B6%E5%A4%B9/">linux命令 文件及文件夹</a></li>
+<li><a href="/post/git%E5%91%BD%E4%BB%A4%E6%B8%85%E5%8D%95/">git命令清单</a></li>
 </ul>
-    </section>
-
-    <section class="widget">
-        <h3 class="widget-title">标签</h3>
+</div>
+<div class="post-meta meta-tags">
+<ul class="clearfix">
+<li><a href="https://hanmei.netlify.com/tags/blog">“blog”</a></li>
+<li><a href="https://hanmei.netlify.com/tags/%E6%8C%81%E7%BB%AD%E8%A1%A5%E5%85%85...">持续补充...</a></li>
+</ul>
+</div>
+</article>
+</div>
+</div>
+<div id="secondary">
+<section class="widget">
+<form _lpchecked="1" accept-charset="utf-8" action="https://hanmei.netlify.com/search/" id="search" method="get" target="_blank">
+<input maxlength="20" name="q" placeholder="Search" type="text"/>
+<input name="sitesearch" type="hidden" value="https://hanmei.netlify.com/"/>
+<button class="submit icon-search" type="submit"></button>
+</form>
+</section>
+<section class="widget">
+<div class="auto-jsCalendar" id="calendar"></div>
+</section>
+<section class="widget">
+<h3 class="widget-title">分类</h3>
+<ul class="widget-list">
+<li><a href="https://hanmei.netlify.com/categories/CS%E8%AF%BE%E7%A8%8B%E5%AD%A6%E4%B9%A0/">CS课程学习 (20)</a></li>
+<li><a href="https://hanmei.netlify.com/categories/blog%E6%90%AD%E5%BB%BA/">blog搭建 (2)</a></li>
+<li><a href="https://hanmei.netlify.com/categories/%E5%AD%A6%E6%9C%AF/">学术 (2)</a></li>
+<li><a href="https://hanmei.netlify.com/categories/%E6%8A%80%E6%9C%AF/">技术 (7)</a></li>
+<li><a href="https://hanmei.netlify.com/categories/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/">日常记录 (29)</a></li>
+<li><a href="https://hanmei.netlify.com/categories/%E7%94%9F%E6%B4%BB/">生活 (1)</a></li>
+</ul>
+</section>
+<section class="widget">
+<h3 class="widget-title">标签</h3>
 <div class="tagcloud">
-    
-    <a href="https://hanmei.netlify.com/tags/">Tags</a>
-    
-    <a href="https://hanmei.netlify.com/tags/WebGL/">WebGL</a>
-    
-    <a href="https://hanmei.netlify.com/tags/blog/">blog</a>
-    
-    <a href="https://hanmei.netlify.com/tags/bug%E8%AE%B0%E5%BD%95/">bug记录</a>
-    
-    <a href="https://hanmei.netlify.com/tags/git/">git</a>
-    
-    <a href="https://hanmei.netlify.com/tags/linux/">linux</a>
-    
-    <a href="https://hanmei.netlify.com/tags/%E5%9B%BE%E5%BD%A2%E5%AD%A6/">图形学</a>
-    
-    <a href="https://hanmei.netlify.com/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/">密码学</a>
-    
-    <a href="https://hanmei.netlify.com/tags/%E6%8C%81%E7%BB%AD%E8%A1%A5%E5%85%85.../">持续补充...</a>
-    
-    <a href="https://hanmei.netlify.com/tags/%E6%B5%8B%E8%AF%84/">测评</a>
-    
-    <a href="https://hanmei.netlify.com/tags/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/">离散数学</a>
-    
-    <a href="https://hanmei.netlify.com/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/">网络安全</a>
-    
-    <a href="https://hanmei.netlify.com/tags/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/">论文阅读</a>
-    
-    <a href="https://hanmei.netlify.com/tags/%E8%BF%90%E5%8A%A8%E4%BC%AA%E5%BD%B1%E6%B6%88%E9%99%A4/">运动伪影消除</a>
-    
-    <a href="https://hanmei.netlify.com/tags/%E9%80%9F%E6%9F%A5/">速查</a>
-    
-    <a href="https://hanmei.netlify.com/tags/%E9%85%B8%E5%A5%B6/">酸奶</a>
-    
-    <a href="https://hanmei.netlify.com/tags/%E9%9B%B6%E9%A3%9F/">零食</a>
-    
+<a href="https://hanmei.netlify.com/tags/WebGL/">WebGL</a>
+<a href="https://hanmei.netlify.com/tags/blog/">blog</a>
+<a href="https://hanmei.netlify.com/tags/bug%E8%AE%B0%E5%BD%95/">bug记录</a>
+<a href="https://hanmei.netlify.com/tags/git/">git</a>
+<a href="https://hanmei.netlify.com/tags/linux/">linux</a>
+<a href="https://hanmei.netlify.com/tags/%E5%9B%BE%E5%BD%A2%E5%AD%A6/">图形学</a>
+<a href="https://hanmei.netlify.com/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/">密码学</a>
+<a href="https://hanmei.netlify.com/tags/%E6%8C%81%E7%BB%AD%E8%A1%A5%E5%85%85.../">持续补充...</a>
+<a href="https://hanmei.netlify.com/tags/%E6%B5%8B%E8%AF%84/">测评</a>
+<a href="https://hanmei.netlify.com/tags/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/">离散数学</a>
+<a href="https://hanmei.netlify.com/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/">网络安全</a>
+<a href="https://hanmei.netlify.com/tags/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/">论文阅读</a>
+<a href="https://hanmei.netlify.com/tags/%E8%BF%90%E5%8A%A8%E4%BC%AA%E5%BD%B1%E6%B6%88%E9%99%A4/">运动伪影消除</a>
+<a href="https://hanmei.netlify.com/tags/%E9%80%9F%E6%9F%A5/">速查</a>
+<a href="https://hanmei.netlify.com/tags/%E9%85%B8%E5%A5%B6/">酸奶</a>
+<a href="https://hanmei.netlify.com/tags/%E9%9B%B6%E9%A3%9F/">零食</a>
 </div>
-    </section>
-
-    
-
-    <section class="widget">
-        <h3 class="widget-title">其它</h3>
-        <ul class="widget-list">
-            <li><a href="https://hanmei.netlify.com/index.xml">文章 RSS</a></li>
-        </ul>
-    </section>
+</section>
+<section class="widget">
+<h3 class="widget-title">其它</h3>
+<ul class="widget-list">
+<li><a href="https://hanmei.netlify.com/index.xml">文章 RSS</a></li>
+</ul>
+</section>
 </div>
-<script type="text/javascript" src='/js/jsCalendar.js?v=0.0.0'></script>
-            </div>
-        </div>
-    </div>
-    <footer id="footer">
-    <div class="container">
-        &copy; 2020 <a href="https://hanmei.netlify.com/">Hanmei@梅.</a>
-        Powered by <a rel="nofollow noreferer noopener" href="https://gohugo.io" target="_blank">Hugo</a>.
+<script src="/js/jsCalendar.js?v=0.0.0" type="text/javascript"></script>
+</div>
+</div>
+</div>
+<footer id="footer">
+<div class="container">
+        © 2020 <a href="https://hanmei.netlify.com/">Hanmei@梅.</a>
+        Powered by <a href="https://gohugo.io" rel="nofollow noreferer noopener" target="_blank">Hugo</a>.
         Theme based on <a href="https://github.com/flysnow-org/maupassant-hugo" target="_blank">maupassant</a>.
         
     </div>
 </footer>
-
-
-
 <script type="text/javascript">
     window.MathJax = {
         tex2jax: {
@@ -681,19 +483,9 @@
         }
     };
 </script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
-
-
-<a id="rocket" href="#top"></a>
-<script type="text/javascript" src='/js/totop.js?v=0.0.0' async=""></script>
-
-
-
-<script type="text/javascript" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
-
-
-
-
+<script async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<a href="#top" id="rocket"></a>
+<script async="" src="/js/totop.js?v=0.0.0" type="text/javascript"></script>
+<script async="" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" type="text/javascript"></script>
 </body>
-
 </html>

@@ -1,76 +1,49 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>课程 网络安全 Anonymity | Hanmei@梅</title>
-    <meta property="og:title" content="课程 网络安全 Anonymity - Hanmei@梅">
-    <meta property="og:type" content="article">
-    
-    <meta property="article:published_time" content='2019-11-21T08:29:57&#43;08:00'>
-    
-    
-    <meta property="article:modified_time" content='2019-11-21T08:29:57&#43;08:00'>
-    
-    <meta name="Keywords" content="">
-    <meta name="description" content="课程 网络安全 Anonymity">
-    
-    <meta name="author" content="">
-    <meta property="og:url" content="https://hanmei.netlify.com/post/%E8%AF%BE%E7%A8%8B-%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-mix-network/">
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-
-    <link rel="stylesheet" href='/css/normalize.css'>
-    <link rel="stylesheet" href='/css/style.css'>
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-    
-
-
-    
-    
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>课程 网络安全 Anonymity | Hanmei@梅</title>
+<meta content="课程 网络安全 Anonymity - Hanmei@梅" property="og:title"/>
+<meta content="article" property="og:type"/>
+<meta content="2019-11-21T08:29:57+08:00" property="article:published_time"/>
+<meta content="2019-11-21T08:29:57+08:00" property="article:modified_time"/>
+<meta content="" name="Keywords"/>
+<meta content="课程 网络安全 Anonymity" name="description"/>
+<meta content="" name="author"/>
+<meta content="https://hanmei.netlify.com/post/%E8%AF%BE%E7%A8%8B-%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-mix-network/" property="og:url"/>
+<link href="/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+<link href="/css/normalize.css" rel="stylesheet"/>
+<link href="/css/style.css" rel="stylesheet"/>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" type="text/javascript"></script>
 </head>
-
 <body>
-    <header id="header" class="clearfix">
-    <div class="container">
-        <div class="col-group">
-            <div class="site-name ">
-                <a id="logo" href="https://hanmei.netlify.com/">
+<header class="clearfix" id="header">
+<div class="container">
+<div class="col-group">
+<div class="site-name">
+<a href="https://hanmei.netlify.com/" id="logo">
                     Hanmei@梅
                 </a>
-                
-            </div>
-            <div>
-                <nav id="nav-menu" class="clearfix">
-                    
-                    <a  href="https://hanmei.netlify.com/"
-                        title="首页">首页</a>
-                    
-                    <a  href="https://hanmei.netlify.com/archives/"
-                        title="存档">存档</a>
-                    
-                    <a  href="https://hanmei.netlify.com/ideas/"
-                        title="碎碎念">碎碎念</a>
-                    
-                    <a  href="https://hanmei.netlify.com/about/"
-                        title="关于">关于</a>
-                    
-                </nav>
-            </div>
-        </div>
-    </div>
+</div>
+<div>
+<nav class="clearfix" id="nav-menu">
+<a href="https://hanmei.netlify.com/" title="首页">首页</a>
+<a href="https://hanmei.netlify.com/archives/" title="存档">存档</a>
+<a href="https://hanmei.netlify.com/ideas/" title="碎碎念">碎碎念</a>
+<a href="https://hanmei.netlify.com/about/" title="关于">关于</a>
+</nav>
+</div>
+</div>
+</div>
 </header>
-    <div id="body">
-        <div class="container">
-            <div class="col-group">
-
-                <div class="col-8" id="main">
-                    
+<div id="body">
+<div class="container">
+<div class="col-group">
+<div class="col-8" id="main">
 <div class="res-cons">
-    <style type="text/css">
+<style type="text/css">
     .post-toc {
         position: fixed;
         width: 200px;
@@ -132,9 +105,9 @@
     }
 </style>
 <div class="post-toc" style="position: absolute; top: 188px;">
-    <h2 class="post-toc-title">文章目录</h2>
-    <div class="post-toc-content">
-        <nav id="TableOfContents">
+<h2 class="post-toc-title">文章目录</h2>
+<div class="post-toc-content">
+<nav id="TableOfContents">
 <ul>
 <li><a href="#一些概念">一些概念</a></li>
 <li><a href="#chaum-s-mix">Chaum’s Mix</a>
@@ -155,7 +128,7 @@
 <li><a href="#dining-cryptographers">Dining Cryptographers</a></li>
 </ul>
 </nav>
-    </div>
+</div>
 </div>
 <script type="text/javascript">
     $(document).ready(function () {
@@ -184,69 +157,44 @@
         }
     })
 </script>
-    <article class="post">
-        <header>
-            <h1 class="post-title">课程 网络安全 Anonymity</h1>
-        </header>
-        <date class="post-meta meta-date">
+<article class="post">
+<header>
+<h1 class="post-title">课程 网络安全 Anonymity</h1>
+</header>
+<date class="post-meta meta-date">
             2019年11月21日
         </date>
-        
-        <div class="post-meta">
-            <span>|</span>
-            
-            <span class="meta-category"><a href='https://hanmei.netlify.com/categories/CS%E8%AF%BE%E7%A8%8B%E5%AD%A6%E4%B9%A0'>CS课程学习</a></span>
-            
-        </div>
-        
-        
-        <div class="post-meta">
-            <span id="busuanzi_container_page_pv">|<span id="busuanzi_value_page_pv"></span><span>
+<div class="post-meta">
+<span>|</span>
+<span class="meta-category"><a href="https://hanmei.netlify.com/categories/CS%E8%AF%BE%E7%A8%8B%E5%AD%A6%E4%B9%A0">CS课程学习</a></span>
+</div>
+<div class="post-meta">
+<span id="busuanzi_container_page_pv">|<span id="busuanzi_value_page_pv"></span><span>
                     阅读</span></span>
-        </div>
-        
-        
-        <div class="clear" style="display: none">
-            <div class="toc-article">
-                <div class="toc-title">文章目录</div>
-            </div>
-        </div>
-        
-        <div class="post-content">
-            <p>摘录于课件，之后继续补充吧.. 12.9已重新整理</p>
-
+</div>
+<div class="clear" style="display: none">
+<div class="toc-article">
+<div class="toc-title">文章目录</div>
+</div>
+</div>
+<div class="post-content">
+<p>摘录于课件，之后继续补充吧.. 12.9已重新整理</p>
 <h1 id="一些概念">一些概念</h1>
-
 <p>首先区分几个术语：</p>
-
 <p>Privacy（隐私）： Right to be left alone 保护个人内容不被公开</p>
-
 <p>Confidentiality（保密）：保护内容只给特定的人（知道密钥）看</p>
-
 <p>Anonymity（匿名）：内容公开，但是发的人是谁没人知道</p>
-
 <h1 id="chaum-s-mix">Chaum’s Mix</h1>
-
-<p>一种路由协议，提供一个称为 &ldquo;mix&rdquo; 的代理服务器链来创建无法被追踪的通信，这些代理服务器接收来自很多个senders的消息，并对他们shuffle处理之后，以随机顺序发送给下一个目的地（可能是另一个混​​合节点）。<span style="color:red">这里断开了source和destination之间的连接，使得窃听者难以追踪 end-to-end communications</span></p>
-
+<p>一种路由协议，提供一个称为 “mix” 的代理服务器链来创建无法被追踪的通信，这些代理服务器接收来自很多个senders的消息，并对他们shuffle处理之后，以随机顺序发送给下一个目的地（可能是另一个混​​合节点）。<span style="color:red">这里断开了source和destination之间的连接，使得窃听者难以追踪 end-to-end communications</span></p>
 <p>混合网络的概念由David Chaum于1981 年首次描述，基于该概念的应用程序包括匿名 anonymous remailers（邮件转发器，例如Mixmaster），onion routing（洋葱路由），garlic routing（大蒜路由）和 key-based routing（基于密钥的路由，包括Tor，I2P，和Freenet）。</p>
-
 <p>—— 翻译自维基百科</p>
-
 <h2 id="原理">原理</h2>
-
 <p><strong>Basic MIX Design</strong></p>
-
-<p><img src="http://q5f66uxyd.bkt.clouddn.com/20191121085334.png" alt="" /></p>
-
+<p><img alt="" src="http://q5f66uxyd.bkt.clouddn.com/20191121085334.png"/></p>
 <p>从图中我们可以看出消息的格式，为什么要加入随机值呢？起到盐的作用，阻止攻击者猜测消息。（攻击者猜到消息的内容，得到公钥加密的结果，可以与发送的消息做对比）</p>
-
 <p><strong>Anonymous Return Addresses</strong></p>
-
-<p><img src="http://q5f66uxyd.bkt.clouddn.com/20191121090145.png" alt="" /></p>
-
+<p><img alt="" src="http://q5f66uxyd.bkt.clouddn.com/20191121090145.png"/></p>
 <p><strong>Mix Cascade</strong></p>
-
 <ul>
 <li>Messages are sent through a sequence of mixes
 
@@ -260,258 +208,146 @@
 <li>计算量大、高时延</li>
 </ul></li>
 </ul>
-
 <h1 id="randomized-routing">Randomized Routing</h1>
-
 <p>新思考：</p>
-
-<p><img src="http://q5f66uxyd.bkt.clouddn.com/20191121090815.png" alt="" /></p>
-
+<p><img alt="" src="http://q5f66uxyd.bkt.clouddn.com/20191121090815.png"/></p>
 <p>通过 routing messages randomly 来隐藏发送端</p>
-
 <p>常用的技术：Crowds, Freenet, Onion routing</p>
-
 <p>路由器不知道当前消息显示的来源是否为真sender或是其它路由器</p>
-
 <p>小知识：“Incognito mode” in modern browsers are not anonymous 浏览器的隐私模式并没有匿名，它只是在关闭浏览器时清除历史记录。</p>
-
 <h2 id="onion-routing-early-tor">Onion Routing (early Tor)</h2>
-
 <p>[Reed, Syverson, Goldschlag  1997]</p>
-
-<p><img src="http://q5f66uxyd.bkt.clouddn.com/20191121090939.png" alt="" /></p>
-
+<p><img alt="" src="http://q5f66uxyd.bkt.clouddn.com/20191121090939.png"/></p>
 <p>Sender 选择一系列随机的 routers，其中有些是诚实的，而有些则不是；此外 sender 还控制 path length</p>
-
 <h2 id="route-establishment-early-tor">Route Establishment (Early Tor)</h2>
-
-<p><img src="http://q5f66uxyd.bkt.clouddn.com/20191121091253.png" alt="" /></p>
-
-<p><img src="http://q5f66uxyd.bkt.clouddn.com/20191209220527.png" alt="" /></p>
-
-<p><img src="http://q5f66uxyd.bkt.clouddn.com/20191209220546.png" alt="" /></p>
-
-<p><img src="http://q5f66uxyd.bkt.clouddn.com/20191209220608.png" alt="" /></p>
-
-<p><img src="http://q5f66uxyd.bkt.clouddn.com/20191209220621.png" alt="" /></p>
-
+<p><img alt="" src="http://q5f66uxyd.bkt.clouddn.com/20191121091253.png"/></p>
+<p><img alt="" src="http://q5f66uxyd.bkt.clouddn.com/20191209220527.png"/></p>
+<p><img alt="" src="http://q5f66uxyd.bkt.clouddn.com/20191209220546.png"/></p>
+<p><img alt="" src="http://q5f66uxyd.bkt.clouddn.com/20191209220608.png"/></p>
+<p><img alt="" src="http://q5f66uxyd.bkt.clouddn.com/20191209220621.png"/></p>
 <p>Routing info for each link encrypted with router’s public key</p>
-
 <p>Each router learns only the identity of the next router</p>
-
 <h2 id="the-onion-router-current-tor">The Onion Router (current Tor)</h2>
-
 <p>第二代 onion routing network <a href="http://tor.eff.org">网址</a> 从 2003 年 10 月开始运营</p>
-
 <p>为低延时匿名互联网通信(e.g.,Web browsing)特别设计</p>
-
 <p>“Easy-to-use” client proxy</p>
-
 <ul>
 <li>Freely available, can use it for anonymous browsing</li>
 <li>Available for smartphones and tablets too</li>
 <li>TorBrowser – get it!!!</li>
 </ul>
-
 <h3 id="tor-circuit-setup">Tor Circuit Setup</h3>
-
 <p>1/ Client proxy establishes a symmetric session key and circuit with Onion Router #1</p>
-
 <p>2/ Client proxy extends the circuit by establishing a symmetric session key with Onion Router #2 （Tunnel through Onion Router #1）</p>
-
 <p>3/ Client proxy extends the circuit by establishing a symmetric session key with Onion Router #3（Tunnel through Onion Routers #1 and #2）</p>
-
 <h3 id="using-a-tor-circuit">Using a Tor Circuit</h3>
-
 <p>Client applications connect and communicate over the established Tor circuit (also to multiple dst-s)</p>
-
 <p>Datagrams are decrypted and re-encrypted at each link</p>
-
 <h3 id="tor-management-issues">Tor Management Issues</h3>
-
 <p>很多引用share一个circuit / Tor router 不需要管理员权限（More participants = better anonymity for everyone ）/ Directory servers 维护活动洋葱路由器的列表，它们的位置，当前的公钥等、控制新路由器如何加入网络
 “Sybil攻击”：攻击者创建了大量路由器、Directory servers’ keys ship with Tor code</p>
-
 <h1 id="dining-cryptographers">Dining Cryptographers</h1>
-
 <p>很神奇的问题，有点 zero-knoledge proof 的感觉，不揭露自己，但是却又传递了信息。具体可以见<a href="https://en.wikipedia.org/wiki/Dining_cryptographers_problem">wiki</a></p>
-
 <p>当泛化到 any group of size N 时，for each bit of the message, every user generates 1 random bit and sends it to ONE neighbor (every user learns 2 bits - his own and his neighbor’s)</p>
-
 <p>Each user announces own bit XOR neighbor’s bit</p>
-
 <p>Sender announces own bit XOR neighbor’s bit XOR message bit</p>
-
 <p>XOR all announcements = message bit</p>
-
 <p><strong>Super-posed Sending</strong></p>
-
-<p><img src="http://q5f66uxyd.bkt.clouddn.com/20191209220801.png" alt="" /></p>
-
-<p><img src="http://q5f66uxyd.bkt.clouddn.com/20191209220813.png" alt="" /></p>
-
-<p><img src="http://q5f66uxyd.bkt.clouddn.com/20191209220827.png" alt="" /></p>
-
-<p><img src="http://q5f66uxyd.bkt.clouddn.com/20191209220853.png" alt="" /></p>
-
+<p><img alt="" src="http://q5f66uxyd.bkt.clouddn.com/20191209220801.png"/></p>
+<p><img alt="" src="http://q5f66uxyd.bkt.clouddn.com/20191209220813.png"/></p>
+<p><img alt="" src="http://q5f66uxyd.bkt.clouddn.com/20191209220827.png"/></p>
+<p><img alt="" src="http://q5f66uxyd.bkt.clouddn.com/20191209220853.png"/></p>
 <blockquote>
 <p>考试指引：</p>
-
 <ul>
 <li>Definitions</li>
 <li>Applications</li>
 <li>Types of Attacks</li>
-<li>Chaum&rsquo;s Mix, Mix Cascade</li>
+<li>Chaum’s Mix, Mix Cascade</li>
 <li>Tor</li>
 </ul>
-
-<p>You need to know and understand how Chaum&rsquo;s Mix, Mix Cascade and Tor work.</p>
+<p>You need to know and understand how Chaum’s Mix, Mix Cascade and Tor work.</p>
 </blockquote>
-        </div>
-
-        
-
-
-        
-
+</div>
 <div class="post-archive">
-    <h2>See Also</h2>
-    <ul class="listing">
-        
-        <li><a href="/post/%E8%AF%BE%E7%A8%8B-%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%B2%BE%E7%AE%80%E7%89%88/">课程 网络安全 期中复习精简版</a></li>
-        
-        <li><a href="/post/%E8%AF%BE%E7%A8%8B-%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0/">课程 网络安全 期中复习</a></li>
-        
-        <li><a href="/post/%E8%AF%BE%E7%A8%8B-%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/">课程 离散数学</a></li>
-        
-    </ul>
-</div>
-
-
-        <div class="post-meta meta-tags">
-            
-            <ul class="clearfix">
-                
-                <li><a href='https://hanmei.netlify.com/tags/%E5%AF%86%E7%A0%81%E5%AD%A6'>密码学</a></li>
-                
-                <li><a href='https://hanmei.netlify.com/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8'>网络安全</a></li>
-                
-            </ul>
-            
-        </div>
-    </article>
-    
-    
-
-    
-    
-</div>
-
-                </div>
-
-                <div id="secondary">
-    <section class="widget">
-        <form id="search" action='https://hanmei.netlify.com/search/'
-      method="get" accept-charset="utf-8" target="_blank" _lpchecked="1">
-      
-      <input type="text" name="q" maxlength="20" placeholder="Search">
-      <input type="hidden" name="sitesearch" value="https://hanmei.netlify.com/">
-      <button type="submit" class="submit icon-search"></button>
-</form>
-    </section>
-
-    
-
-    <section class="widget">
-        <div id="calendar" class="auto-jsCalendar"></div>
-    </section>
-
-    <section class="widget">
-        <h3 class="widget-title">分类</h3>
-<ul class="widget-list">
-    
-    <li><a href="https://hanmei.netlify.com/categories/">Categories (1)</a></li>
-    
-    <li><a href="https://hanmei.netlify.com/categories/CS%E8%AF%BE%E7%A8%8B%E5%AD%A6%E4%B9%A0/">CS课程学习 (19)</a></li>
-    
-    <li><a href="https://hanmei.netlify.com/categories/blog%E6%90%AD%E5%BB%BA/">blog搭建 (2)</a></li>
-    
-    <li><a href="https://hanmei.netlify.com/categories/%E5%AD%A6%E6%9C%AF/">学术 (2)</a></li>
-    
-    <li><a href="https://hanmei.netlify.com/categories/%E6%8A%80%E6%9C%AF/">技术 (7)</a></li>
-    
-    <li><a href="https://hanmei.netlify.com/categories/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/">日常记录 (29)</a></li>
-    
-    <li><a href="https://hanmei.netlify.com/categories/%E7%94%9F%E6%B4%BB/">生活 (1)</a></li>
-    
+<h2>See Also</h2>
+<ul class="listing">
+<li><a href="/post/%E8%AF%BE%E7%A8%8B-%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%B2%BE%E7%AE%80%E7%89%88/">课程 网络安全 期中复习精简版</a></li>
+<li><a href="/post/%E8%AF%BE%E7%A8%8B-%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0/">课程 网络安全 期中复习</a></li>
+<li><a href="/post/%E8%AF%BE%E7%A8%8B-%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/">课程 离散数学</a></li>
 </ul>
-    </section>
-
-    <section class="widget">
-        <h3 class="widget-title">标签</h3>
+</div>
+<div class="post-meta meta-tags">
+<ul class="clearfix">
+<li><a href="https://hanmei.netlify.com/tags/%E5%AF%86%E7%A0%81%E5%AD%A6">密码学</a></li>
+<li><a href="https://hanmei.netlify.com/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8">网络安全</a></li>
+</ul>
+</div>
+</article>
+</div>
+</div>
+<div id="secondary">
+<section class="widget">
+<form _lpchecked="1" accept-charset="utf-8" action="https://hanmei.netlify.com/search/" id="search" method="get" target="_blank">
+<input maxlength="20" name="q" placeholder="Search" type="text"/>
+<input name="sitesearch" type="hidden" value="https://hanmei.netlify.com/"/>
+<button class="submit icon-search" type="submit"></button>
+</form>
+</section>
+<section class="widget">
+<div class="auto-jsCalendar" id="calendar"></div>
+</section>
+<section class="widget">
+<h3 class="widget-title">分类</h3>
+<ul class="widget-list">
+<li><a href="https://hanmei.netlify.com/categories/CS%E8%AF%BE%E7%A8%8B%E5%AD%A6%E4%B9%A0/">CS课程学习 (20)</a></li>
+<li><a href="https://hanmei.netlify.com/categories/blog%E6%90%AD%E5%BB%BA/">blog搭建 (2)</a></li>
+<li><a href="https://hanmei.netlify.com/categories/%E5%AD%A6%E6%9C%AF/">学术 (2)</a></li>
+<li><a href="https://hanmei.netlify.com/categories/%E6%8A%80%E6%9C%AF/">技术 (7)</a></li>
+<li><a href="https://hanmei.netlify.com/categories/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/">日常记录 (29)</a></li>
+<li><a href="https://hanmei.netlify.com/categories/%E7%94%9F%E6%B4%BB/">生活 (1)</a></li>
+</ul>
+</section>
+<section class="widget">
+<h3 class="widget-title">标签</h3>
 <div class="tagcloud">
-    
-    <a href="https://hanmei.netlify.com/tags/">Tags</a>
-    
-    <a href="https://hanmei.netlify.com/tags/WebGL/">WebGL</a>
-    
-    <a href="https://hanmei.netlify.com/tags/blog/">blog</a>
-    
-    <a href="https://hanmei.netlify.com/tags/bug%E8%AE%B0%E5%BD%95/">bug记录</a>
-    
-    <a href="https://hanmei.netlify.com/tags/git/">git</a>
-    
-    <a href="https://hanmei.netlify.com/tags/linux/">linux</a>
-    
-    <a href="https://hanmei.netlify.com/tags/%E5%9B%BE%E5%BD%A2%E5%AD%A6/">图形学</a>
-    
-    <a href="https://hanmei.netlify.com/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/">密码学</a>
-    
-    <a href="https://hanmei.netlify.com/tags/%E6%8C%81%E7%BB%AD%E8%A1%A5%E5%85%85.../">持续补充...</a>
-    
-    <a href="https://hanmei.netlify.com/tags/%E6%B5%8B%E8%AF%84/">测评</a>
-    
-    <a href="https://hanmei.netlify.com/tags/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/">离散数学</a>
-    
-    <a href="https://hanmei.netlify.com/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/">网络安全</a>
-    
-    <a href="https://hanmei.netlify.com/tags/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/">论文阅读</a>
-    
-    <a href="https://hanmei.netlify.com/tags/%E8%BF%90%E5%8A%A8%E4%BC%AA%E5%BD%B1%E6%B6%88%E9%99%A4/">运动伪影消除</a>
-    
-    <a href="https://hanmei.netlify.com/tags/%E9%80%9F%E6%9F%A5/">速查</a>
-    
-    <a href="https://hanmei.netlify.com/tags/%E9%85%B8%E5%A5%B6/">酸奶</a>
-    
-    <a href="https://hanmei.netlify.com/tags/%E9%9B%B6%E9%A3%9F/">零食</a>
-    
+<a href="https://hanmei.netlify.com/tags/WebGL/">WebGL</a>
+<a href="https://hanmei.netlify.com/tags/blog/">blog</a>
+<a href="https://hanmei.netlify.com/tags/bug%E8%AE%B0%E5%BD%95/">bug记录</a>
+<a href="https://hanmei.netlify.com/tags/git/">git</a>
+<a href="https://hanmei.netlify.com/tags/linux/">linux</a>
+<a href="https://hanmei.netlify.com/tags/%E5%9B%BE%E5%BD%A2%E5%AD%A6/">图形学</a>
+<a href="https://hanmei.netlify.com/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/">密码学</a>
+<a href="https://hanmei.netlify.com/tags/%E6%8C%81%E7%BB%AD%E8%A1%A5%E5%85%85.../">持续补充...</a>
+<a href="https://hanmei.netlify.com/tags/%E6%B5%8B%E8%AF%84/">测评</a>
+<a href="https://hanmei.netlify.com/tags/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/">离散数学</a>
+<a href="https://hanmei.netlify.com/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/">网络安全</a>
+<a href="https://hanmei.netlify.com/tags/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/">论文阅读</a>
+<a href="https://hanmei.netlify.com/tags/%E8%BF%90%E5%8A%A8%E4%BC%AA%E5%BD%B1%E6%B6%88%E9%99%A4/">运动伪影消除</a>
+<a href="https://hanmei.netlify.com/tags/%E9%80%9F%E6%9F%A5/">速查</a>
+<a href="https://hanmei.netlify.com/tags/%E9%85%B8%E5%A5%B6/">酸奶</a>
+<a href="https://hanmei.netlify.com/tags/%E9%9B%B6%E9%A3%9F/">零食</a>
 </div>
-    </section>
-
-    
-
-    <section class="widget">
-        <h3 class="widget-title">其它</h3>
-        <ul class="widget-list">
-            <li><a href="https://hanmei.netlify.com/index.xml">文章 RSS</a></li>
-        </ul>
-    </section>
+</section>
+<section class="widget">
+<h3 class="widget-title">其它</h3>
+<ul class="widget-list">
+<li><a href="https://hanmei.netlify.com/index.xml">文章 RSS</a></li>
+</ul>
+</section>
 </div>
-<script type="text/javascript" src='/js/jsCalendar.js?v=0.0.0'></script>
-            </div>
-        </div>
-    </div>
-    <footer id="footer">
-    <div class="container">
-        &copy; 2020 <a href="https://hanmei.netlify.com/">Hanmei@梅.</a>
-        Powered by <a rel="nofollow noreferer noopener" href="https://gohugo.io" target="_blank">Hugo</a>.
+<script src="/js/jsCalendar.js?v=0.0.0" type="text/javascript"></script>
+</div>
+</div>
+</div>
+<footer id="footer">
+<div class="container">
+        © 2020 <a href="https://hanmei.netlify.com/">Hanmei@梅.</a>
+        Powered by <a href="https://gohugo.io" rel="nofollow noreferer noopener" target="_blank">Hugo</a>.
         Theme based on <a href="https://github.com/flysnow-org/maupassant-hugo" target="_blank">maupassant</a>.
         
     </div>
 </footer>
-
-
-
 <script type="text/javascript">
     window.MathJax = {
         tex2jax: {
@@ -520,19 +356,9 @@
         }
     };
 </script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
-
-
-<a id="rocket" href="#top"></a>
-<script type="text/javascript" src='/js/totop.js?v=0.0.0' async=""></script>
-
-
-
-<script type="text/javascript" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
-
-
-
-
+<script async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<a href="#top" id="rocket"></a>
+<script async="" src="/js/totop.js?v=0.0.0" type="text/javascript"></script>
+<script async="" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" type="text/javascript"></script>
 </body>
-
 </html>
