@@ -2,210 +2,410 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hanmei@梅</title>
-    <link>http://example.org/</link>
+    <link>https://hanmei.netlify.com/</link>
     <description>Recent content on Hanmei@梅</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 09 Dec 2019 18:10:03 -0700</lastBuildDate>
+    <lastBuildDate>Thu, 05 Mar 2020 18:02:12 +0800</lastBuildDate>
     
-	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://hanmei.netlify.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>加密测试</title>
+      <link>https://hanmei.netlify.com/post/%E5%8A%A0%E5%AF%86%E6%B5%8B%E8%AF%95/</link>
+      <pubDate>Thu, 05 Mar 2020 18:02:12 +0800</pubDate>
+      
+      <guid>https://hanmei.netlify.com/post/%E5%8A%A0%E5%AF%86%E6%B5%8B%E8%AF%95/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;这里必须存在一些明文文字以及概要标签:&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Idea</title>
+      <link>https://hanmei.netlify.com/ideas/%E6%97%A5%E5%B8%B89/</link>
+      <pubDate>Thu, 05 Mar 2020 17:53:17 +0800</pubDate>
+      
+      <guid>https://hanmei.netlify.com/ideas/%E6%97%A5%E5%B8%B89/</guid>
+      <description>呜呜呜，我想哭！我是如何从一个油皮女孩作成沙漠皮女孩的 😭 老家太干燥，带回旅行装的水乳的都用的差不多了，我该怎么活下去 π__π</description>
+    </item>
+    
+    <item>
+      <title>Idea</title>
+      <link>https://hanmei.netlify.com/ideas/%E5%A6%88%E5%92%AA3/</link>
+      <pubDate>Wed, 04 Mar 2020 09:52:23 +0800</pubDate>
+      
+      <guid>https://hanmei.netlify.com/ideas/%E5%A6%88%E5%92%AA3/</guid>
+      <description>今天也是可爱的麻麻呀！ 妈妈最近在家戴了个帽子，遮住她大大的脸，从侧面看过去像是个小仙女！ 我开玩笑地跟她说：“老妈你这会还装嫩呀！” 她回应道：“我这不是装嫩，而是装婆婆，婆婆太冷了要戴帽子” 哈哈哈哈</description>
+    </item>
+    
+    <item>
+      <title>Idea</title>
+      <link>https://hanmei.netlify.com/ideas/%E6%97%A5%E5%B8%B88/</link>
+      <pubDate>Tue, 03 Mar 2020 21:02:58 +0800</pubDate>
+      
+      <guid>https://hanmei.netlify.com/ideas/%E6%97%A5%E5%B8%B88/</guid>
+      <description>过了今天的我又是一条好汉！！by 面对公众演讲瑟瑟发抖的我</description>
+    </item>
+    
+    <item>
+      <title>Idea</title>
+      <link>https://hanmei.netlify.com/ideas/%E6%97%A5%E5%B8%B87/</link>
+      <pubDate>Mon, 02 Mar 2020 14:34:36 +0800</pubDate>
+      
+      <guid>https://hanmei.netlify.com/ideas/%E6%97%A5%E5%B8%B87/</guid>
+      <description>无意中看到一个土味情话生成器，特好玩！想起之前看过的小说，女主人公说起情话不打草稿，什么时候我也能练成这境地 😉</description>
+    </item>
+    
+    <item>
+      <title>Idea</title>
+      <link>https://hanmei.netlify.com/ideas/%E9%97%AE%E9%A2%981/</link>
+      <pubDate>Sat, 29 Feb 2020 23:53:39 +0800</pubDate>
+      
+      <guid>https://hanmei.netlify.com/ideas/%E9%97%AE%E9%A2%981/</guid>
+      <description>想清理chrome一些搜索框的自动填充，但是autofill clear自带之前保存的地址 有木有大佬教教我如何能单独去掉suggest的自动填充而不影响到地址姓名之类的自动填充呢？查了谷歌活动跟踪，一无所获&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Idea</title>
+      <link>https://hanmei.netlify.com/ideas/%E6%97%A5%E5%B8%B86/</link>
+      <pubDate>Sat, 29 Feb 2020 08:43:03 +0800</pubDate>
+      
+      <guid>https://hanmei.netlify.com/ideas/%E6%97%A5%E5%B8%B86/</guid>
+      <description>这不科学！我的企业邮箱被gmail拉黑了！发出的所有去往gmail的邮件都被明明白白地安排在垃圾箱里！ 55555 不知道怎么处理它，网上搜到了有人跟我一样的情况，看着这长篇大论，我想缓一缓&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Idea</title>
+      <link>https://hanmei.netlify.com/ideas/%E6%97%A5%E5%B8%B85/</link>
+      <pubDate>Fri, 28 Feb 2020 22:32:23 +0800</pubDate>
+      
+      <guid>https://hanmei.netlify.com/ideas/%E6%97%A5%E5%B8%B85/</guid>
+      <description>走进老爸房间，以为他在看直博的球赛，没想到他激动的喊我过去看，只见一个扣篮，篮球架翻了？？？ 我还以为最近发生的事情，没想到已经老黄历了，那个球星是奥尼尔～ 联想到今早被我妈老鹰抓小鸡的一揪，就让我痛的快哭了..人与人之间的差距 😭</description>
+    </item>
+    
+    <item>
+      <title>Idea</title>
+      <link>https://hanmei.netlify.com/ideas/%E6%97%A5%E5%B8%B84/</link>
+      <pubDate>Fri, 28 Feb 2020 15:26:10 +0800</pubDate>
+      
+      <guid>https://hanmei.netlify.com/ideas/%E6%97%A5%E5%B8%B84/</guid>
+      <description>今个天真冷呀！而我的mac真贴心地给我当作暖手宝！一小时掉电80%！ 我个人觉得是notability的锅，好久电脑没这么严重发烧了，今天的不同就是打开了notability。我觉得有空了可以研究研究原因 🤔</description>
+    </item>
+    
+    <item>
+      <title>Idea</title>
+      <link>https://hanmei.netlify.com/ideas/%E8%9D%97%E7%81%BE/</link>
+      <pubDate>Thu, 27 Feb 2020 13:33:58 +0800</pubDate>
+      
+      <guid>https://hanmei.netlify.com/ideas/%E8%9D%97%E7%81%BE/</guid>
+      <description>当我妈跟我说浙江10万鸭子出征灭蝗灾的时候，我完全不相信&amp;hellip; 直到看了新闻「20年前，鸭子“军队”就曾出兵新疆，一举平定蝗灾，立下赫赫战功。」好吧.. 在我小脑壳里，一直以为青蛙才是灭虫的高手。新闻告诉我，也的确如此，但是青蛙在纪律上犹如散兵散将，一旦蝗虫转移，它们不会跟</description>
+    </item>
+    
+    <item>
+      <title>Idea</title>
+      <link>https://hanmei.netlify.com/ideas/%E6%97%A5%E5%B8%B83/</link>
+      <pubDate>Thu, 27 Feb 2020 10:11:20 +0800</pubDate>
+      
+      <guid>https://hanmei.netlify.com/ideas/%E6%97%A5%E5%B8%B83/</guid>
+      <description>非常推荐「十万个品牌故事」节目，我在b站上看的，特别涨姿势！了解品牌背后的故事，企业发展历程和与竞争者的关系。今天我随便点了个居然讲劳力士的发展过程，联想到「朱一旦的枯燥生活」，哈哈哈，这个也推荐！之前在别人推荐下看了朱一旦的视频，觉得特别有趣，但我当时以为他们也就这一个视频，前</description>
+    </item>
+    
+    <item>
+      <title>Idea</title>
+      <link>https://hanmei.netlify.com/ideas/%E5%A6%88%E5%92%AA2/</link>
+      <pubDate>Thu, 27 Feb 2020 10:07:53 +0800</pubDate>
+      
+      <guid>https://hanmei.netlify.com/ideas/%E5%A6%88%E5%92%AA2/</guid>
+      <description>今天也是可爱的麻麻呀！ 「我妈坐在床边，我准备上床瘫着，我已上床，我妈惊呼“亚历山大！” 我问啥意思？“你太重了，床都震了震”」 我妈这用词，xswl，哈哈哈</description>
+    </item>
+    
+    <item>
+      <title>Idea</title>
+      <link>https://hanmei.netlify.com/ideas/%E6%97%A5%E5%B8%B82/</link>
+      <pubDate>Tue, 25 Feb 2020 22:03:28 +0800</pubDate>
+      
+      <guid>https://hanmei.netlify.com/ideas/%E6%97%A5%E5%B8%B82/</guid>
+      <description>年纪的微信群又炸了，省教育部门说3月不开学，同学们问可以提前去学校吗，在家两天一小吵，三天一大吵。当然也有同学表示在这个机会里，和爸妈好好谈了心，达成了和解。 唔，算是吧。至少前段时间是这样的，但是如果观念真的很不一致还真容易出问题。刚刚又和老妈小吵了一架，我俩生活习惯差异很大，我</description>
+    </item>
+    
+    <item>
+      <title>Idea</title>
+      <link>https://hanmei.netlify.com/ideas/%E7%94%B3%E8%AF%B7/</link>
+      <pubDate>Tue, 25 Feb 2020 13:20:03 +0800</pubDate>
+      
+      <guid>https://hanmei.netlify.com/ideas/%E7%94%B3%E8%AF%B7/</guid>
+      <description>原来，大家申请也只是看个 cs ranking 😂</description>
+    </item>
+    
+    <item>
+      <title>Idea</title>
+      <link>https://hanmei.netlify.com/ideas/%E6%97%A5%E5%B8%B81/</link>
+      <pubDate>Sun, 23 Feb 2020 20:40:10 +0800</pubDate>
+      
+      <guid>https://hanmei.netlify.com/ideas/%E6%97%A5%E5%B8%B81/</guid>
+      <description>沉迷王者的一天，偶尔用了狄仁杰发现甚是好用，然鹅我一直输一直输&amp;hellip;到最后都没赢一局 5555 我的妈咪肿么这么可爱，好喜欢调戏她逗她玩～</description>
+    </item>
+    
+    <item>
+      <title>Idea</title>
+      <link>https://hanmei.netlify.com/ideas/%E7%AB%8Bflag/</link>
+      <pubDate>Fri, 21 Feb 2020 22:17:26 +0800</pubDate>
+      
+      <guid>https://hanmei.netlify.com/ideas/%E7%AB%8Bflag/</guid>
+      <description>最近两天有点用眼过度，头特别痛，这特别影响睡眠情况。 立个 flag，明天不长时间对着电脑！晚安 😴</description>
+    </item>
+    
+    <item>
+      <title>数学之美</title>
+      <link>https://hanmei.netlify.com/post/%E6%95%B0%E5%AD%A6%E4%B9%8B%E7%BE%8E/</link>
+      <pubDate>Fri, 21 Feb 2020 21:57:38 +0800</pubDate>
+      
+      <guid>https://hanmei.netlify.com/post/%E6%95%B0%E5%AD%A6%E4%B9%8B%E7%BE%8E/</guid>
+      <description>&lt;p&gt;前沿讲座要写讲座报告，给我们看了一个讨论数学的 TED，短短十多分钟，然鹅要写 1000 字的报告。很悲催的是我走了 hard 模式：用英语写，写了一半发现我要是用中文写字数会多很多&amp;hellip;这篇演讲还挺不错，喜欢里面的各种视觉效果，总体来说就是学到了三点：一数学是一门表达结构的学科，二数学教会我们从不同角度来理解，三数学需要我们充分发挥想象力。以下是我的废话，我都不知道自己在写什么了，为凑字数而凑字数。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>记一个hugo博文消失的bug</title>
+      <link>https://hanmei.netlify.com/post/%E8%AE%B0%E4%B8%80%E4%B8%AAhugo%E5%8D%9A%E6%96%87%E6%B6%88%E5%A4%B1%E7%9A%84bug/</link>
+      <pubDate>Fri, 21 Feb 2020 15:39:13 +0800</pubDate>
+      
+      <guid>https://hanmei.netlify.com/post/%E8%AE%B0%E4%B8%80%E4%B8%AAhugo%E5%8D%9A%E6%96%87%E6%B6%88%E5%A4%B1%E7%9A%84bug/</guid>
+      <description>&lt;p&gt;很小的一个时间问题，却引发了博文消失的bug，花了2个小时的排查&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Idea2</title>
+      <link>https://hanmei.netlify.com/ideas/%E5%A6%88%E5%92%AA/</link>
+      <pubDate>Fri, 21 Feb 2020 13:09:12 +0800</pubDate>
+      
+      <guid>https://hanmei.netlify.com/ideas/%E5%A6%88%E5%92%AA/</guid>
+      <description>今天也是可爱的麻麻呀！ 「和老妈共处一室，正玩着电脑，听到几声“啪啪”。 一眼望去，我的妈妈正在“打脸”，与此同时对着镜子哼咛着“打脸 打脸”， ”我要把我的脸打小一点“」 想做一系列这样的生活小段子。我的妈咪肿么这么可爱 🤗</description>
+    </item>
+    
+    <item>
+      <title>20200220 日常记录</title>
+      <link>https://hanmei.netlify.com/post/20200220-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
+      <pubDate>Thu, 20 Feb 2020 20:23:53 +0800</pubDate>
+      
+      <guid>https://hanmei.netlify.com/post/20200220-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
+      <description>&lt;p&gt;生活碎碎念 ｜ 博客设计未来计划 ｜ 写作计划&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>如何制作一个hugo主题？</title>
+      <link>https://hanmei.netlify.com/post/%E5%A6%82%E4%BD%95%E5%88%B6%E4%BD%9C%E4%B8%80%E4%B8%AAhugo%E4%B8%BB%E9%A2%98/</link>
+      <pubDate>Thu, 20 Feb 2020 20:17:43 +0800</pubDate>
+      
+      <guid>https://hanmei.netlify.com/post/%E5%A6%82%E4%BD%95%E5%88%B6%E4%BD%9C%E4%B8%80%E4%B8%AAhugo%E4%B8%BB%E9%A2%98/</guid>
+      <description>&lt;p&gt;爱折腾的我不满足于even这个主题，它太简单了，我也不是很心水它对md的排版。我希望我的主页能加上日历这个元素，想了想就设计成两栏吧，把文字放在偏左的位置，留下一小块放其它小组件。&lt;/p&gt;
+
+&lt;p&gt;这时候 maupassant 这个主题进入了我的世界，嗯，很美。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Idea</title>
+      <link>https://hanmei.netlify.com/ideas/%E8%90%A7%E4%BA%9A%E8%BD%A9/</link>
+      <pubDate>Wed, 19 Feb 2020 21:30:10 +0800</pubDate>
+      
+      <guid>https://hanmei.netlify.com/ideas/%E8%90%A7%E4%BA%9A%E8%BD%A9/</guid>
+      <description>来自鲜肉收割机的建议！看吐槽大会太甜了吧！赐我一个小帅哥吧！ 看这个节目之后，好喜欢萧亚轩的性格，很赞同她的一些观点。如果没有感情就及时斩断吧，不要被爱情冲昏了头，多和好姐妹们沟通沟通，听听旁观者的建议。</description>
+    </item>
+    
+    <item>
       <title>课程 网络安全 期末复习</title>
-      <link>http://example.org/post/%E8%AF%BE%E7%A8%8B-%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/</link>
+      <link>https://hanmei.netlify.com/post/%E8%AF%BE%E7%A8%8B-%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/</link>
       <pubDate>Mon, 09 Dec 2019 18:10:03 -0700</pubDate>
       
-      <guid>http://example.org/post/%E8%AF%BE%E7%A8%8B-%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/</guid>
+      <guid>https://hanmei.netlify.com/post/%E8%AF%BE%E7%A8%8B-%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/</guid>
       <description>&lt;p&gt;本来不太想写，但是还是有始有终吧&amp;hellip;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>20191208 日常记录</title>
-      <link>http://example.org/post/20191208-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
+      <link>https://hanmei.netlify.com/post/20191208-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Sun, 08 Dec 2019 15:13:54 -0800</pubDate>
       
-      <guid>http://example.org/post/20191208-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
+      <guid>https://hanmei.netlify.com/post/20191208-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
       <description>&lt;p&gt;生活碎碎念&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>20191201 日常记录</title>
-      <link>http://example.org/post/20191201-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
+      <link>https://hanmei.netlify.com/post/20191201-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Sun, 01 Dec 2019 08:43:59 -0800</pubDate>
       
-      <guid>http://example.org/post/20191201-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
+      <guid>https://hanmei.netlify.com/post/20191201-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
       <description>&lt;p&gt;生活流水账 ｜ alfred | vuepress&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>20191130 日常记录</title>
-      <link>http://example.org/post/20191130-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
+      <link>https://hanmei.netlify.com/post/20191130-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Sat, 30 Nov 2019 23:01:38 -0800</pubDate>
       
-      <guid>http://example.org/post/20191130-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
+      <guid>https://hanmei.netlify.com/post/20191130-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
       <description>&lt;p&gt;生活碎碎念&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>20191127 日常记录</title>
-      <link>http://example.org/post/20191127-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
+      <link>https://hanmei.netlify.com/post/20191127-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Wed, 27 Nov 2019 12:10:36 -0800</pubDate>
       
-      <guid>http://example.org/post/20191127-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
+      <guid>https://hanmei.netlify.com/post/20191127-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
       <description>&lt;p&gt;生活碎碎念&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>20191124 日常记录</title>
-      <link>http://example.org/post/20191124-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
+      <link>https://hanmei.netlify.com/post/20191124-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Sun, 24 Nov 2019 10:49:42 -0800</pubDate>
       
-      <guid>http://example.org/post/20191124-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
+      <guid>https://hanmei.netlify.com/post/20191124-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
       <description>&lt;p&gt;图形学作业&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>20191123 日常记录</title>
-      <link>http://example.org/post/20191123-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
+      <link>https://hanmei.netlify.com/post/20191123-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Sat, 23 Nov 2019 23:34:28 -0800</pubDate>
       
-      <guid>http://example.org/post/20191123-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
+      <guid>https://hanmei.netlify.com/post/20191123-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
       <description>&lt;p&gt;生活碎碎念&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>课程 网络安全 Authentication</title>
-      <link>http://example.org/post/%E8%AF%BE%E7%A8%8B-%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-Authentication/</link>
+      <link>https://hanmei.netlify.com/post/%E8%AF%BE%E7%A8%8B-%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-Authentication/</link>
       <pubDate>Fri, 22 Nov 2019 10:36:54 -0700</pubDate>
       
-      <guid>http://example.org/post/%E8%AF%BE%E7%A8%8B-%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-Authentication/</guid>
+      <guid>https://hanmei.netlify.com/post/%E8%AF%BE%E7%A8%8B-%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-Authentication/</guid>
       <description>&lt;p&gt;阅读《Network Security Private Communication in a Public World》笔记&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>20191122 日常记录</title>
-      <link>http://example.org/post/20191122-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
+      <link>https://hanmei.netlify.com/post/20191122-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Fri, 22 Nov 2019 08:06:20 -0800</pubDate>
       
-      <guid>http://example.org/post/20191122-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
+      <guid>https://hanmei.netlify.com/post/20191122-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
       <description>&lt;p&gt;生活碎碎念&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>20191121 日常记录</title>
-      <link>http://example.org/post/20191121-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
+      <link>https://hanmei.netlify.com/post/20191121-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Thu, 21 Nov 2019 12:39:33 -0800</pubDate>
       
-      <guid>http://example.org/post/20191121-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
+      <guid>https://hanmei.netlify.com/post/20191121-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
       <description>&lt;p&gt;生活碎碎念 ｜ 一些想法 ｜ 学术 ｜ activity watch（mac-app）&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>课程 网络安全 Anonymity</title>
-      <link>http://example.org/post/%E8%AF%BE%E7%A8%8B-%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-mix-network/</link>
+      <link>https://hanmei.netlify.com/post/%E8%AF%BE%E7%A8%8B-%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-mix-network/</link>
       <pubDate>Thu, 21 Nov 2019 08:29:57 -0700</pubDate>
       
-      <guid>http://example.org/post/%E8%AF%BE%E7%A8%8B-%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-mix-network/</guid>
+      <guid>https://hanmei.netlify.com/post/%E8%AF%BE%E7%A8%8B-%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-mix-network/</guid>
       <description>&lt;p&gt;摘录于课件，之后继续补充吧.. 12.9已重新整理&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>20191120 日常记录</title>
-      <link>http://example.org/post/20191120-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
+      <link>https://hanmei.netlify.com/post/20191120-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Wed, 20 Nov 2019 20:44:50 -0800</pubDate>
       
-      <guid>http://example.org/post/20191120-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
+      <guid>https://hanmei.netlify.com/post/20191120-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
       <description>&lt;p&gt;android-app | 生活流水账&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>20191119 日常记录</title>
-      <link>http://example.org/post/20191119-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
+      <link>https://hanmei.netlify.com/post/20191119-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Tue, 19 Nov 2019 11:09:19 -0800</pubDate>
       
-      <guid>http://example.org/post/20191119-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
+      <guid>https://hanmei.netlify.com/post/20191119-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
       <description>&lt;p&gt;知网 ｜ Alfred ｜ 一些思考&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>20191118 日常记录</title>
-      <link>http://example.org/post/20191118-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
+      <link>https://hanmei.netlify.com/post/20191118-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Mon, 18 Nov 2019 22:05:21 -0800</pubDate>
       
-      <guid>http://example.org/post/20191118-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
+      <guid>https://hanmei.netlify.com/post/20191118-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
       <description>&lt;p&gt;博客好久没更新了，强行更一波~ 不能继续丧下去了&amp;hellip;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>20191115 日常记录</title>
-      <link>http://example.org/post/20191115-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
+      <link>https://hanmei.netlify.com/post/20191115-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Fri, 15 Nov 2019 10:37:58 -0800</pubDate>
       
-      <guid>http://example.org/post/20191115-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
+      <guid>https://hanmei.netlify.com/post/20191115-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
       <description>&lt;p&gt;生活碎碎念 ｜ zotero (mac-app) | ocr (web)&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>20191114 日常记录</title>
-      <link>http://example.org/post/20191114-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
+      <link>https://hanmei.netlify.com/post/20191114-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Thu, 14 Nov 2019 19:59:25 -0800</pubDate>
       
-      <guid>http://example.org/post/20191114-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
+      <guid>https://hanmei.netlify.com/post/20191114-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
       <description>&lt;p&gt;生活流水账&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>课程 图形学 Animation</title>
-      <link>http://example.org/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Animation/</link>
+      <link>https://hanmei.netlify.com/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Animation/</link>
       <pubDate>Thu, 14 Nov 2019 08:12:39 -0700</pubDate>
       
-      <guid>http://example.org/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Animation/</guid>
+      <guid>https://hanmei.netlify.com/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Animation/</guid>
       <description>&lt;p&gt;about 图形学中的动画效果，只讨论 Physics-Based Animation。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>20191113 日常记录</title>
-      <link>http://example.org/post/20191113-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
+      <link>https://hanmei.netlify.com/post/20191113-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Wed, 13 Nov 2019 23:07:45 -0800</pubDate>
       
-      <guid>http://example.org/post/20191113-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
+      <guid>https://hanmei.netlify.com/post/20191113-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
       <description>&lt;p&gt;生活碎碎念&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>20191112 日常记录</title>
-      <link>http://example.org/post/20191112-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
+      <link>https://hanmei.netlify.com/post/20191112-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Tue, 12 Nov 2019 11:04:50 -0800</pubDate>
       
-      <guid>http://example.org/post/20191112-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
+      <guid>https://hanmei.netlify.com/post/20191112-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
       <description>&lt;p&gt;blog | vscode | PPG实验 ｜ 生活碎碎念&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>课程 图形学 Blending</title>
-      <link>http://example.org/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Blending/</link>
+      <link>https://hanmei.netlify.com/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Blending/</link>
       <pubDate>Tue, 12 Nov 2019 00:56:42 -0700</pubDate>
       
-      <guid>http://example.org/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Blending/</guid>
+      <guid>https://hanmei.netlify.com/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Blending/</guid>
       <description>&lt;p&gt;about 图形学中的融合。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>课程 图形学 Texture Mapping</title>
-      <link>http://example.org/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Texture-Mapping/</link>
+      <link>https://hanmei.netlify.com/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Texture-Mapping/</link>
       <pubDate>Mon, 11 Nov 2019 23:11:46 -0700</pubDate>
       
-      <guid>http://example.org/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Texture-Mapping/</guid>
+      <guid>https://hanmei.netlify.com/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Texture-Mapping/</guid>
       <description>&lt;p&gt;about 图形学中的纹理贴图，结合上课课件和&lt;a href=&#34;https://blog.csdn.net/qq826364410/article/details/88569131&#34;&gt;博文&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>课程 图形学 Polygon Scanning</title>
-      <link>http://example.org/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Polygon-Scanning/</link>
+      <link>https://hanmei.netlify.com/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Polygon-Scanning/</link>
       <pubDate>Mon, 11 Nov 2019 22:39:23 -0700</pubDate>
       
-      <guid>http://example.org/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Polygon-Scanning/</guid>
+      <guid>https://hanmei.netlify.com/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Polygon-Scanning/</guid>
       <description>&lt;p&gt;about 图形学中的多边形扫描算法。&lt;/p&gt;
 
 &lt;p&gt;在图形学中，多边形往往是由&lt;strong&gt;有序的顶点序列&lt;/strong&gt;表达的，以便于进行放缩、平移、旋转等操作。然而，在填充灰度或色彩时，采用点阵的方式才容易操作。所以对于多边形而言，涉及一个&lt;strong&gt;扫描转换&lt;/strong&gt;的问题：给定多边形，确定屏幕上归属于多边形的像素集合。&lt;/p&gt;</description>
@@ -213,64 +413,64 @@
     
     <item>
       <title>课程 图形学 Clipping</title>
-      <link>http://example.org/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Clipping/</link>
+      <link>https://hanmei.netlify.com/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Clipping/</link>
       <pubDate>Mon, 11 Nov 2019 21:27:54 -0700</pubDate>
       
-      <guid>http://example.org/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Clipping/</guid>
+      <guid>https://hanmei.netlify.com/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Clipping/</guid>
       <description>&lt;p&gt;about 图形学的裁剪算法，发生在投影之后，投影已经确定好了二维的坐标，clipping 的工作就是把在视野范围外的部分去除。到这一步时，我们把得到的 clip coordinate （四维齐次坐标）转换为 Normalized devcie coordinate (NDC, 三维坐标)&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>课程 图形学 Shading</title>
-      <link>http://example.org/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Shading/</link>
+      <link>https://hanmei.netlify.com/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Shading/</link>
       <pubDate>Mon, 11 Nov 2019 18:37:44 -0700</pubDate>
       
-      <guid>http://example.org/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Shading/</guid>
+      <guid>https://hanmei.netlify.com/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Shading/</guid>
       <description>&lt;p&gt;about 图形学中的着色过程，重点描述光照模型。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>课程 图形学 Projection</title>
-      <link>http://example.org/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Projection/</link>
+      <link>https://hanmei.netlify.com/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Projection/</link>
       <pubDate>Mon, 11 Nov 2019 16:54:05 -0700</pubDate>
       
-      <guid>http://example.org/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Projection/</guid>
+      <guid>https://hanmei.netlify.com/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Projection/</guid>
       <description>&lt;p&gt;about 图形学中的投影变换，也就是从&lt;strong&gt;视图（摄像头）坐标系&lt;/strong&gt;到&lt;strong&gt;投影坐标系&lt;/strong&gt;的过程。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>课程 图形学 Coordinate transformation</title>
-      <link>http://example.org/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Coordinate-transformation/</link>
+      <link>https://hanmei.netlify.com/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Coordinate-transformation/</link>
       <pubDate>Mon, 11 Nov 2019 09:00:48 -0700</pubDate>
       
-      <guid>http://example.org/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Coordinate-transformation/</guid>
+      <guid>https://hanmei.netlify.com/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Coordinate-transformation/</guid>
       <description>&lt;p&gt;about 图形学中从模型坐标系到世界坐标系，从世界坐标系到视图（摄像头）坐标系会经历的各种矩阵变换。同时还具体的讲了视图变换的过程。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>课程 图形学 Rendering Pipeline</title>
-      <link>http://example.org/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Rendering-Pipeline/</link>
+      <link>https://hanmei.netlify.com/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Rendering-Pipeline/</link>
       <pubDate>Mon, 11 Nov 2019 08:05:23 -0700</pubDate>
       
-      <guid>http://example.org/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Rendering-Pipeline/</guid>
+      <guid>https://hanmei.netlify.com/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Rendering-Pipeline/</guid>
       <description>&lt;p&gt;收集各方资料，稍作整理，方便我的期中复习。若无说明，markdown 引用的内容来自于&lt;a href=&#34;https://blog.csdn.net/poem_qianmo/article/details/70544201&#34;&gt;引用2&lt;/a&gt;，这篇博文写得非常清楚，而且很有条理，建议有需要的同学去看看这篇文章。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>20191111 日常记录</title>
-      <link>http://example.org/post/20191111-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
+      <link>https://hanmei.netlify.com/post/20191111-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Mon, 11 Nov 2019 07:00:29 -0800</pubDate>
       
-      <guid>http://example.org/post/20191111-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
+      <guid>https://hanmei.netlify.com/post/20191111-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
       <description>&lt;p&gt;blog | 考试复习&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>课程 图形学 总结</title>
-      <link>http://example.org/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-%E6%80%BB%E7%BB%93/</link>
+      <link>https://hanmei.netlify.com/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-%E6%80%BB%E7%BB%93/</link>
       <pubDate>Mon, 11 Nov 2019 07:21:06 -0700</pubDate>
       
-      <guid>http://example.org/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-%E6%80%BB%E7%BB%93/</guid>
+      <guid>https://hanmei.netlify.com/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-%E6%80%BB%E7%BB%93/</guid>
       <description>&lt;p&gt;计算机图形学(Computer Graphics，简称CG)是一种使用数学算法将&lt;strong&gt;二维或三维图形&lt;/strong&gt;转化为计算机显示器的&lt;strong&gt;栅格形式&lt;/strong&gt;的科学。—— from百度百科&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://i.loli.net/2019/11/15/2lY5prwe19hKkU4.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;</description>
@@ -278,55 +478,55 @@
     
     <item>
       <title>20191110 日常记录</title>
-      <link>http://example.org/post/20191110-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
+      <link>https://hanmei.netlify.com/post/20191110-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Sun, 10 Nov 2019 10:25:37 -0800</pubDate>
       
-      <guid>http://example.org/post/20191110-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
+      <guid>https://hanmei.netlify.com/post/20191110-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
       <description>&lt;p&gt;生活流水账 ｜ 看论文&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>20191109 日常记录</title>
-      <link>http://example.org/post/20191109-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
+      <link>https://hanmei.netlify.com/post/20191109-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Sat, 09 Nov 2019 08:20:31 -0800</pubDate>
       
-      <guid>http://example.org/post/20191109-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
+      <guid>https://hanmei.netlify.com/post/20191109-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
       <description>&lt;p&gt;mac电脑 ｜ 服务器 ｜ 追up主 ｜ 生活碎碎念 ｜ 看论文&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>linux命令 文件及文件夹</title>
-      <link>http://example.org/post/linux%E5%91%BD%E4%BB%A4-%E6%96%87%E4%BB%B6%E5%8F%8A%E6%96%87%E4%BB%B6%E5%A4%B9/</link>
+      <link>https://hanmei.netlify.com/post/linux%E5%91%BD%E4%BB%A4-%E6%96%87%E4%BB%B6%E5%8F%8A%E6%96%87%E4%BB%B6%E5%A4%B9/</link>
       <pubDate>Sat, 09 Nov 2019 08:25:58 -0700</pubDate>
       
-      <guid>http://example.org/post/linux%E5%91%BD%E4%BB%A4-%E6%96%87%E4%BB%B6%E5%8F%8A%E6%96%87%E4%BB%B6%E5%A4%B9/</guid>
+      <guid>https://hanmei.netlify.com/post/linux%E5%91%BD%E4%BB%A4-%E6%96%87%E4%BB%B6%E5%8F%8A%E6%96%87%E4%BB%B6%E5%A4%B9/</guid>
       <description>&lt;p&gt;有关文件及文件夹的linux命令，持续更新中&amp;hellip;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>About</title>
-      <link>http://example.org/about/</link>
+      <link>https://hanmei.netlify.com/about/</link>
       <pubDate>Sat, 09 Nov 2019 00:05:49 -0700</pubDate>
       
-      <guid>http://example.org/about/</guid>
-      <description>2019-11-08 [更新日志] 数不清多少次的重新搭建了，这次是发现我采用的目录结构不太对，一般都是通过主题文件夹里面的内容构建。同时，因为后续博客的样式会有调整，最好单独创建一个仓库用于主题的样式。 2019-11-06 [更新日志] 加入评论功能gitalk 2019-11-01 [更新日志] 生成了个性化图标</description>
+      <guid>https://hanmei.netlify.com/about/</guid>
+      <description>2019-11-08 [更新日志] 数不清多少次的重新搭建了，这次是发现我采用的目录结构不太对，一般都是通过主题文件夹里面的内容构建。同时，因为后续博客的样式会有调整，最好单独创建一个仓库用于主题的样式。 2019-11-06 [更新日志] 加入评论功能gitalk 2019-11-01 [更新日志] 生成了个性化图标 2020-02-18 [更新日志] 修改主题为 maupassant 2020-02-20 [</description>
     </item>
     
     <item>
       <title>20191108 日常记录</title>
-      <link>http://example.org/post/20191108-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
+      <link>https://hanmei.netlify.com/post/20191108-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Fri, 08 Nov 2019 10:21:21 -0800</pubDate>
       
-      <guid>http://example.org/post/20191108-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
+      <guid>https://hanmei.netlify.com/post/20191108-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
       <description>&lt;p&gt;生活流水账 | 观点&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>PPG小组 Frequency Estimation and Notch Filtering</title>
-      <link>http://example.org/post/PPG%E5%B0%8F%E7%BB%84-Frequency-Estimation-and-Notch-Filtering/</link>
+      <link>https://hanmei.netlify.com/post/PPG%E5%B0%8F%E7%BB%84-Frequency-Estimation-and-Notch-Filtering/</link>
       <pubDate>Thu, 07 Nov 2019 20:38:07 -0700</pubDate>
       
-      <guid>http://example.org/post/PPG%E5%B0%8F%E7%BB%84-Frequency-Estimation-and-Notch-Filtering/</guid>
+      <guid>https://hanmei.netlify.com/post/PPG%E5%B0%8F%E7%BB%84-Frequency-Estimation-and-Notch-Filtering/</guid>
       <description>&lt;p&gt;&lt;strong&gt;阅读论文《Removal of Motion Artifacts in Photoplethysmograph Sensors during Intensive Exercise for Accurate Heart Rate Calculation Based on Frequency Estimation and Notch Filtering》&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;论文原文地址：&lt;a href=&#34;https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6696451/&#34;&gt;https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6696451/&lt;/a&gt;&lt;/p&gt;</description>
@@ -334,163 +534,154 @@
     
     <item>
       <title>课程 图形学 Color &amp; Display</title>
-      <link>http://example.org/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Color-Display/</link>
+      <link>https://hanmei.netlify.com/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Color-Display/</link>
       <pubDate>Thu, 07 Nov 2019 11:09:57 -0700</pubDate>
       
-      <guid>http://example.org/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Color-Display/</guid>
+      <guid>https://hanmei.netlify.com/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Color-Display/</guid>
       <description>&lt;p&gt;about 图形学颜色的本质 &amp;amp; 图像的显示。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>课程 图形学 Sampling &amp; Aliasing</title>
-      <link>http://example.org/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Sampling-Aliasing/</link>
+      <link>https://hanmei.netlify.com/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Sampling-Aliasing/</link>
       <pubDate>Thu, 07 Nov 2019 09:07:29 -0700</pubDate>
       
-      <guid>http://example.org/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Sampling-Aliasing/</guid>
+      <guid>https://hanmei.netlify.com/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Sampling-Aliasing/</guid>
       <description>&lt;p&gt;about 图形学的采样和混叠。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>20191106 日常记录</title>
-      <link>http://example.org/post/20191106-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
+      <link>https://hanmei.netlify.com/post/20191106-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Wed, 06 Nov 2019 10:21:21 -0800</pubDate>
       
-      <guid>http://example.org/post/20191106-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
+      <guid>https://hanmei.netlify.com/post/20191106-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
       <description>&lt;p&gt;blog | 生活流水账 ｜ 观点&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>PPG小组 TROIKA</title>
-      <link>http://example.org/post/PPG%E5%B0%8F%E7%BB%84-TROIKA/</link>
+      <link>https://hanmei.netlify.com/post/PPG%E5%B0%8F%E7%BB%84-TROIKA/</link>
       <pubDate>Tue, 05 Nov 2019 09:14:16 -0700</pubDate>
       
-      <guid>http://example.org/post/PPG%E5%B0%8F%E7%BB%84-TROIKA/</guid>
+      <guid>https://hanmei.netlify.com/post/PPG%E5%B0%8F%E7%BB%84-TROIKA/</guid>
       <description>&lt;p&gt;&lt;strong&gt;阅读论文《TROIKA: A General Framework for Heart Rate Monitoring Using Wrist-Type Photoplethysmographic Signals During Intensive Physical Exercise》&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>20191105 日常记录</title>
-      <link>http://example.org/post/20191105-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
+      <link>https://hanmei.netlify.com/post/20191105-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Tue, 05 Nov 2019 07:02:12 -0800</pubDate>
       
-      <guid>http://example.org/post/20191105-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
+      <guid>https://hanmei.netlify.com/post/20191105-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
       <description>&lt;p&gt;生活碎碎念｜ blog | 看论文&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>20191104 日常记录</title>
-      <link>http://example.org/post/20191104-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
+      <link>https://hanmei.netlify.com/post/20191104-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Mon, 04 Nov 2019 16:33:35 -0800</pubDate>
       
-      <guid>http://example.org/post/20191104-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
+      <guid>https://hanmei.netlify.com/post/20191104-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
       <description>&lt;p&gt;生活碎碎念 ｜ android-app | web-app ｜ 科研 ｜ 观点 ｜ 创作&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>北美酸奶测评</title>
-      <link>http://example.org/post/%E5%8C%97%E7%BE%8E%E9%85%B8%E5%A5%B6%E6%B5%8B%E8%AF%84/</link>
+      <link>https://hanmei.netlify.com/post/%E5%8C%97%E7%BE%8E%E9%85%B8%E5%A5%B6%E6%B5%8B%E8%AF%84/</link>
       <pubDate>Mon, 04 Nov 2019 16:36:50 -0700</pubDate>
       
-      <guid>http://example.org/post/%E5%8C%97%E7%BE%8E%E9%85%B8%E5%A5%B6%E6%B5%8B%E8%AF%84/</guid>
+      <guid>https://hanmei.netlify.com/post/%E5%8C%97%E7%BE%8E%E9%85%B8%E5%A5%B6%E6%B5%8B%E8%AF%84/</guid>
       <description>&lt;p&gt;最开始来这边一直在寻觅邓邓说的便宜大罐的冰淇淋，但买回来发现除了哈根达斯其它都不是很好吃；这边牛奶味道也没有国内某些品牌那么纯，不是我的菜；但自从某一天大肆采购了一批酸奶后，就一发不可收拾的爱上了喝酸奶。此文一来总结一下我喝过的品牌，为自己之后买酸奶提供参考，同时希望我的测评对你也有帮助。&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>【】课程作业 图形学PA2解题过程</title>
-      <link>http://example.org/post/%E8%AF%BE%E7%A8%8B%E4%BD%9C%E4%B8%9A-%E5%9B%BE%E5%BD%A2%E5%AD%A6PA2%E8%A7%A3%E9%A2%98%E8%BF%87%E7%A8%8B/</link>
-      <pubDate>Mon, 04 Nov 2019 08:45:54 -0700</pubDate>
-      
-      <guid>http://example.org/post/%E8%AF%BE%E7%A8%8B%E4%BD%9C%E4%B8%9A-%E5%9B%BE%E5%BD%A2%E5%AD%A6PA2%E8%A7%A3%E9%A2%98%E8%BF%87%E7%A8%8B/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>WebGL 系列三</title>
-      <link>http://example.org/post/WebGL-%E7%B3%BB%E5%88%97%E4%B8%89/</link>
+      <link>https://hanmei.netlify.com/post/WebGL-%E7%B3%BB%E5%88%97%E4%B8%89/</link>
       <pubDate>Mon, 04 Nov 2019 00:03:43 -0700</pubDate>
       
-      <guid>http://example.org/post/WebGL-%E7%B3%BB%E5%88%97%E4%B8%89/</guid>
+      <guid>https://hanmei.netlify.com/post/WebGL-%E7%B3%BB%E5%88%97%E4%B8%89/</guid>
       <description></description>
     </item>
     
     <item>
       <title>WebGL 系列二</title>
-      <link>http://example.org/post/WebGL-%E7%B3%BB%E5%88%97%E4%BA%8C/</link>
+      <link>https://hanmei.netlify.com/post/WebGL-%E7%B3%BB%E5%88%97%E4%BA%8C/</link>
       <pubDate>Sun, 03 Nov 2019 17:55:22 -0700</pubDate>
       
-      <guid>http://example.org/post/WebGL-%E7%B3%BB%E5%88%97%E4%BA%8C/</guid>
+      <guid>https://hanmei.netlify.com/post/WebGL-%E7%B3%BB%E5%88%97%E4%BA%8C/</guid>
       <description>&lt;p&gt;WebGL渲染的工作原理 study from &lt;a href=&#34;https://webglfundamentals.org/webgl/lessons/&#34;&gt;https://webglfundamentals.org/webgl/lessons/&lt;/a&gt; step by step&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>WebGL 系列一</title>
-      <link>http://example.org/post/WebGL-%E7%B3%BB%E5%88%97%E4%B8%80/</link>
+      <link>https://hanmei.netlify.com/post/WebGL-%E7%B3%BB%E5%88%97%E4%B8%80/</link>
       <pubDate>Sun, 03 Nov 2019 17:52:22 -0700</pubDate>
       
-      <guid>http://example.org/post/WebGL-%E7%B3%BB%E5%88%97%E4%B8%80/</guid>
+      <guid>https://hanmei.netlify.com/post/WebGL-%E7%B3%BB%E5%88%97%E4%B8%80/</guid>
       <description>&lt;p&gt;基础概念 | 初始化代码&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>20191103 日常记录</title>
-      <link>http://example.org/post/20191103-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
+      <link>https://hanmei.netlify.com/post/20191103-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Sun, 03 Nov 2019 15:27:23 -0800</pubDate>
       
-      <guid>http://example.org/post/20191103-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
+      <guid>https://hanmei.netlify.com/post/20191103-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
       <description>&lt;p&gt;blog ｜ vscode ｜ mac电脑&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>20191102 日常记录</title>
-      <link>http://example.org/post/20191102-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
+      <link>https://hanmei.netlify.com/post/20191102-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Sat, 02 Nov 2019 08:48:30 -0700</pubDate>
       
-      <guid>http://example.org/post/20191102-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
+      <guid>https://hanmei.netlify.com/post/20191102-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
       <description>&lt;p&gt;shell编程 ｜ vscode ｜ 图床 ｜ 生活碎碎念&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>git命令清单</title>
-      <link>http://example.org/post/git%E5%91%BD%E4%BB%A4%E6%B8%85%E5%8D%95/</link>
+      <link>https://hanmei.netlify.com/post/git%E5%91%BD%E4%BB%A4%E6%B8%85%E5%8D%95/</link>
       <pubDate>Fri, 01 Nov 2019 18:30:00 -0700</pubDate>
       
-      <guid>http://example.org/post/git%E5%91%BD%E4%BB%A4%E6%B8%85%E5%8D%95/</guid>
+      <guid>https://hanmei.netlify.com/post/git%E5%91%BD%E4%BB%A4%E6%B8%85%E5%8D%95/</guid>
       <description>&lt;p&gt;总是查总是忘，查别人的博客还不如查自己的，自力更生。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>20191101 日常记录</title>
-      <link>http://example.org/post/20191101-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
+      <link>https://hanmei.netlify.com/post/20191101-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Fri, 01 Nov 2019 10:30:00 -0700</pubDate>
       
-      <guid>http://example.org/post/20191101-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
+      <guid>https://hanmei.netlify.com/post/20191101-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
       <description>&lt;p&gt;blog ｜ vscode ｜ mac电脑&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>课程 网络安全 期中复习精简版</title>
-      <link>http://example.org/post/%E8%AF%BE%E7%A8%8B-%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%B2%BE%E7%AE%80%E7%89%88/</link>
+      <link>https://hanmei.netlify.com/post/%E8%AF%BE%E7%A8%8B-%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%B2%BE%E7%AE%80%E7%89%88/</link>
       <pubDate>Wed, 30 Oct 2019 22:05:51 -0700</pubDate>
       
-      <guid>http://example.org/post/%E8%AF%BE%E7%A8%8B-%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%B2%BE%E7%AE%80%E7%89%88/</guid>
+      <guid>https://hanmei.netlify.com/post/%E8%AF%BE%E7%A8%8B-%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%B2%BE%E7%AE%80%E7%89%88/</guid>
       <description>&lt;p&gt;适合考前过知识点的精简版复习资料。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>20191030 日常记录</title>
-      <link>http://example.org/post/20191030-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
+      <link>https://hanmei.netlify.com/post/20191030-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Wed, 30 Oct 2019 11:07:21 -0700</pubDate>
       
-      <guid>http://example.org/post/20191030-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
+      <guid>https://hanmei.netlify.com/post/20191030-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
       <description>&lt;p&gt;图床 ｜ vscode ｜ alfred&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>课程 离散数学</title>
-      <link>http://example.org/post/%E8%AF%BE%E7%A8%8B-%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/</link>
+      <link>https://hanmei.netlify.com/post/%E8%AF%BE%E7%A8%8B-%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/</link>
       <pubDate>Tue, 29 Oct 2019 11:21:14 -0700</pubDate>
       
-      <guid>http://example.org/post/%E8%AF%BE%E7%A8%8B-%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/</guid>
+      <guid>https://hanmei.netlify.com/post/%E8%AF%BE%E7%A8%8B-%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/</guid>
       <description>&lt;p&gt;复习网络安全课程时觉得很多内容与2年前上过王琦男神的离散课有重叠，然而网络安全课在数论方面写的比较简略，没办法建立一个系统的概念，于是好不容易从硬盘里找对应的课件，借此巩固一下这方面的知识。&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://i.loli.net/2019/10/29/wNntXy4CB7SvRLb.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;</description>
@@ -498,58 +689,67 @@
     
     <item>
       <title>20191029 日常记录</title>
-      <link>http://example.org/post/20191029-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
+      <link>https://hanmei.netlify.com/post/20191029-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Tue, 29 Oct 2019 10:59:41 -0700</pubDate>
       
-      <guid>http://example.org/post/20191029-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
+      <guid>https://hanmei.netlify.com/post/20191029-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
       <description>&lt;p&gt;blog ｜ 图床 ｜ 生活流水账 ｜ android-app&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>课程 网络安全 期中复习</title>
-      <link>http://example.org/post/%E8%AF%BE%E7%A8%8B-%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0/</link>
+      <link>https://hanmei.netlify.com/post/%E8%AF%BE%E7%A8%8B-%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0/</link>
       <pubDate>Mon, 28 Oct 2019 18:57:31 -0700</pubDate>
       
-      <guid>http://example.org/post/%E8%AF%BE%E7%A8%8B-%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0/</guid>
+      <guid>https://hanmei.netlify.com/post/%E8%AF%BE%E7%A8%8B-%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0/</guid>
       <description>&lt;p&gt;特长，知识点特多，适合哪里不会查哪里。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>20191028 日常记录</title>
-      <link>http://example.org/post/20191028-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
+      <link>https://hanmei.netlify.com/post/20191028-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Mon, 28 Oct 2019 17:57:10 -0700</pubDate>
       
-      <guid>http://example.org/post/20191028-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
+      <guid>https://hanmei.netlify.com/post/20191028-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
       <description>&lt;p&gt;blog ｜ sourcetree (mac-app) | alfred | 生活流水账 ｜ mac电脑&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Linux命令 软链接</title>
-      <link>http://example.org/post/linux%E5%91%BD%E4%BB%A4-%E8%BD%AF%E9%93%BE%E6%8E%A5/</link>
+      <link>https://hanmei.netlify.com/post/linux%E5%91%BD%E4%BB%A4-%E8%BD%AF%E9%93%BE%E6%8E%A5/</link>
       <pubDate>Mon, 28 Oct 2019 16:55:43 -0700</pubDate>
       
-      <guid>http://example.org/post/linux%E5%91%BD%E4%BB%A4-%E8%BD%AF%E9%93%BE%E6%8E%A5/</guid>
+      <guid>https://hanmei.netlify.com/post/linux%E5%91%BD%E4%BB%A4-%E8%BD%AF%E9%93%BE%E6%8E%A5/</guid>
       <description>&lt;p&gt;想在桌面创建一个 博客内容 的快捷方式，使用 &lt;code&gt;ln -s&lt;/code&gt; 创建软链接一直失败，原因是第一个参数也就是源文件的路径必须为绝对路径。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Hello world !</title>
-      <link>http://example.org/post/hello-world/</link>
+      <link>https://hanmei.netlify.com/post/hello-world/</link>
       <pubDate>Mon, 28 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/post/hello-world/</guid>
+      <guid>https://hanmei.netlify.com/post/hello-world/</guid>
       <description>&lt;p&gt;My discoveries begin&amp;hellip; 记录关于博客搭建的点点滴滴。&lt;/p&gt;
 
 &lt;p&gt;&amp;emsp;&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title></title>
-      <link>http://example.org/archives/</link>
+      <title>Archive</title>
+      <link>https://hanmei.netlify.com/archives/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/archives/</guid>
-      <description>title: &amp;ldquo;归档&amp;rdquo; description: Just for recall type: archives</description>
+      <guid>https://hanmei.netlify.com/archives/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Search</title>
+      <link>https://hanmei.netlify.com/search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hanmei.netlify.com/search/</guid>
+      <description></description>
     </item>
     
   </channel>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>bug记录 on Hanmei@梅</title>
+    <link>https://hanmei.netlify.com/tags/bug%E8%AE%B0%E5%BD%95/</link>
+    <description>Recent content in bug记录 on Hanmei@梅</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Fri, 21 Feb 2020 15:39:13 +0800</lastBuildDate>
+    
+	<atom:link href="https://hanmei.netlify.com/tags/bug%E8%AE%B0%E5%BD%95/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>记一个hugo博文消失的bug</title>
+      <link>https://hanmei.netlify.com/post/%E8%AE%B0%E4%B8%80%E4%B8%AAhugo%E5%8D%9A%E6%96%87%E6%B6%88%E5%A4%B1%E7%9A%84bug/</link>
+      <pubDate>Fri, 21 Feb 2020 15:39:13 +0800</pubDate>
+      
+      <guid>https://hanmei.netlify.com/post/%E8%AE%B0%E4%B8%80%E4%B8%AAhugo%E5%8D%9A%E6%96%87%E6%B6%88%E5%A4%B1%E7%9A%84bug/</guid>
+      <description>&lt;p&gt;很小的一个时间问题，却引发了博文消失的bug，花了2个小时的排查&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

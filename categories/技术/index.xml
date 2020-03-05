@@ -2,75 +2,75 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>技术 on Hanmei@梅</title>
-    <link>http://example.org/categories/%E6%8A%80%E6%9C%AF/</link>
+    <link>https://hanmei.netlify.com/categories/%E6%8A%80%E6%9C%AF/</link>
     <description>Recent content in 技术 on Hanmei@梅</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 09 Nov 2019 08:25:58 -0700</lastBuildDate>
+    <lastBuildDate>Fri, 21 Feb 2020 15:39:13 +0800</lastBuildDate>
     
-	<atom:link href="http://example.org/categories/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://hanmei.netlify.com/categories/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>记一个hugo博文消失的bug</title>
+      <link>https://hanmei.netlify.com/post/%E8%AE%B0%E4%B8%80%E4%B8%AAhugo%E5%8D%9A%E6%96%87%E6%B6%88%E5%A4%B1%E7%9A%84bug/</link>
+      <pubDate>Fri, 21 Feb 2020 15:39:13 +0800</pubDate>
+      
+      <guid>https://hanmei.netlify.com/post/%E8%AE%B0%E4%B8%80%E4%B8%AAhugo%E5%8D%9A%E6%96%87%E6%B6%88%E5%A4%B1%E7%9A%84bug/</guid>
+      <description>&lt;p&gt;很小的一个时间问题，却引发了博文消失的bug，花了2个小时的排查&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>linux命令 文件及文件夹</title>
-      <link>http://example.org/post/linux%E5%91%BD%E4%BB%A4-%E6%96%87%E4%BB%B6%E5%8F%8A%E6%96%87%E4%BB%B6%E5%A4%B9/</link>
+      <link>https://hanmei.netlify.com/post/linux%E5%91%BD%E4%BB%A4-%E6%96%87%E4%BB%B6%E5%8F%8A%E6%96%87%E4%BB%B6%E5%A4%B9/</link>
       <pubDate>Sat, 09 Nov 2019 08:25:58 -0700</pubDate>
       
-      <guid>http://example.org/post/linux%E5%91%BD%E4%BB%A4-%E6%96%87%E4%BB%B6%E5%8F%8A%E6%96%87%E4%BB%B6%E5%A4%B9/</guid>
+      <guid>https://hanmei.netlify.com/post/linux%E5%91%BD%E4%BB%A4-%E6%96%87%E4%BB%B6%E5%8F%8A%E6%96%87%E4%BB%B6%E5%A4%B9/</guid>
       <description>&lt;p&gt;有关文件及文件夹的linux命令，持续更新中&amp;hellip;&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>【】课程作业 图形学PA2解题过程</title>
-      <link>http://example.org/post/%E8%AF%BE%E7%A8%8B%E4%BD%9C%E4%B8%9A-%E5%9B%BE%E5%BD%A2%E5%AD%A6PA2%E8%A7%A3%E9%A2%98%E8%BF%87%E7%A8%8B/</link>
-      <pubDate>Mon, 04 Nov 2019 08:45:54 -0700</pubDate>
-      
-      <guid>http://example.org/post/%E8%AF%BE%E7%A8%8B%E4%BD%9C%E4%B8%9A-%E5%9B%BE%E5%BD%A2%E5%AD%A6PA2%E8%A7%A3%E9%A2%98%E8%BF%87%E7%A8%8B/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>WebGL 系列三</title>
-      <link>http://example.org/post/WebGL-%E7%B3%BB%E5%88%97%E4%B8%89/</link>
+      <link>https://hanmei.netlify.com/post/WebGL-%E7%B3%BB%E5%88%97%E4%B8%89/</link>
       <pubDate>Mon, 04 Nov 2019 00:03:43 -0700</pubDate>
       
-      <guid>http://example.org/post/WebGL-%E7%B3%BB%E5%88%97%E4%B8%89/</guid>
+      <guid>https://hanmei.netlify.com/post/WebGL-%E7%B3%BB%E5%88%97%E4%B8%89/</guid>
       <description></description>
     </item>
     
     <item>
       <title>WebGL 系列二</title>
-      <link>http://example.org/post/WebGL-%E7%B3%BB%E5%88%97%E4%BA%8C/</link>
+      <link>https://hanmei.netlify.com/post/WebGL-%E7%B3%BB%E5%88%97%E4%BA%8C/</link>
       <pubDate>Sun, 03 Nov 2019 17:55:22 -0700</pubDate>
       
-      <guid>http://example.org/post/WebGL-%E7%B3%BB%E5%88%97%E4%BA%8C/</guid>
+      <guid>https://hanmei.netlify.com/post/WebGL-%E7%B3%BB%E5%88%97%E4%BA%8C/</guid>
       <description>&lt;p&gt;WebGL渲染的工作原理 study from &lt;a href=&#34;https://webglfundamentals.org/webgl/lessons/&#34;&gt;https://webglfundamentals.org/webgl/lessons/&lt;/a&gt; step by step&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>WebGL 系列一</title>
-      <link>http://example.org/post/WebGL-%E7%B3%BB%E5%88%97%E4%B8%80/</link>
+      <link>https://hanmei.netlify.com/post/WebGL-%E7%B3%BB%E5%88%97%E4%B8%80/</link>
       <pubDate>Sun, 03 Nov 2019 17:52:22 -0700</pubDate>
       
-      <guid>http://example.org/post/WebGL-%E7%B3%BB%E5%88%97%E4%B8%80/</guid>
+      <guid>https://hanmei.netlify.com/post/WebGL-%E7%B3%BB%E5%88%97%E4%B8%80/</guid>
       <description>&lt;p&gt;基础概念 | 初始化代码&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>git命令清单</title>
-      <link>http://example.org/post/git%E5%91%BD%E4%BB%A4%E6%B8%85%E5%8D%95/</link>
+      <link>https://hanmei.netlify.com/post/git%E5%91%BD%E4%BB%A4%E6%B8%85%E5%8D%95/</link>
       <pubDate>Fri, 01 Nov 2019 18:30:00 -0700</pubDate>
       
-      <guid>http://example.org/post/git%E5%91%BD%E4%BB%A4%E6%B8%85%E5%8D%95/</guid>
+      <guid>https://hanmei.netlify.com/post/git%E5%91%BD%E4%BB%A4%E6%B8%85%E5%8D%95/</guid>
       <description>&lt;p&gt;总是查总是忘，查别人的博客还不如查自己的，自力更生。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Linux命令 软链接</title>
-      <link>http://example.org/post/linux%E5%91%BD%E4%BB%A4-%E8%BD%AF%E9%93%BE%E6%8E%A5/</link>
+      <link>https://hanmei.netlify.com/post/linux%E5%91%BD%E4%BB%A4-%E8%BD%AF%E9%93%BE%E6%8E%A5/</link>
       <pubDate>Mon, 28 Oct 2019 16:55:43 -0700</pubDate>
       
-      <guid>http://example.org/post/linux%E5%91%BD%E4%BB%A4-%E8%BD%AF%E9%93%BE%E6%8E%A5/</guid>
+      <guid>https://hanmei.netlify.com/post/linux%E5%91%BD%E4%BB%A4-%E8%BD%AF%E9%93%BE%E6%8E%A5/</guid>
       <description>&lt;p&gt;想在桌面创建一个 博客内容 的快捷方式，使用 &lt;code&gt;ln -s&lt;/code&gt; 创建软链接一直失败，原因是第一个参数也就是源文件的路径必须为绝对路径。&lt;/p&gt;</description>
     </item>
     

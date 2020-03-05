@@ -2,48 +2,48 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>图形学 on Hanmei@梅</title>
-    <link>http://example.org/tags/%E5%9B%BE%E5%BD%A2%E5%AD%A6/</link>
+    <link>https://hanmei.netlify.com/tags/%E5%9B%BE%E5%BD%A2%E5%AD%A6/</link>
     <description>Recent content in 图形学 on Hanmei@梅</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <lastBuildDate>Thu, 14 Nov 2019 08:12:39 -0700</lastBuildDate>
     
-	<atom:link href="http://example.org/tags/%E5%9B%BE%E5%BD%A2%E5%AD%A6/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://hanmei.netlify.com/tags/%E5%9B%BE%E5%BD%A2%E5%AD%A6/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>课程 图形学 Animation</title>
-      <link>http://example.org/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Animation/</link>
+      <link>https://hanmei.netlify.com/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Animation/</link>
       <pubDate>Thu, 14 Nov 2019 08:12:39 -0700</pubDate>
       
-      <guid>http://example.org/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Animation/</guid>
+      <guid>https://hanmei.netlify.com/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Animation/</guid>
       <description>&lt;p&gt;about 图形学中的动画效果，只讨论 Physics-Based Animation。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>课程 图形学 Blending</title>
-      <link>http://example.org/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Blending/</link>
+      <link>https://hanmei.netlify.com/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Blending/</link>
       <pubDate>Tue, 12 Nov 2019 00:56:42 -0700</pubDate>
       
-      <guid>http://example.org/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Blending/</guid>
+      <guid>https://hanmei.netlify.com/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Blending/</guid>
       <description>&lt;p&gt;about 图形学中的融合。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>课程 图形学 Texture Mapping</title>
-      <link>http://example.org/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Texture-Mapping/</link>
+      <link>https://hanmei.netlify.com/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Texture-Mapping/</link>
       <pubDate>Mon, 11 Nov 2019 23:11:46 -0700</pubDate>
       
-      <guid>http://example.org/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Texture-Mapping/</guid>
+      <guid>https://hanmei.netlify.com/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Texture-Mapping/</guid>
       <description>&lt;p&gt;about 图形学中的纹理贴图，结合上课课件和&lt;a href=&#34;https://blog.csdn.net/qq826364410/article/details/88569131&#34;&gt;博文&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>课程 图形学 Polygon Scanning</title>
-      <link>http://example.org/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Polygon-Scanning/</link>
+      <link>https://hanmei.netlify.com/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Polygon-Scanning/</link>
       <pubDate>Mon, 11 Nov 2019 22:39:23 -0700</pubDate>
       
-      <guid>http://example.org/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Polygon-Scanning/</guid>
+      <guid>https://hanmei.netlify.com/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Polygon-Scanning/</guid>
       <description>&lt;p&gt;about 图形学中的多边形扫描算法。&lt;/p&gt;
 
 &lt;p&gt;在图形学中，多边形往往是由&lt;strong&gt;有序的顶点序列&lt;/strong&gt;表达的，以便于进行放缩、平移、旋转等操作。然而，在填充灰度或色彩时，采用点阵的方式才容易操作。所以对于多边形而言，涉及一个&lt;strong&gt;扫描转换&lt;/strong&gt;的问题：给定多边形，确定屏幕上归属于多边形的像素集合。&lt;/p&gt;</description>
@@ -51,55 +51,55 @@
     
     <item>
       <title>课程 图形学 Clipping</title>
-      <link>http://example.org/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Clipping/</link>
+      <link>https://hanmei.netlify.com/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Clipping/</link>
       <pubDate>Mon, 11 Nov 2019 21:27:54 -0700</pubDate>
       
-      <guid>http://example.org/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Clipping/</guid>
+      <guid>https://hanmei.netlify.com/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Clipping/</guid>
       <description>&lt;p&gt;about 图形学的裁剪算法，发生在投影之后，投影已经确定好了二维的坐标，clipping 的工作就是把在视野范围外的部分去除。到这一步时，我们把得到的 clip coordinate （四维齐次坐标）转换为 Normalized devcie coordinate (NDC, 三维坐标)&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>课程 图形学 Shading</title>
-      <link>http://example.org/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Shading/</link>
+      <link>https://hanmei.netlify.com/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Shading/</link>
       <pubDate>Mon, 11 Nov 2019 18:37:44 -0700</pubDate>
       
-      <guid>http://example.org/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Shading/</guid>
+      <guid>https://hanmei.netlify.com/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Shading/</guid>
       <description>&lt;p&gt;about 图形学中的着色过程，重点描述光照模型。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>课程 图形学 Projection</title>
-      <link>http://example.org/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Projection/</link>
+      <link>https://hanmei.netlify.com/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Projection/</link>
       <pubDate>Mon, 11 Nov 2019 16:54:05 -0700</pubDate>
       
-      <guid>http://example.org/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Projection/</guid>
+      <guid>https://hanmei.netlify.com/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Projection/</guid>
       <description>&lt;p&gt;about 图形学中的投影变换，也就是从&lt;strong&gt;视图（摄像头）坐标系&lt;/strong&gt;到&lt;strong&gt;投影坐标系&lt;/strong&gt;的过程。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>课程 图形学 Coordinate transformation</title>
-      <link>http://example.org/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Coordinate-transformation/</link>
+      <link>https://hanmei.netlify.com/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Coordinate-transformation/</link>
       <pubDate>Mon, 11 Nov 2019 09:00:48 -0700</pubDate>
       
-      <guid>http://example.org/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Coordinate-transformation/</guid>
+      <guid>https://hanmei.netlify.com/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Coordinate-transformation/</guid>
       <description>&lt;p&gt;about 图形学中从模型坐标系到世界坐标系，从世界坐标系到视图（摄像头）坐标系会经历的各种矩阵变换。同时还具体的讲了视图变换的过程。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>课程 图形学 Rendering Pipeline</title>
-      <link>http://example.org/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Rendering-Pipeline/</link>
+      <link>https://hanmei.netlify.com/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Rendering-Pipeline/</link>
       <pubDate>Mon, 11 Nov 2019 08:05:23 -0700</pubDate>
       
-      <guid>http://example.org/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Rendering-Pipeline/</guid>
+      <guid>https://hanmei.netlify.com/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Rendering-Pipeline/</guid>
       <description>&lt;p&gt;收集各方资料，稍作整理，方便我的期中复习。若无说明，markdown 引用的内容来自于&lt;a href=&#34;https://blog.csdn.net/poem_qianmo/article/details/70544201&#34;&gt;引用2&lt;/a&gt;，这篇博文写得非常清楚，而且很有条理，建议有需要的同学去看看这篇文章。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>课程 图形学 总结</title>
-      <link>http://example.org/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-%E6%80%BB%E7%BB%93/</link>
+      <link>https://hanmei.netlify.com/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-%E6%80%BB%E7%BB%93/</link>
       <pubDate>Mon, 11 Nov 2019 07:21:06 -0700</pubDate>
       
-      <guid>http://example.org/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-%E6%80%BB%E7%BB%93/</guid>
+      <guid>https://hanmei.netlify.com/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-%E6%80%BB%E7%BB%93/</guid>
       <description>&lt;p&gt;计算机图形学(Computer Graphics，简称CG)是一种使用数学算法将&lt;strong&gt;二维或三维图形&lt;/strong&gt;转化为计算机显示器的&lt;strong&gt;栅格形式&lt;/strong&gt;的科学。—— from百度百科&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://i.loli.net/2019/11/15/2lY5prwe19hKkU4.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;</description>
@@ -107,55 +107,46 @@
     
     <item>
       <title>课程 图形学 Color &amp; Display</title>
-      <link>http://example.org/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Color-Display/</link>
+      <link>https://hanmei.netlify.com/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Color-Display/</link>
       <pubDate>Thu, 07 Nov 2019 11:09:57 -0700</pubDate>
       
-      <guid>http://example.org/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Color-Display/</guid>
+      <guid>https://hanmei.netlify.com/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Color-Display/</guid>
       <description>&lt;p&gt;about 图形学颜色的本质 &amp;amp; 图像的显示。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>课程 图形学 Sampling &amp; Aliasing</title>
-      <link>http://example.org/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Sampling-Aliasing/</link>
+      <link>https://hanmei.netlify.com/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Sampling-Aliasing/</link>
       <pubDate>Thu, 07 Nov 2019 09:07:29 -0700</pubDate>
       
-      <guid>http://example.org/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Sampling-Aliasing/</guid>
+      <guid>https://hanmei.netlify.com/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Sampling-Aliasing/</guid>
       <description>&lt;p&gt;about 图形学的采样和混叠。&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>【】课程作业 图形学PA2解题过程</title>
-      <link>http://example.org/post/%E8%AF%BE%E7%A8%8B%E4%BD%9C%E4%B8%9A-%E5%9B%BE%E5%BD%A2%E5%AD%A6PA2%E8%A7%A3%E9%A2%98%E8%BF%87%E7%A8%8B/</link>
-      <pubDate>Mon, 04 Nov 2019 08:45:54 -0700</pubDate>
-      
-      <guid>http://example.org/post/%E8%AF%BE%E7%A8%8B%E4%BD%9C%E4%B8%9A-%E5%9B%BE%E5%BD%A2%E5%AD%A6PA2%E8%A7%A3%E9%A2%98%E8%BF%87%E7%A8%8B/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>WebGL 系列三</title>
-      <link>http://example.org/post/WebGL-%E7%B3%BB%E5%88%97%E4%B8%89/</link>
+      <link>https://hanmei.netlify.com/post/WebGL-%E7%B3%BB%E5%88%97%E4%B8%89/</link>
       <pubDate>Mon, 04 Nov 2019 00:03:43 -0700</pubDate>
       
-      <guid>http://example.org/post/WebGL-%E7%B3%BB%E5%88%97%E4%B8%89/</guid>
+      <guid>https://hanmei.netlify.com/post/WebGL-%E7%B3%BB%E5%88%97%E4%B8%89/</guid>
       <description></description>
     </item>
     
     <item>
       <title>WebGL 系列二</title>
-      <link>http://example.org/post/WebGL-%E7%B3%BB%E5%88%97%E4%BA%8C/</link>
+      <link>https://hanmei.netlify.com/post/WebGL-%E7%B3%BB%E5%88%97%E4%BA%8C/</link>
       <pubDate>Sun, 03 Nov 2019 17:55:22 -0700</pubDate>
       
-      <guid>http://example.org/post/WebGL-%E7%B3%BB%E5%88%97%E4%BA%8C/</guid>
+      <guid>https://hanmei.netlify.com/post/WebGL-%E7%B3%BB%E5%88%97%E4%BA%8C/</guid>
       <description>&lt;p&gt;WebGL渲染的工作原理 study from &lt;a href=&#34;https://webglfundamentals.org/webgl/lessons/&#34;&gt;https://webglfundamentals.org/webgl/lessons/&lt;/a&gt; step by step&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>WebGL 系列一</title>
-      <link>http://example.org/post/WebGL-%E7%B3%BB%E5%88%97%E4%B8%80/</link>
+      <link>https://hanmei.netlify.com/post/WebGL-%E7%B3%BB%E5%88%97%E4%B8%80/</link>
       <pubDate>Sun, 03 Nov 2019 17:52:22 -0700</pubDate>
       
-      <guid>http://example.org/post/WebGL-%E7%B3%BB%E5%88%97%E4%B8%80/</guid>
+      <guid>https://hanmei.netlify.com/post/WebGL-%E7%B3%BB%E5%88%97%E4%B8%80/</guid>
       <description>&lt;p&gt;基础概念 | 初始化代码&lt;/p&gt;</description>
     </item>
     

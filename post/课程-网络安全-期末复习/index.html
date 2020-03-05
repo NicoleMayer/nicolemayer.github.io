@@ -19,7 +19,7 @@
     <meta name="description" content="课程 网络安全 期末复习">
     
     <meta name="author" content="">
-    <meta property="og:url" content="http://example.org/post/%E8%AF%BE%E7%A8%8B-%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/">
+    <meta property="og:url" content="https://hanmei.netlify.com/post/%E8%AF%BE%E7%A8%8B-%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href='/css/normalize.css'>
@@ -38,7 +38,7 @@
     <div class="container">
         <div class="col-group">
             <div class="site-name ">
-                <a id="logo" href="http://example.org/">
+                <a id="logo" href="https://hanmei.netlify.com/">
                     Hanmei@梅
                 </a>
                 
@@ -46,13 +46,16 @@
             <div>
                 <nav id="nav-menu" class="clearfix">
                     
-                    <a  href="http://example.org/"
+                    <a  href="https://hanmei.netlify.com/"
                         title="首页">首页</a>
                     
-                    <a  href="http://example.org/archives/"
+                    <a  href="https://hanmei.netlify.com/archives/"
                         title="存档">存档</a>
                     
-                    <a  href="http://example.org/about/"
+                    <a  href="https://hanmei.netlify.com/ideas/"
+                        title="碎碎念">碎碎念</a>
+                    
+                    <a  href="https://hanmei.netlify.com/about/"
                         title="关于">关于</a>
                     
                 </nav>
@@ -194,7 +197,7 @@
         <div class="post-meta">
             <span>|</span>
             
-            <span class="meta-category"><a href='http://example.org/categories/CS%E8%AF%BE%E7%A8%8B%E5%AD%A6%E4%B9%A0'>CS课程学习</a></span>
+            <span class="meta-category"><a href='https://hanmei.netlify.com/categories/CS%E8%AF%BE%E7%A8%8B%E5%AD%A6%E4%B9%A0'>CS课程学习</a></span>
             
         </div>
         
@@ -246,17 +249,17 @@
 
 <p><strong>Internet Structure</strong></p>
 
-<p><img src="http://q2sxqdau4.bkt.clouddn.com/20191209185438.png" alt="" /></p>
+<p><img src="http://q5f66uxyd.bkt.clouddn.com/20191209185438.png" alt="" /></p>
 
 <p><strong>Data Formats</strong></p>
 
-<p><img src="http://q2sxqdau4.bkt.clouddn.com/20191209185822.png" alt="" /></p>
+<p><img src="http://q5f66uxyd.bkt.clouddn.com/20191209185822.png" alt="" /></p>
 
 <p>TCP -&gt; 全称 Transmission Control Protocol（我记得以前有人考过我，我没答出来&hellip;）Sequence number / ACK</p>
 
 <p>IP -&gt; 全称 Internet Protocol Unreliable /  “best-effort” / Longest-prefix match</p>
 
-<p><img src="http://q2sxqdau4.bkt.clouddn.com/20191209192212.png" alt="" /></p>
+<p><img src="http://q5f66uxyd.bkt.clouddn.com/20191209192212.png" alt="" /></p>
 
 <p>ICMP -&gt; 全称 Control Message Protocol</p>
 
@@ -305,7 +308,7 @@ device, in “promiscuous mode” （混杂模式） can read all data on its br
 
 <h3 id="smurf-attack">“Smurf” Attack</h3>
 
-<p><img src="http://q2sxqdau4.bkt.clouddn.com/20191209193146.png" alt="" /></p>
+<p><img src="http://q5f66uxyd.bkt.clouddn.com/20191209193146.png" alt="" /></p>
 
 <p>Solution: reject external packets to broadcast addresses</p>
 
@@ -319,11 +322,11 @@ device, in “promiscuous mode” （混杂模式） can read all data on its br
 
 <p>TCP Handshake:</p>
 
-<p><img src="http://q2sxqdau4.bkt.clouddn.com/20191209193552.png" alt="" /></p>
+<p><img src="http://q5f66uxyd.bkt.clouddn.com/20191209193552.png" alt="" /></p>
 
 <p>Attack:</p>
 
-<p><img src="http://q2sxqdau4.bkt.clouddn.com/20191209193610.png" alt="" /></p>
+<p><img src="http://q5f66uxyd.bkt.clouddn.com/20191209193610.png" alt="" /></p>
 
 <p>Attacker sends many connection requests (SYNs) with <strong>spoofed source (IP) addresses</strong>.</p>
 
@@ -340,14 +343,14 @@ device, in “promiscuous mode” （混杂模式） can read all data on its br
 <p>Solution1: Cookies allow server to remain stateless until client produces: Server state (IP addresses and ports) stored in a cookie
 and originally sent to client. When client responds, cookie is verified.</p>
 
-<p><img src="http://q2sxqdau4.bkt.clouddn.com/20191209194348.png" alt="" /></p>
+<p><img src="http://q5f66uxyd.bkt.clouddn.com/20191209194348.png" alt="" /></p>
 
 <p><span style="color:red">If source IP address is bogus, attacker can’t confirm</span> 这个地方很不理解？？前面都伪造了SYN，凭啥ACK无法伪造？？？</p>
 
 <p>Solution2: Passive Defense - Random Deletion. Legitimate connections have a chance to complete
 Fake addresses will be eventually deleted.</p>
 
-<p><img src="http://q2sxqdau4.bkt.clouddn.com/20191209200937.png" alt="" /></p>
+<p><img src="http://q5f66uxyd.bkt.clouddn.com/20191209200937.png" alt="" /></p>
 
 <h3 id="tcp-connection-spoofing">TCP Connection Spoofing</h3>
 
@@ -392,13 +395,13 @@ Fake addresses will be eventually deleted.</p>
 
 <p><strong>DNS “Authentication”</strong></p>
 
-<p><img src="http://q2sxqdau4.bkt.clouddn.com/20191209202034.png" alt="" /></p>
+<p><img src="http://q5f66uxyd.bkt.clouddn.com/20191209202034.png" alt="" /></p>
 
 <p><strong>DNS Spoofing / DNS Cache Poisoning</strong></p>
 
-<p><img src="http://q2sxqdau4.bkt.clouddn.com/20191209202320.png" alt="" /></p>
+<p><img src="http://q5f66uxyd.bkt.clouddn.com/20191209202320.png" alt="" /></p>
 
-<p><img src="http://q2sxqdau4.bkt.clouddn.com/20191209202434.png" alt="" /></p>
+<p><img src="http://q5f66uxyd.bkt.clouddn.com/20191209202434.png" alt="" /></p>
 
 <p>If attacker loses, has to wait until TTL expires. If attacker wins, future DNS requests for www.foo.com will go to 6.6.6.6.</p>
 
@@ -470,55 +473,55 @@ requests and responses</p>
 </ul></li>
 </ul>
 
-<p><img src="http://q2sxqdau4.bkt.clouddn.com/20191209211623.png" alt="" /></p>
+<p><img src="http://q5f66uxyd.bkt.clouddn.com/20191209211623.png" alt="" /></p>
 
 <h2 id="toy-ssl-tls">Toy SSL/TLS</h2>
 
 <p><strong>handshake</strong>: Alice and Bob use their certificates, private keys to authenticate each other and exchange a shared secret</p>
 
-<p><img src="http://q2sxqdau4.bkt.clouddn.com/20191209211926.png" alt="" /></p>
+<p><img src="http://q5f66uxyd.bkt.clouddn.com/20191209211926.png" alt="" /></p>
 
 <p><strong>key derivation</strong>: Alice and Bob use shared secret to derive set of keys</p>
 
-<p><img src="http://q2sxqdau4.bkt.clouddn.com/20191209212118.png" alt="" /></p>
+<p><img src="http://q5f66uxyd.bkt.clouddn.com/20191209212118.png" alt="" /></p>
 
 <p><strong>data transfer</strong>: data to be transferred is broken up into series of records</p>
 
-<p><img src="http://q2sxqdau4.bkt.clouddn.com/20191209212510.png" alt="" /></p>
+<p><img src="http://q5f66uxyd.bkt.clouddn.com/20191209212510.png" alt="" /></p>
 
 <p><strong>connection closure</strong>: special messages to securely close connection</p>
 
-<p><img src="http://q2sxqdau4.bkt.clouddn.com/20191209212608.png" alt="" /></p>
+<p><img src="http://q5f66uxyd.bkt.clouddn.com/20191209212608.png" alt="" /></p>
 
 <p><strong>Summary</strong></p>
 
-<p><img src="http://q2sxqdau4.bkt.clouddn.com/20191209212228.png" alt="" /></p>
+<p><img src="http://q5f66uxyd.bkt.clouddn.com/20191209212228.png" alt="" /></p>
 
 <p>除此之外，Toy SSL/TLS 还包含了 fields长度、encryption algorithms、parameter negotiatio 等等</p>
 
 <p><strong>SSL/TLS Cipher Suite</strong></p>
 
-<p><img src="http://q2sxqdau4.bkt.clouddn.com/20191209212919.png" alt="" /></p>
+<p><img src="http://q5f66uxyd.bkt.clouddn.com/20191209212919.png" alt="" /></p>
 
 <h2 id="real-ssl-tls">Real SSL/TLS</h2>
 
-<p><img src="http://q2sxqdau4.bkt.clouddn.com/20191209213122.png" alt="" /></p>
+<p><img src="http://q5f66uxyd.bkt.clouddn.com/20191209213122.png" alt="" /></p>
 
 <p><strong>why two random nonces?</strong></p>
 
-<p><img src="http://q2sxqdau4.bkt.clouddn.com/20191209213316.png" alt="" /></p>
+<p><img src="http://q5f66uxyd.bkt.clouddn.com/20191209213316.png" alt="" /></p>
 
 <p><strong>SSL/TLS Record Protocol</strong></p>
 
-<p><img src="http://q2sxqdau4.bkt.clouddn.com/20191209213402.png" alt="" /></p>
+<p><img src="http://q5f66uxyd.bkt.clouddn.com/20191209213402.png" alt="" /></p>
 
 <p><strong>SSL/TLS Record Format</strong></p>
 
-<p><img src="http://q2sxqdau4.bkt.clouddn.com/20191209213441.png" alt="" /></p>
+<p><img src="http://q5f66uxyd.bkt.clouddn.com/20191209213441.png" alt="" /></p>
 
 <p><strong>Real SSL/TLS Connection</strong></p>
 
-<p><img src="http://q2sxqdau4.bkt.clouddn.com/20191209213515.png" alt="" /></p>
+<p><img src="http://q5f66uxyd.bkt.clouddn.com/20191209213515.png" alt="" /></p>
 
 <blockquote>
 <p>考试指引：</p>
@@ -557,9 +560,9 @@ requests and responses</p>
             
             <ul class="clearfix">
                 
-                <li><a href='http://example.org/tags/%E5%AF%86%E7%A0%81%E5%AD%A6'>密码学</a></li>
+                <li><a href='https://hanmei.netlify.com/tags/%E5%AF%86%E7%A0%81%E5%AD%A6'>密码学</a></li>
                 
-                <li><a href='http://example.org/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8'>网络安全</a></li>
+                <li><a href='https://hanmei.netlify.com/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8'>网络安全</a></li>
                 
             </ul>
             
@@ -576,11 +579,11 @@ requests and responses</p>
 
                 <div id="secondary">
     <section class="widget">
-        <form id="search" action='//www.google.com/search'
+        <form id="search" action='https://hanmei.netlify.com/search/'
       method="get" accept-charset="utf-8" target="_blank" _lpchecked="1">
       
       <input type="text" name="q" maxlength="20" placeholder="Search">
-      <input type="hidden" name="sitesearch" value="http://example.org/">
+      <input type="hidden" name="sitesearch" value="https://hanmei.netlify.com/">
       <button type="submit" class="submit icon-search"></button>
 </form>
     </section>
@@ -588,20 +591,26 @@ requests and responses</p>
     
 
     <section class="widget">
+        <div id="calendar" class="auto-jsCalendar"></div>
+    </section>
+
+    <section class="widget">
         <h3 class="widget-title">分类</h3>
 <ul class="widget-list">
     
-    <li><a href="http://example.org/categories/CS%E8%AF%BE%E7%A8%8B%E5%AD%A6%E4%B9%A0/">CS课程学习 (18)</a></li>
+    <li><a href="https://hanmei.netlify.com/categories/">Categories (1)</a></li>
     
-    <li><a href="http://example.org/categories/blog%E6%90%AD%E5%BB%BA/">blog搭建 (1)</a></li>
+    <li><a href="https://hanmei.netlify.com/categories/CS%E8%AF%BE%E7%A8%8B%E5%AD%A6%E4%B9%A0/">CS课程学习 (19)</a></li>
     
-    <li><a href="http://example.org/categories/%E5%AD%A6%E6%9C%AF/">学术 (2)</a></li>
+    <li><a href="https://hanmei.netlify.com/categories/blog%E6%90%AD%E5%BB%BA/">blog搭建 (2)</a></li>
     
-    <li><a href="http://example.org/categories/%E6%8A%80%E6%9C%AF/">技术 (7)</a></li>
+    <li><a href="https://hanmei.netlify.com/categories/%E5%AD%A6%E6%9C%AF/">学术 (2)</a></li>
     
-    <li><a href="http://example.org/categories/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/">日常记录 (28)</a></li>
+    <li><a href="https://hanmei.netlify.com/categories/%E6%8A%80%E6%9C%AF/">技术 (7)</a></li>
     
-    <li><a href="http://example.org/categories/%E7%94%9F%E6%B4%BB/">生活 (1)</a></li>
+    <li><a href="https://hanmei.netlify.com/categories/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/">日常记录 (29)</a></li>
+    
+    <li><a href="https://hanmei.netlify.com/categories/%E7%94%9F%E6%B4%BB/">生活 (1)</a></li>
     
 </ul>
     </section>
@@ -610,35 +619,39 @@ requests and responses</p>
         <h3 class="widget-title">标签</h3>
 <div class="tagcloud">
     
-    <a href="http://example.org/tags/WebGL/">WebGL</a>
+    <a href="https://hanmei.netlify.com/tags/">Tags</a>
     
-    <a href="http://example.org/tags/blog/">blog</a>
+    <a href="https://hanmei.netlify.com/tags/WebGL/">WebGL</a>
     
-    <a href="http://example.org/tags/git/">git</a>
+    <a href="https://hanmei.netlify.com/tags/blog/">blog</a>
     
-    <a href="http://example.org/tags/linux/">linux</a>
+    <a href="https://hanmei.netlify.com/tags/bug%E8%AE%B0%E5%BD%95/">bug记录</a>
     
-    <a href="http://example.org/tags/%E5%9B%BE%E5%BD%A2%E5%AD%A6/">图形学</a>
+    <a href="https://hanmei.netlify.com/tags/git/">git</a>
     
-    <a href="http://example.org/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/">密码学</a>
+    <a href="https://hanmei.netlify.com/tags/linux/">linux</a>
     
-    <a href="http://example.org/tags/%E6%8C%81%E7%BB%AD%E8%A1%A5%E5%85%85.../">持续补充...</a>
+    <a href="https://hanmei.netlify.com/tags/%E5%9B%BE%E5%BD%A2%E5%AD%A6/">图形学</a>
     
-    <a href="http://example.org/tags/%E6%B5%8B%E8%AF%84/">测评</a>
+    <a href="https://hanmei.netlify.com/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/">密码学</a>
     
-    <a href="http://example.org/tags/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/">离散数学</a>
+    <a href="https://hanmei.netlify.com/tags/%E6%8C%81%E7%BB%AD%E8%A1%A5%E5%85%85.../">持续补充...</a>
     
-    <a href="http://example.org/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/">网络安全</a>
+    <a href="https://hanmei.netlify.com/tags/%E6%B5%8B%E8%AF%84/">测评</a>
     
-    <a href="http://example.org/tags/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/">论文阅读</a>
+    <a href="https://hanmei.netlify.com/tags/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/">离散数学</a>
     
-    <a href="http://example.org/tags/%E8%BF%90%E5%8A%A8%E4%BC%AA%E5%BD%B1%E6%B6%88%E9%99%A4/">运动伪影消除</a>
+    <a href="https://hanmei.netlify.com/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/">网络安全</a>
     
-    <a href="http://example.org/tags/%E9%80%9F%E6%9F%A5/">速查</a>
+    <a href="https://hanmei.netlify.com/tags/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/">论文阅读</a>
     
-    <a href="http://example.org/tags/%E9%85%B8%E5%A5%B6/">酸奶</a>
+    <a href="https://hanmei.netlify.com/tags/%E8%BF%90%E5%8A%A8%E4%BC%AA%E5%BD%B1%E6%B6%88%E9%99%A4/">运动伪影消除</a>
     
-    <a href="http://example.org/tags/%E9%9B%B6%E9%A3%9F/">零食</a>
+    <a href="https://hanmei.netlify.com/tags/%E9%80%9F%E6%9F%A5/">速查</a>
+    
+    <a href="https://hanmei.netlify.com/tags/%E9%85%B8%E5%A5%B6/">酸奶</a>
+    
+    <a href="https://hanmei.netlify.com/tags/%E9%9B%B6%E9%A3%9F/">零食</a>
     
 </div>
     </section>
@@ -648,16 +661,17 @@ requests and responses</p>
     <section class="widget">
         <h3 class="widget-title">其它</h3>
         <ul class="widget-list">
-            <li><a href="http://example.org/index.xml">文章 RSS</a></li>
+            <li><a href="https://hanmei.netlify.com/index.xml">文章 RSS</a></li>
         </ul>
     </section>
 </div>
+<script type="text/javascript" src='/js/jsCalendar.js?v=0.0.0'></script>
             </div>
         </div>
     </div>
     <footer id="footer">
     <div class="container">
-        &copy; 2020 <a href="http://example.org/">Hanmei@梅.</a>
+        &copy; 2020 <a href="https://hanmei.netlify.com/">Hanmei@梅.</a>
         Powered by <a rel="nofollow noreferer noopener" href="https://gohugo.io" target="_blank">Hugo</a>.
         Theme based on <a href="https://github.com/flysnow-org/maupassant-hugo" target="_blank">maupassant</a>.
         

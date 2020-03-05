@@ -2,264 +2,273 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>日常记录 on Hanmei@梅</title>
-    <link>http://example.org/categories/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
+    <link>https://hanmei.netlify.com/categories/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
     <description>Recent content in 日常记录 on Hanmei@梅</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 08 Dec 2019 15:13:54 -0800</lastBuildDate>
+    <lastBuildDate>Thu, 20 Feb 2020 20:23:53 +0800</lastBuildDate>
     
-	<atom:link href="http://example.org/categories/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://hanmei.netlify.com/categories/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>20200220 日常记录</title>
+      <link>https://hanmei.netlify.com/post/20200220-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
+      <pubDate>Thu, 20 Feb 2020 20:23:53 +0800</pubDate>
+      
+      <guid>https://hanmei.netlify.com/post/20200220-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
+      <description>&lt;p&gt;生活碎碎念 ｜ 博客设计未来计划 ｜ 写作计划&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>20191208 日常记录</title>
-      <link>http://example.org/post/20191208-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
+      <link>https://hanmei.netlify.com/post/20191208-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Sun, 08 Dec 2019 15:13:54 -0800</pubDate>
       
-      <guid>http://example.org/post/20191208-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
+      <guid>https://hanmei.netlify.com/post/20191208-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
       <description>&lt;p&gt;生活碎碎念&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>20191201 日常记录</title>
-      <link>http://example.org/post/20191201-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
+      <link>https://hanmei.netlify.com/post/20191201-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Sun, 01 Dec 2019 08:43:59 -0800</pubDate>
       
-      <guid>http://example.org/post/20191201-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
+      <guid>https://hanmei.netlify.com/post/20191201-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
       <description>&lt;p&gt;生活流水账 ｜ alfred | vuepress&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>20191130 日常记录</title>
-      <link>http://example.org/post/20191130-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
+      <link>https://hanmei.netlify.com/post/20191130-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Sat, 30 Nov 2019 23:01:38 -0800</pubDate>
       
-      <guid>http://example.org/post/20191130-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
+      <guid>https://hanmei.netlify.com/post/20191130-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
       <description>&lt;p&gt;生活碎碎念&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>20191127 日常记录</title>
-      <link>http://example.org/post/20191127-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
+      <link>https://hanmei.netlify.com/post/20191127-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Wed, 27 Nov 2019 12:10:36 -0800</pubDate>
       
-      <guid>http://example.org/post/20191127-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
+      <guid>https://hanmei.netlify.com/post/20191127-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
       <description>&lt;p&gt;生活碎碎念&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>20191124 日常记录</title>
-      <link>http://example.org/post/20191124-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
+      <link>https://hanmei.netlify.com/post/20191124-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Sun, 24 Nov 2019 10:49:42 -0800</pubDate>
       
-      <guid>http://example.org/post/20191124-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
+      <guid>https://hanmei.netlify.com/post/20191124-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
       <description>&lt;p&gt;图形学作业&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>20191123 日常记录</title>
-      <link>http://example.org/post/20191123-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
+      <link>https://hanmei.netlify.com/post/20191123-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Sat, 23 Nov 2019 23:34:28 -0800</pubDate>
       
-      <guid>http://example.org/post/20191123-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
+      <guid>https://hanmei.netlify.com/post/20191123-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
       <description>&lt;p&gt;生活碎碎念&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>20191122 日常记录</title>
-      <link>http://example.org/post/20191122-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
+      <link>https://hanmei.netlify.com/post/20191122-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Fri, 22 Nov 2019 08:06:20 -0800</pubDate>
       
-      <guid>http://example.org/post/20191122-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
+      <guid>https://hanmei.netlify.com/post/20191122-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
       <description>&lt;p&gt;生活碎碎念&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>20191121 日常记录</title>
-      <link>http://example.org/post/20191121-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
+      <link>https://hanmei.netlify.com/post/20191121-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Thu, 21 Nov 2019 12:39:33 -0800</pubDate>
       
-      <guid>http://example.org/post/20191121-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
+      <guid>https://hanmei.netlify.com/post/20191121-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
       <description>&lt;p&gt;生活碎碎念 ｜ 一些想法 ｜ 学术 ｜ activity watch（mac-app）&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>20191120 日常记录</title>
-      <link>http://example.org/post/20191120-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
+      <link>https://hanmei.netlify.com/post/20191120-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Wed, 20 Nov 2019 20:44:50 -0800</pubDate>
       
-      <guid>http://example.org/post/20191120-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
+      <guid>https://hanmei.netlify.com/post/20191120-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
       <description>&lt;p&gt;android-app | 生活流水账&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>20191119 日常记录</title>
-      <link>http://example.org/post/20191119-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
+      <link>https://hanmei.netlify.com/post/20191119-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Tue, 19 Nov 2019 11:09:19 -0800</pubDate>
       
-      <guid>http://example.org/post/20191119-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
+      <guid>https://hanmei.netlify.com/post/20191119-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
       <description>&lt;p&gt;知网 ｜ Alfred ｜ 一些思考&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>20191118 日常记录</title>
-      <link>http://example.org/post/20191118-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
+      <link>https://hanmei.netlify.com/post/20191118-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Mon, 18 Nov 2019 22:05:21 -0800</pubDate>
       
-      <guid>http://example.org/post/20191118-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
+      <guid>https://hanmei.netlify.com/post/20191118-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
       <description>&lt;p&gt;博客好久没更新了，强行更一波~ 不能继续丧下去了&amp;hellip;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>20191115 日常记录</title>
-      <link>http://example.org/post/20191115-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
+      <link>https://hanmei.netlify.com/post/20191115-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Fri, 15 Nov 2019 10:37:58 -0800</pubDate>
       
-      <guid>http://example.org/post/20191115-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
+      <guid>https://hanmei.netlify.com/post/20191115-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
       <description>&lt;p&gt;生活碎碎念 ｜ zotero (mac-app) | ocr (web)&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>20191114 日常记录</title>
-      <link>http://example.org/post/20191114-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
+      <link>https://hanmei.netlify.com/post/20191114-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Thu, 14 Nov 2019 19:59:25 -0800</pubDate>
       
-      <guid>http://example.org/post/20191114-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
+      <guid>https://hanmei.netlify.com/post/20191114-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
       <description>&lt;p&gt;生活流水账&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>20191113 日常记录</title>
-      <link>http://example.org/post/20191113-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
+      <link>https://hanmei.netlify.com/post/20191113-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Wed, 13 Nov 2019 23:07:45 -0800</pubDate>
       
-      <guid>http://example.org/post/20191113-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
+      <guid>https://hanmei.netlify.com/post/20191113-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
       <description>&lt;p&gt;生活碎碎念&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>20191112 日常记录</title>
-      <link>http://example.org/post/20191112-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
+      <link>https://hanmei.netlify.com/post/20191112-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Tue, 12 Nov 2019 11:04:50 -0800</pubDate>
       
-      <guid>http://example.org/post/20191112-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
+      <guid>https://hanmei.netlify.com/post/20191112-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
       <description>&lt;p&gt;blog | vscode | PPG实验 ｜ 生活碎碎念&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>20191111 日常记录</title>
-      <link>http://example.org/post/20191111-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
+      <link>https://hanmei.netlify.com/post/20191111-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Mon, 11 Nov 2019 07:00:29 -0800</pubDate>
       
-      <guid>http://example.org/post/20191111-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
+      <guid>https://hanmei.netlify.com/post/20191111-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
       <description>&lt;p&gt;blog | 考试复习&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>20191110 日常记录</title>
-      <link>http://example.org/post/20191110-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
+      <link>https://hanmei.netlify.com/post/20191110-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Sun, 10 Nov 2019 10:25:37 -0800</pubDate>
       
-      <guid>http://example.org/post/20191110-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
+      <guid>https://hanmei.netlify.com/post/20191110-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
       <description>&lt;p&gt;生活流水账 ｜ 看论文&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>20191109 日常记录</title>
-      <link>http://example.org/post/20191109-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
+      <link>https://hanmei.netlify.com/post/20191109-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Sat, 09 Nov 2019 08:20:31 -0800</pubDate>
       
-      <guid>http://example.org/post/20191109-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
+      <guid>https://hanmei.netlify.com/post/20191109-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
       <description>&lt;p&gt;mac电脑 ｜ 服务器 ｜ 追up主 ｜ 生活碎碎念 ｜ 看论文&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>20191108 日常记录</title>
-      <link>http://example.org/post/20191108-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
+      <link>https://hanmei.netlify.com/post/20191108-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Fri, 08 Nov 2019 10:21:21 -0800</pubDate>
       
-      <guid>http://example.org/post/20191108-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
+      <guid>https://hanmei.netlify.com/post/20191108-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
       <description>&lt;p&gt;生活流水账 | 观点&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>20191106 日常记录</title>
-      <link>http://example.org/post/20191106-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
+      <link>https://hanmei.netlify.com/post/20191106-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Wed, 06 Nov 2019 10:21:21 -0800</pubDate>
       
-      <guid>http://example.org/post/20191106-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
+      <guid>https://hanmei.netlify.com/post/20191106-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
       <description>&lt;p&gt;blog | 生活流水账 ｜ 观点&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>20191105 日常记录</title>
-      <link>http://example.org/post/20191105-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
+      <link>https://hanmei.netlify.com/post/20191105-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Tue, 05 Nov 2019 07:02:12 -0800</pubDate>
       
-      <guid>http://example.org/post/20191105-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
+      <guid>https://hanmei.netlify.com/post/20191105-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
       <description>&lt;p&gt;生活碎碎念｜ blog | 看论文&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>20191104 日常记录</title>
-      <link>http://example.org/post/20191104-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
+      <link>https://hanmei.netlify.com/post/20191104-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Mon, 04 Nov 2019 16:33:35 -0800</pubDate>
       
-      <guid>http://example.org/post/20191104-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
+      <guid>https://hanmei.netlify.com/post/20191104-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
       <description>&lt;p&gt;生活碎碎念 ｜ android-app | web-app ｜ 科研 ｜ 观点 ｜ 创作&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>20191103 日常记录</title>
-      <link>http://example.org/post/20191103-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
+      <link>https://hanmei.netlify.com/post/20191103-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Sun, 03 Nov 2019 15:27:23 -0800</pubDate>
       
-      <guid>http://example.org/post/20191103-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
+      <guid>https://hanmei.netlify.com/post/20191103-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
       <description>&lt;p&gt;blog ｜ vscode ｜ mac电脑&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>20191102 日常记录</title>
-      <link>http://example.org/post/20191102-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
+      <link>https://hanmei.netlify.com/post/20191102-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Sat, 02 Nov 2019 08:48:30 -0700</pubDate>
       
-      <guid>http://example.org/post/20191102-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
+      <guid>https://hanmei.netlify.com/post/20191102-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
       <description>&lt;p&gt;shell编程 ｜ vscode ｜ 图床 ｜ 生活碎碎念&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>20191101 日常记录</title>
-      <link>http://example.org/post/20191101-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
+      <link>https://hanmei.netlify.com/post/20191101-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Fri, 01 Nov 2019 10:30:00 -0700</pubDate>
       
-      <guid>http://example.org/post/20191101-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
+      <guid>https://hanmei.netlify.com/post/20191101-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
       <description>&lt;p&gt;blog ｜ vscode ｜ mac电脑&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>20191030 日常记录</title>
-      <link>http://example.org/post/20191030-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
+      <link>https://hanmei.netlify.com/post/20191030-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Wed, 30 Oct 2019 11:07:21 -0700</pubDate>
       
-      <guid>http://example.org/post/20191030-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
+      <guid>https://hanmei.netlify.com/post/20191030-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
       <description>&lt;p&gt;图床 ｜ vscode ｜ alfred&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>20191029 日常记录</title>
-      <link>http://example.org/post/20191029-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
+      <link>https://hanmei.netlify.com/post/20191029-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Tue, 29 Oct 2019 10:59:41 -0700</pubDate>
       
-      <guid>http://example.org/post/20191029-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
+      <guid>https://hanmei.netlify.com/post/20191029-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
       <description>&lt;p&gt;blog ｜ 图床 ｜ 生活流水账 ｜ android-app&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>20191028 日常记录</title>
-      <link>http://example.org/post/20191028-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
+      <link>https://hanmei.netlify.com/post/20191028-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Mon, 28 Oct 2019 17:57:10 -0700</pubDate>
       
-      <guid>http://example.org/post/20191028-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
+      <guid>https://hanmei.netlify.com/post/20191028-%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/</guid>
       <description>&lt;p&gt;blog ｜ sourcetree (mac-app) | alfred | 生活流水账 ｜ mac电脑&lt;/p&gt;</description>
     </item>
     

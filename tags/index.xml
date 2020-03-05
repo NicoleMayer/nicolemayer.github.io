@@ -2,147 +2,156 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Hanmei@梅</title>
-    <link>http://example.org/tags/</link>
+    <link>https://hanmei.netlify.com/tags/</link>
     <description>Recent content in Tags on Hanmei@梅</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 09 Dec 2019 18:10:03 -0700</lastBuildDate>
+    <lastBuildDate>Thu, 05 Mar 2020 18:02:12 +0800</lastBuildDate>
     
-	<atom:link href="http://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://hanmei.netlify.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>密码学</title>
-      <link>http://example.org/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/</link>
-      <pubDate>Mon, 09 Dec 2019 18:10:03 -0700</pubDate>
-      
-      <guid>http://example.org/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/</guid>
-      <description></description>
-    </item>
     
     <item>
-      <title>网络安全</title>
-      <link>http://example.org/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/</link>
-      <pubDate>Mon, 09 Dec 2019 18:10:03 -0700</pubDate>
+      <title>bug记录</title>
+      <link>https://hanmei.netlify.com/tags/bug%E8%AE%B0%E5%BD%95/</link>
+      <pubDate>Fri, 21 Feb 2020 15:39:13 +0800</pubDate>
       
-      <guid>http://example.org/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>图形学</title>
-      <link>http://example.org/tags/%E5%9B%BE%E5%BD%A2%E5%AD%A6/</link>
-      <pubDate>Thu, 14 Nov 2019 08:12:39 -0700</pubDate>
-      
-      <guid>http://example.org/tags/%E5%9B%BE%E5%BD%A2%E5%AD%A6/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>持续补充...</title>
-      <link>http://example.org/tags/%E6%8C%81%E7%BB%AD%E8%A1%A5%E5%85%85.../</link>
-      <pubDate>Mon, 11 Nov 2019 07:21:06 -0700</pubDate>
-      
-      <guid>http://example.org/tags/%E6%8C%81%E7%BB%AD%E8%A1%A5%E5%85%85.../</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>linux</title>
-      <link>http://example.org/tags/linux/</link>
-      <pubDate>Sat, 09 Nov 2019 08:25:58 -0700</pubDate>
-      
-      <guid>http://example.org/tags/linux/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>论文阅读</title>
-      <link>http://example.org/tags/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/</link>
-      <pubDate>Thu, 07 Nov 2019 20:38:07 -0700</pubDate>
-      
-      <guid>http://example.org/tags/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>运动伪影消除</title>
-      <link>http://example.org/tags/%E8%BF%90%E5%8A%A8%E4%BC%AA%E5%BD%B1%E6%B6%88%E9%99%A4/</link>
-      <pubDate>Thu, 07 Nov 2019 20:38:07 -0700</pubDate>
-      
-      <guid>http://example.org/tags/%E8%BF%90%E5%8A%A8%E4%BC%AA%E5%BD%B1%E6%B6%88%E9%99%A4/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>测评</title>
-      <link>http://example.org/tags/%E6%B5%8B%E8%AF%84/</link>
-      <pubDate>Mon, 04 Nov 2019 16:36:50 -0700</pubDate>
-      
-      <guid>http://example.org/tags/%E6%B5%8B%E8%AF%84/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>酸奶</title>
-      <link>http://example.org/tags/%E9%85%B8%E5%A5%B6/</link>
-      <pubDate>Mon, 04 Nov 2019 16:36:50 -0700</pubDate>
-      
-      <guid>http://example.org/tags/%E9%85%B8%E5%A5%B6/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>零食</title>
-      <link>http://example.org/tags/%E9%9B%B6%E9%A3%9F/</link>
-      <pubDate>Mon, 04 Nov 2019 16:36:50 -0700</pubDate>
-      
-      <guid>http://example.org/tags/%E9%9B%B6%E9%A3%9F/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>WebGL</title>
-      <link>http://example.org/tags/WebGL/</link>
-      <pubDate>Mon, 04 Nov 2019 08:45:54 -0700</pubDate>
-      
-      <guid>http://example.org/tags/WebGL/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>git</title>
-      <link>http://example.org/tags/git/</link>
-      <pubDate>Fri, 01 Nov 2019 18:30:00 -0700</pubDate>
-      
-      <guid>http://example.org/tags/git/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>速查</title>
-      <link>http://example.org/tags/%E9%80%9F%E6%9F%A5/</link>
-      <pubDate>Fri, 01 Nov 2019 18:30:00 -0700</pubDate>
-      
-      <guid>http://example.org/tags/%E9%80%9F%E6%9F%A5/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>离散数学</title>
-      <link>http://example.org/tags/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/</link>
-      <pubDate>Tue, 29 Oct 2019 11:21:14 -0700</pubDate>
-      
-      <guid>http://example.org/tags/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/</guid>
+      <guid>https://hanmei.netlify.com/tags/bug%E8%AE%B0%E5%BD%95/</guid>
       <description></description>
     </item>
     
     <item>
       <title>blog</title>
-      <link>http://example.org/tags/blog/</link>
-      <pubDate>Mon, 28 Oct 2019 00:00:00 +0000</pubDate>
+      <link>https://hanmei.netlify.com/tags/blog/</link>
+      <pubDate>Thu, 20 Feb 2020 20:17:43 +0800</pubDate>
       
-      <guid>http://example.org/tags/blog/</guid>
+      <guid>https://hanmei.netlify.com/tags/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>持续补充...</title>
+      <link>https://hanmei.netlify.com/tags/%E6%8C%81%E7%BB%AD%E8%A1%A5%E5%85%85.../</link>
+      <pubDate>Thu, 20 Feb 2020 20:17:43 +0800</pubDate>
+      
+      <guid>https://hanmei.netlify.com/tags/%E6%8C%81%E7%BB%AD%E8%A1%A5%E5%85%85.../</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>密码学</title>
+      <link>https://hanmei.netlify.com/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/</link>
+      <pubDate>Mon, 09 Dec 2019 18:10:03 -0700</pubDate>
+      
+      <guid>https://hanmei.netlify.com/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>网络安全</title>
+      <link>https://hanmei.netlify.com/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/</link>
+      <pubDate>Mon, 09 Dec 2019 18:10:03 -0700</pubDate>
+      
+      <guid>https://hanmei.netlify.com/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>图形学</title>
+      <link>https://hanmei.netlify.com/tags/%E5%9B%BE%E5%BD%A2%E5%AD%A6/</link>
+      <pubDate>Thu, 14 Nov 2019 08:12:39 -0700</pubDate>
+      
+      <guid>https://hanmei.netlify.com/tags/%E5%9B%BE%E5%BD%A2%E5%AD%A6/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>https://hanmei.netlify.com/tags/linux/</link>
+      <pubDate>Sat, 09 Nov 2019 08:25:58 -0700</pubDate>
+      
+      <guid>https://hanmei.netlify.com/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>论文阅读</title>
+      <link>https://hanmei.netlify.com/tags/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/</link>
+      <pubDate>Thu, 07 Nov 2019 20:38:07 -0700</pubDate>
+      
+      <guid>https://hanmei.netlify.com/tags/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>运动伪影消除</title>
+      <link>https://hanmei.netlify.com/tags/%E8%BF%90%E5%8A%A8%E4%BC%AA%E5%BD%B1%E6%B6%88%E9%99%A4/</link>
+      <pubDate>Thu, 07 Nov 2019 20:38:07 -0700</pubDate>
+      
+      <guid>https://hanmei.netlify.com/tags/%E8%BF%90%E5%8A%A8%E4%BC%AA%E5%BD%B1%E6%B6%88%E9%99%A4/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>测评</title>
+      <link>https://hanmei.netlify.com/tags/%E6%B5%8B%E8%AF%84/</link>
+      <pubDate>Mon, 04 Nov 2019 16:36:50 -0700</pubDate>
+      
+      <guid>https://hanmei.netlify.com/tags/%E6%B5%8B%E8%AF%84/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>酸奶</title>
+      <link>https://hanmei.netlify.com/tags/%E9%85%B8%E5%A5%B6/</link>
+      <pubDate>Mon, 04 Nov 2019 16:36:50 -0700</pubDate>
+      
+      <guid>https://hanmei.netlify.com/tags/%E9%85%B8%E5%A5%B6/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>零食</title>
+      <link>https://hanmei.netlify.com/tags/%E9%9B%B6%E9%A3%9F/</link>
+      <pubDate>Mon, 04 Nov 2019 16:36:50 -0700</pubDate>
+      
+      <guid>https://hanmei.netlify.com/tags/%E9%9B%B6%E9%A3%9F/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>WebGL</title>
+      <link>https://hanmei.netlify.com/tags/WebGL/</link>
+      <pubDate>Mon, 04 Nov 2019 00:03:43 -0700</pubDate>
+      
+      <guid>https://hanmei.netlify.com/tags/WebGL/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>git</title>
+      <link>https://hanmei.netlify.com/tags/git/</link>
+      <pubDate>Fri, 01 Nov 2019 18:30:00 -0700</pubDate>
+      
+      <guid>https://hanmei.netlify.com/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>速查</title>
+      <link>https://hanmei.netlify.com/tags/%E9%80%9F%E6%9F%A5/</link>
+      <pubDate>Fri, 01 Nov 2019 18:30:00 -0700</pubDate>
+      
+      <guid>https://hanmei.netlify.com/tags/%E9%80%9F%E6%9F%A5/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>离散数学</title>
+      <link>https://hanmei.netlify.com/tags/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/</link>
+      <pubDate>Tue, 29 Oct 2019 11:21:14 -0700</pubDate>
+      
+      <guid>https://hanmei.netlify.com/tags/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/</guid>
       <description></description>
     </item>
     

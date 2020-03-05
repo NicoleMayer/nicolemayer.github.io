@@ -1103,6 +1103,8 @@ img.alignright {
     font-size: 15px;
     line-height: 2;
     padding-bottom: .8em;
+    /* box-shadow: 0 0 0 1px #FFFFFF, 0 0 0 2px #ddd, 0 1px 5px 3px #EEEEEE;
+    background-color: #fff; */
 }
 
 .post-archive h2 {
@@ -1262,4 +1264,137 @@ table tr th, table tr td {
     border: 1px solid #CCC;
     padding: 0.5em 1em;
     text-align: left;
+}
+
+/* calendar */
+
+.jsCalendar * {
+    margin: 0;
+    padding: 0;
+}
+
+.jsCalendar table, .jsCalendar table th, .jsCalendar table td {
+    border: 0;
+    box-sizing: content-box;
+}
+
+.jsCalendar table {
+    background-color: #FFFFFF;
+    border-collapse: collapse;
+    border-radius: 4px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+    color: #000000;
+    font-family: Tahoma, Geneva, sans-serif;
+    /* margin: 5px; */
+}
+
+.jsCalendar tr {
+    line-height: 0;
+}
+
+.jsCalendar thead .jsCalendar-title {
+    height: 40px;
+    line-height: 40px;
+    background-color: rgb(249, 249, 249);
+}
+
+.jsCalendar thead .jsCalendar-title-left {
+    float: left;
+}
+
+.jsCalendar thead .jsCalendar-title-right {
+    float: right;
+}
+
+.jsCalendar thead .jsCalendar-title-name {
+    cursor: default;
+    float: left;
+    font-size: 18px;
+    font-weight: lighter;
+    padding: 0 32px;
+    padding-right: 0;
+}
+
+.jsCalendar thead .jsCalendar-title-name2 {
+    cursor: default;
+    float: left;
+    font-size: 18px;
+    font-weight: lighter;
+    padding: 0 10px;
+}
+
+.jsCalendar thead .jsCalendar-nav-left, .jsCalendar thead .jsCalendar-nav-right {
+    border-radius: 10px;
+    color: #999999;
+    cursor: pointer;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 12px;
+    font-weight: bold;
+    height: 20px;
+    line-height: 20px;
+    margin: 10px 8px;
+    text-align: center;
+    transition: color 0.2s, background-color 0.2s;
+    width: 20px;
+}
+
+.jsCalendar thead .jsCalendar-nav-left:hover, .jsCalendar thead .jsCalendar-nav-right:hover {
+    background-color: #E2E2E2;
+    color: #000000;
+}
+
+.jsCalendar thead .jsCalendar-nav-left {
+    float: left;
+}
+
+.jsCalendar thead .jsCalendar-nav-right {
+    float: right;
+}
+
+.jsCalendar thead .jsCalendar-nav-left:after {
+    content: "<";
+}
+
+.jsCalendar thead .jsCalendar-nav-right:after {
+    content: ">";
+}
+
+.jsCalendar thead .jsCalendar-week-days th {
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+    font-weight: 400;
+}
+
+.jsCalendar tbody td {
+    border-radius: 18px;
+}
+
+.jsCalendar thead .jsCalendar-week-days th {
+    background-color: #f9f9f9;
+}
+
+.jsCalendar thead .jsCalendar-week-days th, .jsCalendar tbody td {
+    cursor: default;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: lighter;
+    height: 32px;
+    line-height: 32px;
+    width: 32px;
+    margin: 1px 2.1px;
+    text-align: center;
+    transition: color 0.1s, background-color 0.2s;
+}
+
+.jsCalendar tbody td:hover {
+    background-color: #E6E6E6;
+}
+
+.jsCalendar tbody td.jsCalendar-current {
+    background-color: #111;
+    border-radius: 18px;
+    color: #FFFFFF;
+}
+
+.jsCalendar tbody td.jsCalendar-previous, .jsCalendar tbody td.jsCalendar-next {
+    color: #CACACA;
 }

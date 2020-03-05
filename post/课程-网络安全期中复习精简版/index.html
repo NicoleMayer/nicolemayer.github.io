@@ -19,7 +19,7 @@
     <meta name="description" content="课程 网络安全 期中复习精简版">
     
     <meta name="author" content="">
-    <meta property="og:url" content="http://example.org/post/%E8%AF%BE%E7%A8%8B-%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%B2%BE%E7%AE%80%E7%89%88/">
+    <meta property="og:url" content="https://hanmei.netlify.com/post/%E8%AF%BE%E7%A8%8B-%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0%E7%B2%BE%E7%AE%80%E7%89%88/">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href='/css/normalize.css'>
@@ -38,7 +38,7 @@
     <div class="container">
         <div class="col-group">
             <div class="site-name ">
-                <a id="logo" href="http://example.org/">
+                <a id="logo" href="https://hanmei.netlify.com/">
                     Hanmei@梅
                 </a>
                 
@@ -46,13 +46,16 @@
             <div>
                 <nav id="nav-menu" class="clearfix">
                     
-                    <a  href="http://example.org/"
+                    <a  href="https://hanmei.netlify.com/"
                         title="首页">首页</a>
                     
-                    <a  href="http://example.org/archives/"
+                    <a  href="https://hanmei.netlify.com/archives/"
                         title="存档">存档</a>
                     
-                    <a  href="http://example.org/about/"
+                    <a  href="https://hanmei.netlify.com/ideas/"
+                        title="碎碎念">碎碎念</a>
+                    
+                    <a  href="https://hanmei.netlify.com/about/"
                         title="关于">关于</a>
                     
                 </nav>
@@ -186,7 +189,7 @@
         <div class="post-meta">
             <span>|</span>
             
-            <span class="meta-category"><a href='http://example.org/categories/CS%E8%AF%BE%E7%A8%8B%E5%AD%A6%E4%B9%A0'>CS课程学习</a></span>
+            <span class="meta-category"><a href='https://hanmei.netlify.com/categories/CS%E8%AF%BE%E7%A8%8B%E5%AD%A6%E4%B9%A0'>CS课程学习</a></span>
             
         </div>
         
@@ -249,7 +252,7 @@
 
 <p>每一轮加密解密过程如下：</p>
 
-<p><img src="http://q2sxqdau4.bkt.clouddn.com/20191122084347.png" alt="" /></p>
+<p><img src="http://q5f66uxyd.bkt.clouddn.com/20191122084347.png" alt="" /></p>
 
 <p>其中F变换为：expansion(32 bit -&gt; 48 bit 和 subkey 保持一致, 不是直接加0, 有一定的策略) -&gt; Rn 异或 Kn -&gt; S-Box Substitution (32 bit 每6位产生4位的值) -&gt; P-box Permutation (32 bit 使得下一轮顺序颠倒, 增强安全性)</p>
 
@@ -257,7 +260,7 @@
 
 <p>整个框架：</p>
 
-<p><img src="http://q2sxqdau4.bkt.clouddn.com/20191122085451.png" alt="" /></p>
+<p><img src="http://q5f66uxyd.bkt.clouddn.com/20191122085451.png" alt="" /></p>
 
 <p>上图包含了 subkey generation 的过程，涉及到的matrix: permutation choice 1 (7*8的选择)/ permutation choice 2 (4*8的选择)</p>
 
@@ -265,7 +268,7 @@
 
 <p>DES Variants</p>
 
-<p><img src="http://q2sxqdau4.bkt.clouddn.com/20191122090022.jpg" alt="" /></p>
+<p><img src="http://q5f66uxyd.bkt.clouddn.com/20191122090022.jpg" alt="" /></p>
 
 <p><strong>AES</strong> Rijndael</p>
 
@@ -275,7 +278,7 @@
 
 <p><img src="https://i.loli.net/2019/11/01/8ZLkwCVDmeJGPtM.jpg" alt="" /></p>
 
-<p><img src="http://q2sxqdau4.bkt.clouddn.com/20191122090557.jpg" alt="" /></p>
+<p><img src="http://q5f66uxyd.bkt.clouddn.com/20191122090557.jpg" alt="" /></p>
 
 <p>优点：硬件软件的实现都有提升（Atomic operations / small tables in ROM / barrel-shifting registers / fast table lookup routine / Considerable parallelism）</p>
 
@@ -299,7 +302,7 @@
 
 <p><strong>Birthday Paradox</strong></p>
 
-<p><img src="http://q2sxqdau4.bkt.clouddn.com/20191122090801.jpg" alt="" /></p>
+<p><img src="http://q5f66uxyd.bkt.clouddn.com/20191122090801.jpg" alt="" /></p>
 
 <p>CHF from a Block Cipher：<code>Hi = E ( Mi, Hi-1 ), H0= 0</code>
 Davies-Meyer CHF：<code>Hi = Hi-1 ⊕ E ( Mi, Hi-1 ), H0= 0</code></p>
@@ -438,9 +441,9 @@ Davies-Meyer CHF：<code>Hi = Hi-1 ⊕ E ( Mi, Hi-1 ), H0= 0</code></p>
             
             <ul class="clearfix">
                 
-                <li><a href='http://example.org/tags/%E5%AF%86%E7%A0%81%E5%AD%A6'>密码学</a></li>
+                <li><a href='https://hanmei.netlify.com/tags/%E5%AF%86%E7%A0%81%E5%AD%A6'>密码学</a></li>
                 
-                <li><a href='http://example.org/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8'>网络安全</a></li>
+                <li><a href='https://hanmei.netlify.com/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8'>网络安全</a></li>
                 
             </ul>
             
@@ -457,11 +460,11 @@ Davies-Meyer CHF：<code>Hi = Hi-1 ⊕ E ( Mi, Hi-1 ), H0= 0</code></p>
 
                 <div id="secondary">
     <section class="widget">
-        <form id="search" action='//www.google.com/search'
+        <form id="search" action='https://hanmei.netlify.com/search/'
       method="get" accept-charset="utf-8" target="_blank" _lpchecked="1">
       
       <input type="text" name="q" maxlength="20" placeholder="Search">
-      <input type="hidden" name="sitesearch" value="http://example.org/">
+      <input type="hidden" name="sitesearch" value="https://hanmei.netlify.com/">
       <button type="submit" class="submit icon-search"></button>
 </form>
     </section>
@@ -469,20 +472,26 @@ Davies-Meyer CHF：<code>Hi = Hi-1 ⊕ E ( Mi, Hi-1 ), H0= 0</code></p>
     
 
     <section class="widget">
+        <div id="calendar" class="auto-jsCalendar"></div>
+    </section>
+
+    <section class="widget">
         <h3 class="widget-title">分类</h3>
 <ul class="widget-list">
     
-    <li><a href="http://example.org/categories/CS%E8%AF%BE%E7%A8%8B%E5%AD%A6%E4%B9%A0/">CS课程学习 (18)</a></li>
+    <li><a href="https://hanmei.netlify.com/categories/">Categories (1)</a></li>
     
-    <li><a href="http://example.org/categories/blog%E6%90%AD%E5%BB%BA/">blog搭建 (1)</a></li>
+    <li><a href="https://hanmei.netlify.com/categories/CS%E8%AF%BE%E7%A8%8B%E5%AD%A6%E4%B9%A0/">CS课程学习 (19)</a></li>
     
-    <li><a href="http://example.org/categories/%E5%AD%A6%E6%9C%AF/">学术 (2)</a></li>
+    <li><a href="https://hanmei.netlify.com/categories/blog%E6%90%AD%E5%BB%BA/">blog搭建 (2)</a></li>
     
-    <li><a href="http://example.org/categories/%E6%8A%80%E6%9C%AF/">技术 (7)</a></li>
+    <li><a href="https://hanmei.netlify.com/categories/%E5%AD%A6%E6%9C%AF/">学术 (2)</a></li>
     
-    <li><a href="http://example.org/categories/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/">日常记录 (28)</a></li>
+    <li><a href="https://hanmei.netlify.com/categories/%E6%8A%80%E6%9C%AF/">技术 (7)</a></li>
     
-    <li><a href="http://example.org/categories/%E7%94%9F%E6%B4%BB/">生活 (1)</a></li>
+    <li><a href="https://hanmei.netlify.com/categories/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/">日常记录 (29)</a></li>
+    
+    <li><a href="https://hanmei.netlify.com/categories/%E7%94%9F%E6%B4%BB/">生活 (1)</a></li>
     
 </ul>
     </section>
@@ -491,35 +500,39 @@ Davies-Meyer CHF：<code>Hi = Hi-1 ⊕ E ( Mi, Hi-1 ), H0= 0</code></p>
         <h3 class="widget-title">标签</h3>
 <div class="tagcloud">
     
-    <a href="http://example.org/tags/WebGL/">WebGL</a>
+    <a href="https://hanmei.netlify.com/tags/">Tags</a>
     
-    <a href="http://example.org/tags/blog/">blog</a>
+    <a href="https://hanmei.netlify.com/tags/WebGL/">WebGL</a>
     
-    <a href="http://example.org/tags/git/">git</a>
+    <a href="https://hanmei.netlify.com/tags/blog/">blog</a>
     
-    <a href="http://example.org/tags/linux/">linux</a>
+    <a href="https://hanmei.netlify.com/tags/bug%E8%AE%B0%E5%BD%95/">bug记录</a>
     
-    <a href="http://example.org/tags/%E5%9B%BE%E5%BD%A2%E5%AD%A6/">图形学</a>
+    <a href="https://hanmei.netlify.com/tags/git/">git</a>
     
-    <a href="http://example.org/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/">密码学</a>
+    <a href="https://hanmei.netlify.com/tags/linux/">linux</a>
     
-    <a href="http://example.org/tags/%E6%8C%81%E7%BB%AD%E8%A1%A5%E5%85%85.../">持续补充...</a>
+    <a href="https://hanmei.netlify.com/tags/%E5%9B%BE%E5%BD%A2%E5%AD%A6/">图形学</a>
     
-    <a href="http://example.org/tags/%E6%B5%8B%E8%AF%84/">测评</a>
+    <a href="https://hanmei.netlify.com/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/">密码学</a>
     
-    <a href="http://example.org/tags/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/">离散数学</a>
+    <a href="https://hanmei.netlify.com/tags/%E6%8C%81%E7%BB%AD%E8%A1%A5%E5%85%85.../">持续补充...</a>
     
-    <a href="http://example.org/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/">网络安全</a>
+    <a href="https://hanmei.netlify.com/tags/%E6%B5%8B%E8%AF%84/">测评</a>
     
-    <a href="http://example.org/tags/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/">论文阅读</a>
+    <a href="https://hanmei.netlify.com/tags/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/">离散数学</a>
     
-    <a href="http://example.org/tags/%E8%BF%90%E5%8A%A8%E4%BC%AA%E5%BD%B1%E6%B6%88%E9%99%A4/">运动伪影消除</a>
+    <a href="https://hanmei.netlify.com/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/">网络安全</a>
     
-    <a href="http://example.org/tags/%E9%80%9F%E6%9F%A5/">速查</a>
+    <a href="https://hanmei.netlify.com/tags/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/">论文阅读</a>
     
-    <a href="http://example.org/tags/%E9%85%B8%E5%A5%B6/">酸奶</a>
+    <a href="https://hanmei.netlify.com/tags/%E8%BF%90%E5%8A%A8%E4%BC%AA%E5%BD%B1%E6%B6%88%E9%99%A4/">运动伪影消除</a>
     
-    <a href="http://example.org/tags/%E9%9B%B6%E9%A3%9F/">零食</a>
+    <a href="https://hanmei.netlify.com/tags/%E9%80%9F%E6%9F%A5/">速查</a>
+    
+    <a href="https://hanmei.netlify.com/tags/%E9%85%B8%E5%A5%B6/">酸奶</a>
+    
+    <a href="https://hanmei.netlify.com/tags/%E9%9B%B6%E9%A3%9F/">零食</a>
     
 </div>
     </section>
@@ -529,16 +542,17 @@ Davies-Meyer CHF：<code>Hi = Hi-1 ⊕ E ( Mi, Hi-1 ), H0= 0</code></p>
     <section class="widget">
         <h3 class="widget-title">其它</h3>
         <ul class="widget-list">
-            <li><a href="http://example.org/index.xml">文章 RSS</a></li>
+            <li><a href="https://hanmei.netlify.com/index.xml">文章 RSS</a></li>
         </ul>
     </section>
 </div>
+<script type="text/javascript" src='/js/jsCalendar.js?v=0.0.0'></script>
             </div>
         </div>
     </div>
     <footer id="footer">
     <div class="container">
-        &copy; 2020 <a href="http://example.org/">Hanmei@梅.</a>
+        &copy; 2020 <a href="https://hanmei.netlify.com/">Hanmei@梅.</a>
         Powered by <a rel="nofollow noreferer noopener" href="https://gohugo.io" target="_blank">Hugo</a>.
         Theme based on <a href="https://github.com/flysnow-org/maupassant-hugo" target="_blank">maupassant</a>.
         

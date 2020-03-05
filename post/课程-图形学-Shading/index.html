@@ -19,7 +19,7 @@
     <meta name="description" content="课程 图形学 Shading">
     
     <meta name="author" content="">
-    <meta property="og:url" content="http://example.org/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Shading/">
+    <meta property="og:url" content="https://hanmei.netlify.com/post/%E8%AF%BE%E7%A8%8B-%E5%9B%BE%E5%BD%A2%E5%AD%A6-Shading/">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href='/css/normalize.css'>
@@ -38,7 +38,7 @@
     <div class="container">
         <div class="col-group">
             <div class="site-name ">
-                <a id="logo" href="http://example.org/">
+                <a id="logo" href="https://hanmei.netlify.com/">
                     Hanmei@梅
                 </a>
                 
@@ -46,13 +46,16 @@
             <div>
                 <nav id="nav-menu" class="clearfix">
                     
-                    <a  href="http://example.org/"
+                    <a  href="https://hanmei.netlify.com/"
                         title="首页">首页</a>
                     
-                    <a  href="http://example.org/archives/"
+                    <a  href="https://hanmei.netlify.com/archives/"
                         title="存档">存档</a>
                     
-                    <a  href="http://example.org/about/"
+                    <a  href="https://hanmei.netlify.com/ideas/"
+                        title="碎碎念">碎碎念</a>
+                    
+                    <a  href="https://hanmei.netlify.com/about/"
                         title="关于">关于</a>
                     
                 </nav>
@@ -195,7 +198,7 @@
         <div class="post-meta">
             <span>|</span>
             
-            <span class="meta-category"><a href='http://example.org/categories/CS%E8%AF%BE%E7%A8%8B%E5%AD%A6%E4%B9%A0'>CS课程学习</a></span>
+            <span class="meta-category"><a href='https://hanmei.netlify.com/categories/CS%E8%AF%BE%E7%A8%8B%E5%AD%A6%E4%B9%A0'>CS课程学习</a></span>
             
         </div>
         
@@ -225,7 +228,7 @@
 
 <p>散射不改变光线密度和颜色，只改变方向；吸收不改变方向，只改变光线密度和颜色，</p>
 
-<p><img src="http://q2sxqdau4.bkt.clouddn.com/20191111184638.png" alt="" /></p>
+<p><img src="http://q5f66uxyd.bkt.clouddn.com/20191111184638.png" alt="" /></p>
 
 <h1 id="反射模型">反射模型</h1>
 
@@ -247,7 +250,7 @@ $$
 
 <p>Also called <strong>Lambertian surface</strong></p>
 
-<p><img src="http://q2sxqdau4.bkt.clouddn.com/20191111195449.png" alt="" /></p>
+<p><img src="http://q5f66uxyd.bkt.clouddn.com/20191111195449.png" alt="" /></p>
 
 <p>当光线照射到物体表面上，the energy of light will spread around the area，所以需要乘以 cosθ</p>
 
@@ -283,7 +286,7 @@ $$
 
 <h3 id="phong模型">Phong模型</h3>
 
-<p><img src="http://q2sxqdau4.bkt.clouddn.com/20191111201216.png" alt="" /></p>
+<p><img src="http://q5f66uxyd.bkt.clouddn.com/20191111201216.png" alt="" /></p>
 
 <div>
 $$
@@ -297,15 +300,15 @@ $$
 
 <p>Blinn-Phong模型是对phong模型的改进，解决了Phong模型存在的一些失真情况，并且提高了运算效率。在Blinn-Phong模型中，使用$H$单位矢量代替了$R$，称作&rdquo;HalfWay&rdquo;：</p>
 
-<p><img src="http://q2sxqdau4.bkt.clouddn.com/20191111202143.png" alt="" /></p>
+<p><img src="http://q5f66uxyd.bkt.clouddn.com/20191111202143.png" alt="" /></p>
 
 <h2 id="bidirectional-reflectance-distribution-functions">Bidirectional Reflectance Distribution Functions</h2>
 
 <p>Phong reflectance model 不遵循真实的物理世界，该模型就是它的补充。仅做补充，考试应该不考。</p>
 
-<p><img src="http://q2sxqdau4.bkt.clouddn.com/20191111211336.png" alt="" /></p>
+<p><img src="http://q5f66uxyd.bkt.clouddn.com/20191111211336.png" alt="" /></p>
 
-<p><img src="http://q2sxqdau4.bkt.clouddn.com/20191111211357.png" alt="" /></p>
+<p><img src="http://q5f66uxyd.bkt.clouddn.com/20191111211357.png" alt="" /></p>
 
 <p>实际上光照模型分为三种，第一种纯手工测量[MERL lab]，第二种就是前面的那些经验公式（Phong, Blinn-Phong, Ward），此外还有物理上的分析（Cook-Torrance, Torrance-Sparrow, …）</p>
 
@@ -313,7 +316,7 @@ $$
 
 <p>注意这里 $L$ 和 $N$ 都是单位向量</p>
 
-<p><img src="http://q2sxqdau4.bkt.clouddn.com/20191111201827.png" alt="" /></p>
+<p><img src="http://q5f66uxyd.bkt.clouddn.com/20191111201827.png" alt="" /></p>
 
 <div>
 $$
@@ -335,7 +338,7 @@ $$
 
 <h2 id="如何计算-normal-法线">如何计算 normal 法线?</h2>
 
-<p><img src="http://q2sxqdau4.bkt.clouddn.com/20191111204523.png" alt="" /></p>
+<p><img src="http://q5f66uxyd.bkt.clouddn.com/20191111204523.png" alt="" /></p>
 
 <p><strong>Normal of a triangle</strong>:</p>
 
@@ -361,13 +364,13 @@ $$
 
 <p>对于每个三角形只计算一次，使用 <strong>Normal of a triangle</strong> 着色，最终的效果是每个三角形都很均匀。</p>
 
-<p><img src="http://q2sxqdau4.bkt.clouddn.com/20191111205416.png" alt="" /></p>
+<p><img src="http://q5f66uxyd.bkt.clouddn.com/20191111205416.png" alt="" /></p>
 
 <h2 id="gouraud-smooth-shading">Gouraud/Smooth Shading</h2>
 
 <p>使用 <strong>Normal of a vertex</strong> 着色，Interpolating illumination between vertices，Bilinear interpolation across the triangle，也就是说，对每个顶点进行颜色计算，将这个颜色作为输入传递给片段着色器，由它对两点之间的点进行插值计算。</p>
 
-<p><img src="http://q2sxqdau4.bkt.clouddn.com/20191111210107.png" alt="" /></p>
+<p><img src="http://q5f66uxyd.bkt.clouddn.com/20191111210107.png" alt="" /></p>
 
 <p>这种方法计算的 edge 能够得到相同的颜色，不论它是从那边的三角形渲染的，Shading is continuous at edges</p>
 
@@ -409,7 +412,7 @@ $$
             
             <ul class="clearfix">
                 
-                <li><a href='http://example.org/tags/%E5%9B%BE%E5%BD%A2%E5%AD%A6'>图形学</a></li>
+                <li><a href='https://hanmei.netlify.com/tags/%E5%9B%BE%E5%BD%A2%E5%AD%A6'>图形学</a></li>
                 
             </ul>
             
@@ -426,11 +429,11 @@ $$
 
                 <div id="secondary">
     <section class="widget">
-        <form id="search" action='//www.google.com/search'
+        <form id="search" action='https://hanmei.netlify.com/search/'
       method="get" accept-charset="utf-8" target="_blank" _lpchecked="1">
       
       <input type="text" name="q" maxlength="20" placeholder="Search">
-      <input type="hidden" name="sitesearch" value="http://example.org/">
+      <input type="hidden" name="sitesearch" value="https://hanmei.netlify.com/">
       <button type="submit" class="submit icon-search"></button>
 </form>
     </section>
@@ -438,20 +441,26 @@ $$
     
 
     <section class="widget">
+        <div id="calendar" class="auto-jsCalendar"></div>
+    </section>
+
+    <section class="widget">
         <h3 class="widget-title">分类</h3>
 <ul class="widget-list">
     
-    <li><a href="http://example.org/categories/CS%E8%AF%BE%E7%A8%8B%E5%AD%A6%E4%B9%A0/">CS课程学习 (18)</a></li>
+    <li><a href="https://hanmei.netlify.com/categories/">Categories (1)</a></li>
     
-    <li><a href="http://example.org/categories/blog%E6%90%AD%E5%BB%BA/">blog搭建 (1)</a></li>
+    <li><a href="https://hanmei.netlify.com/categories/CS%E8%AF%BE%E7%A8%8B%E5%AD%A6%E4%B9%A0/">CS课程学习 (19)</a></li>
     
-    <li><a href="http://example.org/categories/%E5%AD%A6%E6%9C%AF/">学术 (2)</a></li>
+    <li><a href="https://hanmei.netlify.com/categories/blog%E6%90%AD%E5%BB%BA/">blog搭建 (2)</a></li>
     
-    <li><a href="http://example.org/categories/%E6%8A%80%E6%9C%AF/">技术 (7)</a></li>
+    <li><a href="https://hanmei.netlify.com/categories/%E5%AD%A6%E6%9C%AF/">学术 (2)</a></li>
     
-    <li><a href="http://example.org/categories/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/">日常记录 (28)</a></li>
+    <li><a href="https://hanmei.netlify.com/categories/%E6%8A%80%E6%9C%AF/">技术 (7)</a></li>
     
-    <li><a href="http://example.org/categories/%E7%94%9F%E6%B4%BB/">生活 (1)</a></li>
+    <li><a href="https://hanmei.netlify.com/categories/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/">日常记录 (29)</a></li>
+    
+    <li><a href="https://hanmei.netlify.com/categories/%E7%94%9F%E6%B4%BB/">生活 (1)</a></li>
     
 </ul>
     </section>
@@ -460,35 +469,39 @@ $$
         <h3 class="widget-title">标签</h3>
 <div class="tagcloud">
     
-    <a href="http://example.org/tags/WebGL/">WebGL</a>
+    <a href="https://hanmei.netlify.com/tags/">Tags</a>
     
-    <a href="http://example.org/tags/blog/">blog</a>
+    <a href="https://hanmei.netlify.com/tags/WebGL/">WebGL</a>
     
-    <a href="http://example.org/tags/git/">git</a>
+    <a href="https://hanmei.netlify.com/tags/blog/">blog</a>
     
-    <a href="http://example.org/tags/linux/">linux</a>
+    <a href="https://hanmei.netlify.com/tags/bug%E8%AE%B0%E5%BD%95/">bug记录</a>
     
-    <a href="http://example.org/tags/%E5%9B%BE%E5%BD%A2%E5%AD%A6/">图形学</a>
+    <a href="https://hanmei.netlify.com/tags/git/">git</a>
     
-    <a href="http://example.org/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/">密码学</a>
+    <a href="https://hanmei.netlify.com/tags/linux/">linux</a>
     
-    <a href="http://example.org/tags/%E6%8C%81%E7%BB%AD%E8%A1%A5%E5%85%85.../">持续补充...</a>
+    <a href="https://hanmei.netlify.com/tags/%E5%9B%BE%E5%BD%A2%E5%AD%A6/">图形学</a>
     
-    <a href="http://example.org/tags/%E6%B5%8B%E8%AF%84/">测评</a>
+    <a href="https://hanmei.netlify.com/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/">密码学</a>
     
-    <a href="http://example.org/tags/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/">离散数学</a>
+    <a href="https://hanmei.netlify.com/tags/%E6%8C%81%E7%BB%AD%E8%A1%A5%E5%85%85.../">持续补充...</a>
     
-    <a href="http://example.org/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/">网络安全</a>
+    <a href="https://hanmei.netlify.com/tags/%E6%B5%8B%E8%AF%84/">测评</a>
     
-    <a href="http://example.org/tags/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/">论文阅读</a>
+    <a href="https://hanmei.netlify.com/tags/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/">离散数学</a>
     
-    <a href="http://example.org/tags/%E8%BF%90%E5%8A%A8%E4%BC%AA%E5%BD%B1%E6%B6%88%E9%99%A4/">运动伪影消除</a>
+    <a href="https://hanmei.netlify.com/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/">网络安全</a>
     
-    <a href="http://example.org/tags/%E9%80%9F%E6%9F%A5/">速查</a>
+    <a href="https://hanmei.netlify.com/tags/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/">论文阅读</a>
     
-    <a href="http://example.org/tags/%E9%85%B8%E5%A5%B6/">酸奶</a>
+    <a href="https://hanmei.netlify.com/tags/%E8%BF%90%E5%8A%A8%E4%BC%AA%E5%BD%B1%E6%B6%88%E9%99%A4/">运动伪影消除</a>
     
-    <a href="http://example.org/tags/%E9%9B%B6%E9%A3%9F/">零食</a>
+    <a href="https://hanmei.netlify.com/tags/%E9%80%9F%E6%9F%A5/">速查</a>
+    
+    <a href="https://hanmei.netlify.com/tags/%E9%85%B8%E5%A5%B6/">酸奶</a>
+    
+    <a href="https://hanmei.netlify.com/tags/%E9%9B%B6%E9%A3%9F/">零食</a>
     
 </div>
     </section>
@@ -498,16 +511,17 @@ $$
     <section class="widget">
         <h3 class="widget-title">其它</h3>
         <ul class="widget-list">
-            <li><a href="http://example.org/index.xml">文章 RSS</a></li>
+            <li><a href="https://hanmei.netlify.com/index.xml">文章 RSS</a></li>
         </ul>
     </section>
 </div>
+<script type="text/javascript" src='/js/jsCalendar.js?v=0.0.0'></script>
             </div>
         </div>
     </div>
     <footer id="footer">
     <div class="container">
-        &copy; 2020 <a href="http://example.org/">Hanmei@梅.</a>
+        &copy; 2020 <a href="https://hanmei.netlify.com/">Hanmei@梅.</a>
         Powered by <a rel="nofollow noreferer noopener" href="https://gohugo.io" target="_blank">Hugo</a>.
         Theme based on <a href="https://github.com/flysnow-org/maupassant-hugo" target="_blank">maupassant</a>.
         

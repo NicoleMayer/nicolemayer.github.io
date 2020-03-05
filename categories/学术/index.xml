@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>学术 on Hanmei@梅</title>
-    <link>http://example.org/categories/%E5%AD%A6%E6%9C%AF/</link>
+    <link>https://hanmei.netlify.com/categories/%E5%AD%A6%E6%9C%AF/</link>
     <description>Recent content in 学术 on Hanmei@梅</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <lastBuildDate>Thu, 07 Nov 2019 20:38:07 -0700</lastBuildDate>
     
-	<atom:link href="http://example.org/categories/%E5%AD%A6%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://hanmei.netlify.com/categories/%E5%AD%A6%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>PPG小组 Frequency Estimation and Notch Filtering</title>
-      <link>http://example.org/post/PPG%E5%B0%8F%E7%BB%84-Frequency-Estimation-and-Notch-Filtering/</link>
+      <link>https://hanmei.netlify.com/post/PPG%E5%B0%8F%E7%BB%84-Frequency-Estimation-and-Notch-Filtering/</link>
       <pubDate>Thu, 07 Nov 2019 20:38:07 -0700</pubDate>
       
-      <guid>http://example.org/post/PPG%E5%B0%8F%E7%BB%84-Frequency-Estimation-and-Notch-Filtering/</guid>
+      <guid>https://hanmei.netlify.com/post/PPG%E5%B0%8F%E7%BB%84-Frequency-Estimation-and-Notch-Filtering/</guid>
       <description>&lt;p&gt;&lt;strong&gt;阅读论文《Removal of Motion Artifacts in Photoplethysmograph Sensors during Intensive Exercise for Accurate Heart Rate Calculation Based on Frequency Estimation and Notch Filtering》&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;论文原文地址：&lt;a href=&#34;https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6696451/&#34;&gt;https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6696451/&lt;/a&gt;&lt;/p&gt;</description>
@@ -24,10 +24,10 @@
     
     <item>
       <title>PPG小组 TROIKA</title>
-      <link>http://example.org/post/PPG%E5%B0%8F%E7%BB%84-TROIKA/</link>
+      <link>https://hanmei.netlify.com/post/PPG%E5%B0%8F%E7%BB%84-TROIKA/</link>
       <pubDate>Tue, 05 Nov 2019 09:14:16 -0700</pubDate>
       
-      <guid>http://example.org/post/PPG%E5%B0%8F%E7%BB%84-TROIKA/</guid>
+      <guid>https://hanmei.netlify.com/post/PPG%E5%B0%8F%E7%BB%84-TROIKA/</guid>
       <description>&lt;p&gt;&lt;strong&gt;阅读论文《TROIKA: A General Framework for Heart Rate Monitoring Using Wrist-Type Photoplethysmographic Signals During Intensive Physical Exercise》&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     
