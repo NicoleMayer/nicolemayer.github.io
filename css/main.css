@@ -9,7 +9,7 @@ body {
   font-family: "Open Sans", sans-serif;
   font-weight: 100;
   line-height: 20px;
-  text-align: justify;
+  /* text-align: justify; */
   color: black;
   background-position: center;
   background-size: auto;
@@ -30,7 +30,7 @@ p {
 }
 
 .container {
-  max-width: 55%;
+  max-width: 80%;
   margin: auto;
 }
 
